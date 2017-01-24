@@ -69,7 +69,6 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0Sc-3J-vor"/>
-                                    <constraint firstItem="yVS-mx-X9W" firstAttribute="top" secondItem="Ryj-iz-Oa1" secondAttribute="top" constant="15" id="c8c-7Z-EEh"/>
                                     <constraint firstItem="yVS-mx-X9W" firstAttribute="centerX" secondItem="Ryj-iz-Oa1" secondAttribute="centerX" id="dAn-9e-nLz"/>
                                     <constraint firstItem="yVS-mx-X9W" firstAttribute="centerY" secondItem="Ryj-iz-Oa1" secondAttribute="centerY" id="jJJ-qc-ow8"/>
                                 </constraints>
@@ -128,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Schedule-->
         <scene sceneID="L7o-G6-qxc">
             <objects>
-                <viewController id="jcK-n3-AKM" sceneMemberID="viewController">
+                <viewController id="jcK-n3-AKM" userLabel="Schedule" customClass="ScheduleVC" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gEy-ba-zRO"/>
                         <viewControllerLayoutGuide type="bottom" id="DN4-Zv-r5H"/>
@@ -140,20 +139,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ViewController2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVJ-VA-Xui">
-                                <rect key="frame" x="126" y="280" width="123" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="PoX-Cn-el8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0uL-vA-z5J">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xep-aq-jc0">
+                                        <rect key="frame" x="150" y="13" width="75.5" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="bRc-en-Zmg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="21"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGs-Gh-4h7">
+                                        <rect key="frame" x="8" y="10" width="47" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="C3z-ic-OzP"/>
+                                        </constraints>
+                                        <state key="normal" title="Toggle">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="xep-aq-jc0" firstAttribute="centerY" secondItem="0uL-vA-z5J" secondAttribute="centerY" id="1cV-1V-C5c"/>
+                                    <constraint firstItem="IGs-Gh-4h7" firstAttribute="leading" secondItem="0uL-vA-z5J" secondAttribute="leading" constant="8" id="7MK-z3-95B"/>
+                                    <constraint firstItem="xep-aq-jc0" firstAttribute="centerX" secondItem="0uL-vA-z5J" secondAttribute="centerX" id="DCC-MX-wcl"/>
+                                    <constraint firstAttribute="height" constant="50" id="jOH-ik-wo2"/>
+                                    <constraint firstItem="IGs-Gh-4h7" firstAttribute="centerY" secondItem="0uL-vA-z5J" secondAttribute="centerY" id="tiT-UM-WW9"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="z0e-yd-QVH"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbZ-LW-lmL">
+                                <rect key="frame" x="41" y="151" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="togglebutton:" destination="jcK-n3-AKM" eventType="touchUpInside" id="utV-hc-S7F"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0uL-vA-z5J" firstAttribute="top" secondItem="ZBq-83-wXK" secondAttribute="top" id="Fxq-5p-5gB"/>
+                            <constraint firstItem="PoX-Cn-el8" firstAttribute="leading" secondItem="ZBq-83-wXK" secondAttribute="leading" id="LVe-Hw-c4f"/>
+                            <constraint firstItem="PoX-Cn-el8" firstAttribute="top" secondItem="ZBq-83-wXK" secondAttribute="top" id="Ltt-6I-PJc"/>
+                            <constraint firstAttribute="bottom" secondItem="PoX-Cn-el8" secondAttribute="bottom" id="ehl-e1-8nD"/>
+                            <constraint firstAttribute="trailing" secondItem="PoX-Cn-el8" secondAttribute="trailing" id="gvV-fz-geJ"/>
+                            <constraint firstItem="0uL-vA-z5J" firstAttribute="leading" secondItem="ZBq-83-wXK" secondAttribute="leading" id="gzD-CV-cRa"/>
+                            <constraint firstAttribute="trailing" secondItem="0uL-vA-z5J" secondAttribute="trailing" id="x42-EX-pCu"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXY-fT-qtK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="968" y="140"/>
+            <point key="canvasLocation" x="967.20000000000005" y="139.880059970015"/>
         </scene>
     </scenes>
     <resources>

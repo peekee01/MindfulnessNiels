@@ -7,65 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15A3875FB1A15F57165DCBB0E672258F /* Pods-Mindfulness Niels-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A322440D386BAA36741D9827B5BD247A /* Pods-Mindfulness Niels-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BE469EB016DAEB25C81EA7DD1B49B54 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454F5257F5D3314C23CD9A9C88BAF3B /* ENSideMenu.swift */; };
-		7C96F09A338321D08622BA7112DF58FD /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078902E3773FCC597AB9654DDA73E1C /* ENSideMenuNavigationController.swift */; };
-		89A744DD6D7FA59C5B865F642FCB1143 /* ENSwiftSideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD612D6F2E49472EA7C36F117B2D53B /* ENSwiftSideMenu-dummy.m */; };
-		AC97BD3C3FD21547796E2C1E51A93321 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		C0384B074997F0198ACE67C7F36E923E /* ENSwiftSideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58A7AA23FFFBBD44E2EF2EA03C420440 /* ENSwiftSideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D796B76A1346E073BF9FE67E94EC506E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		F035E0D48E3C0CB47B643578C9A260C5 /* Pods-Mindfulness Niels-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37778C86766346E49FA048E00C885382 /* Pods-Mindfulness Niels-dummy.m */; };
+		613B719D45228B555606ADD9F53FFC4E /* Pods-Mindfulness Niels-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37778C86766346E49FA048E00C885382 /* Pods-Mindfulness Niels-dummy.m */; };
+		6E74FF3380DF23EBD7849E765EA492AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		74BBEA007402566A315D18F68D0FFC4F /* YALSideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A0291F3AC6DD2F2FD067BCC103A4E8 /* YALSideMenu-dummy.m */; };
+		97D3C17064721E46468C306A146F5F03 /* YALSideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6716DB17CB3E3FE2B89A1A3FB81A988B /* YALSideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A5E0BA32897B53E517355D116FB79A6 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B05FA8F74248495D5A2E2E465F5158 /* Menu.swift */; };
+		E6837362B9AD794A78773BF7102B64E4 /* MenuItemsAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49455E7E3A34CD61EBA223EB55D94089 /* MenuItemsAnimator.swift */; };
+		F354D45EF6B2EA02DA5380512F009D0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		F7370A72E341A548B870E218603FBAB0 /* Pods-Mindfulness Niels-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A322440D386BAA36741D9827B5BD247A /* Pods-Mindfulness Niels-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8325C43CF48E2922D1A0AE501138CB3 /* MenuTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA36E3C8C7A1C378A295078175CB5982 /* MenuTransitionAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C0846AA4D77092E9FE227F5A1537AE54 /* PBXContainerItemProxy */ = {
+		ABB70D35E868D4C33EEBF5E03EC284A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E1C1806B93D7F3F64ADC36CCFBBD7D87;
-			remoteInfo = ENSwiftSideMenu;
+			remoteGlobalIDString = 97E906521E68ADC567BDCF068DAA11C7;
+			remoteInfo = YALSideMenu;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0454F5257F5D3314C23CD9A9C88BAF3B /* ENSideMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ENSideMenu.swift; path = Library/ENSideMenu.swift; sourceTree = "<group>"; };
-		2CD612D6F2E49472EA7C36F117B2D53B /* ENSwiftSideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ENSwiftSideMenu-dummy.m"; sourceTree = "<group>"; };
+		0667864A24B262A726F5872396CB8EE5 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SideMenu.framework; path = YALSideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FF41F67445390D36C12FA8F420EA125 /* YALSideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YALSideMenu-prefix.pch"; sourceTree = "<group>"; };
 		37778C86766346E49FA048E00C885382 /* Pods-Mindfulness Niels-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Mindfulness Niels-dummy.m"; sourceTree = "<group>"; };
 		48C12F0F8E1E549771478A0E5E4A715E /* Pods-Mindfulness Niels-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Mindfulness Niels-acknowledgements.plist"; sourceTree = "<group>"; };
-		5793DDCC099EBE83CEB41BD692D9F366 /* ENSwiftSideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ENSwiftSideMenu.xcconfig; sourceTree = "<group>"; };
-		58A7AA23FFFBBD44E2EF2EA03C420440 /* ENSwiftSideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ENSwiftSideMenu-umbrella.h"; sourceTree = "<group>"; };
+		49455E7E3A34CD61EBA223EB55D94089 /* MenuItemsAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuItemsAnimator.swift; path = SideMenu/MenuItemsAnimator.swift; sourceTree = "<group>"; };
+		51B05FA8F74248495D5A2E2E465F5158 /* Menu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Menu.swift; path = SideMenu/Menu.swift; sourceTree = "<group>"; };
+		5F45F742EA8EDE582072A03BD740DEF0 /* YALSideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YALSideMenu.xcconfig; sourceTree = "<group>"; };
+		6716DB17CB3E3FE2B89A1A3FB81A988B /* YALSideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YALSideMenu-umbrella.h"; sourceTree = "<group>"; };
 		6ECC83D869B72B390026B961C17321ED /* Pods-Mindfulness Niels-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Mindfulness Niels-resources.sh"; sourceTree = "<group>"; };
 		78B28B8E7C62EE7868C48B7E4E844A29 /* Pods-Mindfulness Niels.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Mindfulness Niels.modulemap"; sourceTree = "<group>"; };
+		899B2E47FF6A14AA7F8F239A73E2BEF9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9AC8C3BAAA10C20F8615339CF5E447AA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A322440D386BAA36741D9827B5BD247A /* Pods-Mindfulness Niels-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Mindfulness Niels-umbrella.h"; sourceTree = "<group>"; };
-		AE9B0CB0B202711E9D647E0FE48E9AFE /* ENSwiftSideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ENSwiftSideMenu.modulemap; sourceTree = "<group>"; };
-		BB18A99EF8F3D2D6D4BF57AE21597BE2 /* Pods_Mindfulness_Niels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Mindfulness_Niels.framework; path = "Pods-Mindfulness Niels.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94EBA6C87716331B4D41B8E9AE5E6C0 /* Pods-Mindfulness Niels-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Mindfulness Niels-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CBB229C13E77B814D43CAEEF8175DB7A /* Pods-Mindfulness Niels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Mindfulness Niels.release.xcconfig"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D078902E3773FCC597AB9654DDA73E1C /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ENSideMenuNavigationController.swift; path = Library/ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
-		DED8DA5F863E8017C533E7E3A39406A1 /* ENSwiftSideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ENSwiftSideMenu-prefix.pch"; sourceTree = "<group>"; };
-		E03854B369442F70007E4A3904E5357A /* ENSwiftSideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ENSwiftSideMenu.framework; path = ENSwiftSideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF07C4643619E9602E0C5A861CA4E19B /* YALSideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YALSideMenu.modulemap; sourceTree = "<group>"; };
+		E7495F38E05037ACAF2E9B953B25D9E1 /* Pods_Mindfulness_Niels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Mindfulness_Niels.framework; path = "Pods-Mindfulness Niels.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA36E3C8C7A1C378A295078175CB5982 /* MenuTransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuTransitionAnimator.swift; path = SideMenu/MenuTransitionAnimator.swift; sourceTree = "<group>"; };
 		F09B200878C30C83615617D8C4637F58 /* Pods-Mindfulness Niels-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Mindfulness Niels-frameworks.sh"; sourceTree = "<group>"; };
-		F748ACFA453961C567029942B87DFDF0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8A0291F3AC6DD2F2FD067BCC103A4E8 /* YALSideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YALSideMenu-dummy.m"; sourceTree = "<group>"; };
 		FD1D36F119921E8A18C0BCBD2B038A33 /* Pods-Mindfulness Niels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Mindfulness Niels.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		066100BED2AD47E39633A44B4CAA73AF /* Frameworks */ = {
+		7BBFDCADE6BD79C4F19C87B592494254 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D796B76A1346E073BF9FE67E94EC506E /* Foundation.framework in Frameworks */,
+				F354D45EF6B2EA02DA5380512F009D0A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6D331303C1E6339A55C8A2E7DEE079D /* Frameworks */ = {
+		F4B20C84EA9237B1CB631E85C23683D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC97BD3C3FD21547796E2C1E51A93321 /* Foundation.framework in Frameworks */,
+				6E74FF3380DF23EBD7849E765EA492AD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,15 +100,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		5CFDCE5F22383971FA8457FD861A28B5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E03854B369442F70007E4A3904E5357A /* ENSwiftSideMenu.framework */,
-				BB18A99EF8F3D2D6D4BF57AE21597BE2 /* Pods_Mindfulness_Niels.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,34 +108,50 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		7BD954DF118B172E40D19DF932EC3A30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7495F38E05037ACAF2E9B953B25D9E1 /* Pods_Mindfulness_Niels.framework */,
+				0667864A24B262A726F5872396CB8EE5 /* SideMenu.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				927BF6D291AAC5DC9A099FCA9218DF18 /* Pods */,
-				5CFDCE5F22383971FA8457FD861A28B5 /* Products */,
+				E875F7B56328D7111E57FCC1FF2D8056 /* Pods */,
+				7BD954DF118B172E40D19DF932EC3A30 /* Products */,
 				483457FA26DC51E5CD2E0FC1519D9302 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		927BF6D291AAC5DC9A099FCA9218DF18 /* Pods */ = {
+		B28F4A059947CCBF3DCA9FBFC43D3EC2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AA615BBCCD13862DE73D3126B9983ECC /* ENSwiftSideMenu */,
+				899B2E47FF6A14AA7F8F239A73E2BEF9 /* Info.plist */,
+				CF07C4643619E9602E0C5A861CA4E19B /* YALSideMenu.modulemap */,
+				5F45F742EA8EDE582072A03BD740DEF0 /* YALSideMenu.xcconfig */,
+				F8A0291F3AC6DD2F2FD067BCC103A4E8 /* YALSideMenu-dummy.m */,
+				1FF41F67445390D36C12FA8F420EA125 /* YALSideMenu-prefix.pch */,
+				6716DB17CB3E3FE2B89A1A3FB81A988B /* YALSideMenu-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/YALSideMenu";
 			sourceTree = "<group>";
 		};
-		AA615BBCCD13862DE73D3126B9983ECC /* ENSwiftSideMenu */ = {
+		B9BC98239FD3548F84E87A370CADFF00 /* YALSideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				0454F5257F5D3314C23CD9A9C88BAF3B /* ENSideMenu.swift */,
-				D078902E3773FCC597AB9654DDA73E1C /* ENSideMenuNavigationController.swift */,
-				C3AF1232E3F44296D5893A81B0DC83F8 /* Support Files */,
+				51B05FA8F74248495D5A2E2E465F5158 /* Menu.swift */,
+				49455E7E3A34CD61EBA223EB55D94089 /* MenuItemsAnimator.swift */,
+				EA36E3C8C7A1C378A295078175CB5982 /* MenuTransitionAnimator.swift */,
+				B28F4A059947CCBF3DCA9FBFC43D3EC2 /* Support Files */,
 			);
-			name = ENSwiftSideMenu;
-			path = ENSwiftSideMenu;
+			name = YALSideMenu;
+			path = YALSideMenu;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -153,75 +162,69 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C3AF1232E3F44296D5893A81B0DC83F8 /* Support Files */ = {
+		E875F7B56328D7111E57FCC1FF2D8056 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AE9B0CB0B202711E9D647E0FE48E9AFE /* ENSwiftSideMenu.modulemap */,
-				5793DDCC099EBE83CEB41BD692D9F366 /* ENSwiftSideMenu.xcconfig */,
-				2CD612D6F2E49472EA7C36F117B2D53B /* ENSwiftSideMenu-dummy.m */,
-				DED8DA5F863E8017C533E7E3A39406A1 /* ENSwiftSideMenu-prefix.pch */,
-				58A7AA23FFFBBD44E2EF2EA03C420440 /* ENSwiftSideMenu-umbrella.h */,
-				F748ACFA453961C567029942B87DFDF0 /* Info.plist */,
+				B9BC98239FD3548F84E87A370CADFF00 /* YALSideMenu */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ENSwiftSideMenu";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		35C50B43CD4FFF866C6FCE77EB6FEF91 /* Headers */ = {
+		6EA8F6B3951542505CBF512A5B5511DC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15A3875FB1A15F57165DCBB0E672258F /* Pods-Mindfulness Niels-umbrella.h in Headers */,
+				F7370A72E341A548B870E218603FBAB0 /* Pods-Mindfulness Niels-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC3383AFE57E92B7902A6FE9DB8EE26E /* Headers */ = {
+		A2E7C90F143CE741A37FEFF0994F0FAF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0384B074997F0198ACE67C7F36E923E /* ENSwiftSideMenu-umbrella.h in Headers */,
+				97D3C17064721E46468C306A146F5F03 /* YALSideMenu-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		19B42B7B8B16212893B2824EBE1C2E7D /* Pods-Mindfulness Niels */ = {
+		97E906521E68ADC567BDCF068DAA11C7 /* YALSideMenu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 557F6A7617A75AD42C00ABC8B494DA14 /* Build configuration list for PBXNativeTarget "Pods-Mindfulness Niels" */;
+			buildConfigurationList = 84729677F7FE8757CB50EF0DF91BE9B1 /* Build configuration list for PBXNativeTarget "YALSideMenu" */;
 			buildPhases = (
-				D43AB6D330107038FBCF003D16792BC0 /* Sources */,
-				B6D331303C1E6339A55C8A2E7DEE079D /* Frameworks */,
-				35C50B43CD4FFF866C6FCE77EB6FEF91 /* Headers */,
+				73474D279A7B3BD1F088C7919C77AB07 /* Sources */,
+				F4B20C84EA9237B1CB631E85C23683D3 /* Frameworks */,
+				A2E7C90F143CE741A37FEFF0994F0FAF /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				179BE4068BBDEE0326E76E6792A41079 /* PBXTargetDependency */,
+			);
+			name = YALSideMenu;
+			productName = YALSideMenu;
+			productReference = 0667864A24B262A726F5872396CB8EE5 /* SideMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C58B6D79FF3BA52E3CB956D0CA1EBAB1 /* Pods-Mindfulness Niels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12F67F309AF074C97D096EFFDC506842 /* Build configuration list for PBXNativeTarget "Pods-Mindfulness Niels" */;
+			buildPhases = (
+				377A011192AD74D301033371C496ADB6 /* Sources */,
+				7BBFDCADE6BD79C4F19C87B592494254 /* Frameworks */,
+				6EA8F6B3951542505CBF512A5B5511DC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2424A286C5FA4C3CDE81659990D1DF6 /* PBXTargetDependency */,
 			);
 			name = "Pods-Mindfulness Niels";
 			productName = "Pods-Mindfulness Niels";
-			productReference = BB18A99EF8F3D2D6D4BF57AE21597BE2 /* Pods_Mindfulness_Niels.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E1C1806B93D7F3F64ADC36CCFBBD7D87 /* ENSwiftSideMenu */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9F37F5ABFF8D79DA3FC3CF760D59D42F /* Build configuration list for PBXNativeTarget "ENSwiftSideMenu" */;
-			buildPhases = (
-				88236B642819C2DCFDAD13EB40A08C2A /* Sources */,
-				066100BED2AD47E39633A44B4CAA73AF /* Frameworks */,
-				FC3383AFE57E92B7902A6FE9DB8EE26E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ENSwiftSideMenu;
-			productName = ENSwiftSideMenu;
-			productReference = E03854B369442F70007E4A3904E5357A /* ENSwiftSideMenu.framework */;
+			productReference = E7495F38E05037ACAF2E9B953B25D9E1 /* Pods_Mindfulness_Niels.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -241,48 +244,82 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 5CFDCE5F22383971FA8457FD861A28B5 /* Products */;
+			productRefGroup = 7BD954DF118B172E40D19DF932EC3A30 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E1C1806B93D7F3F64ADC36CCFBBD7D87 /* ENSwiftSideMenu */,
-				19B42B7B8B16212893B2824EBE1C2E7D /* Pods-Mindfulness Niels */,
+				C58B6D79FF3BA52E3CB956D0CA1EBAB1 /* Pods-Mindfulness Niels */,
+				97E906521E68ADC567BDCF068DAA11C7 /* YALSideMenu */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		88236B642819C2DCFDAD13EB40A08C2A /* Sources */ = {
+		377A011192AD74D301033371C496ADB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BE469EB016DAEB25C81EA7DD1B49B54 /* ENSideMenu.swift in Sources */,
-				7C96F09A338321D08622BA7112DF58FD /* ENSideMenuNavigationController.swift in Sources */,
-				89A744DD6D7FA59C5B865F642FCB1143 /* ENSwiftSideMenu-dummy.m in Sources */,
+				613B719D45228B555606ADD9F53FFC4E /* Pods-Mindfulness Niels-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D43AB6D330107038FBCF003D16792BC0 /* Sources */ = {
+		73474D279A7B3BD1F088C7919C77AB07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F035E0D48E3C0CB47B643578C9A260C5 /* Pods-Mindfulness Niels-dummy.m in Sources */,
+				9A5E0BA32897B53E517355D116FB79A6 /* Menu.swift in Sources */,
+				E6837362B9AD794A78773BF7102B64E4 /* MenuItemsAnimator.swift in Sources */,
+				F8325C43CF48E2922D1A0AE501138CB3 /* MenuTransitionAnimator.swift in Sources */,
+				74BBEA007402566A315D18F68D0FFC4F /* YALSideMenu-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		179BE4068BBDEE0326E76E6792A41079 /* PBXTargetDependency */ = {
+		E2424A286C5FA4C3CDE81659990D1DF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ENSwiftSideMenu;
-			target = E1C1806B93D7F3F64ADC36CCFBBD7D87 /* ENSwiftSideMenu */;
-			targetProxy = C0846AA4D77092E9FE227F5A1537AE54 /* PBXContainerItemProxy */;
+			name = YALSideMenu;
+			target = 97E906521E68ADC567BDCF068DAA11C7 /* YALSideMenu */;
+			targetProxy = ABB70D35E868D4C33EEBF5E03EC284A6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+		0E0C7F34DB23D8BFA2AD7BEFBFC8662F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F45F742EA8EDE582072A03BD740DEF0 /* YALSideMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YALSideMenu/YALSideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YALSideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YALSideMenu/YALSideMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -318,7 +355,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -326,7 +363,75 @@
 			};
 			name = Debug;
 		};
-		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+		77EB4B4B7E404BD78C059CA6D568C349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F45F742EA8EDE582072A03BD740DEF0 /* YALSideMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YALSideMenu/YALSideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YALSideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YALSideMenu/YALSideMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C87DB0AE7035BE86BFAB144B5CE1BCE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD1D36F119921E8A18C0BCBD2B038A33 /* Pods-Mindfulness Niels.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Mindfulness Niels/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Mindfulness Niels/Pods-Mindfulness Niels.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Mindfulness_Niels;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -358,7 +463,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
@@ -366,108 +471,7 @@
 			};
 			name = Release;
 		};
-		5080B272BBE56B8FF4A742252BFCEF9F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5793DDCC099EBE83CEB41BD692D9F366 /* ENSwiftSideMenu.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ENSwiftSideMenu/ENSwiftSideMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ENSwiftSideMenu/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ENSwiftSideMenu/ENSwiftSideMenu.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ENSwiftSideMenu;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		517AD3F53D381CE0185FF4D5EB886A16 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD1D36F119921E8A18C0BCBD2B038A33 /* Pods-Mindfulness Niels.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Mindfulness Niels/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Mindfulness Niels/Pods-Mindfulness Niels.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Mindfulness_Niels;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		57F0AF95B64E434B482FBCE370774AD9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5793DDCC099EBE83CEB41BD692D9F366 /* ENSwiftSideMenu.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ENSwiftSideMenu/ENSwiftSideMenu-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ENSwiftSideMenu/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ENSwiftSideMenu/ENSwiftSideMenu.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ENSwiftSideMenu;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8A5AAB84FDF0F8F2A0015EF8FFB5A741 /* Release */ = {
+		EE735DA551874AF4E131A7F3B4A3EF92 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CBB229C13E77B814D43CAEEF8175DB7A /* Pods-Mindfulness Niels.release.xcconfig */;
 			buildSettings = {
@@ -484,7 +488,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-Mindfulness Niels/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Mindfulness Niels/Pods-Mindfulness Niels.modulemap";
@@ -505,29 +509,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		12F67F309AF074C97D096EFFDC506842 /* Build configuration list for PBXNativeTarget "Pods-Mindfulness Niels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C87DB0AE7035BE86BFAB144B5CE1BCE9 /* Debug */,
+				EE735DA551874AF4E131A7F3B4A3EF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
-				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		557F6A7617A75AD42C00ABC8B494DA14 /* Build configuration list for PBXNativeTarget "Pods-Mindfulness Niels" */ = {
+		84729677F7FE8757CB50EF0DF91BE9B1 /* Build configuration list for PBXNativeTarget "YALSideMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				517AD3F53D381CE0185FF4D5EB886A16 /* Debug */,
-				8A5AAB84FDF0F8F2A0015EF8FFB5A741 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9F37F5ABFF8D79DA3FC3CF760D59D42F /* Build configuration list for PBXNativeTarget "ENSwiftSideMenu" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				57F0AF95B64E434B482FBCE370774AD9 /* Debug */,
-				5080B272BBE56B8FF4A742252BFCEF9F /* Release */,
+				0E0C7F34DB23D8BFA2AD7BEFBFC8662F /* Debug */,
+				77EB4B4B7E404BD78C059CA6D568C349 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
