@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		65788EE41E37DA8300A6AC6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65788EE31E37DA8300A6AC6A /* AppDelegate.swift */; };
-		65788EE61E37DA8300A6AC6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65788EE51E37DA8300A6AC6A /* ViewController.swift */; };
+		65788EE61E37DA8300A6AC6A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65788EE51E37DA8300A6AC6A /* MainVC.swift */; };
 		65788EE91E37DA8300A6AC6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65788EE71E37DA8300A6AC6A /* Main.storyboard */; };
 		65788EEC1E37DA8300A6AC6A /* Mindfulness_Niels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65788EEA1E37DA8300A6AC6A /* Mindfulness_Niels.xcdatamodeld */; };
 		65788EEE1E37DA8300A6AC6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65788EED1E37DA8300A6AC6A /* Assets.xcassets */; };
 		65788EF11E37DA8300A6AC6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65788EEF1E37DA8300A6AC6A /* LaunchScreen.storyboard */; };
+		95067312A9A2FF60ED238C66 /* Pods_Mindfulness_Niels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD573AA54512CCB2557DD9D6 /* Pods_Mindfulness_Niels.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		65788EE01E37DA8300A6AC6A /* Mindfulness Niels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mindfulness Niels.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65788EE31E37DA8300A6AC6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65788EE51E37DA8300A6AC6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65788EE51E37DA8300A6AC6A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		65788EE81E37DA8300A6AC6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65788EEB1E37DA8300A6AC6A /* Mindfulness_Niels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mindfulness_Niels.xcdatamodel; sourceTree = "<group>"; };
 		65788EED1E37DA8300A6AC6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65788EF01E37DA8300A6AC6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65788EF21E37DA8300A6AC6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		968AE0B665E063B8C7CDE0F6 /* Pods-Mindfulness Niels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindfulness Niels.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mindfulness Niels/Pods-Mindfulness Niels.release.xcconfig"; sourceTree = "<group>"; };
+		B302AC870CF2B90BEB7EC470 /* Pods-Mindfulness Niels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindfulness Niels.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mindfulness Niels/Pods-Mindfulness Niels.debug.xcconfig"; sourceTree = "<group>"; };
+		FD573AA54512CCB2557DD9D6 /* Pods_Mindfulness_Niels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mindfulness_Niels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95067312A9A2FF60ED238C66 /* Pods_Mindfulness_Niels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				65788EE21E37DA8300A6AC6A /* Mindfulness Niels */,
 				65788EE11E37DA8300A6AC6A /* Products */,
+				BAB208018792C810B9FCA48B /* Pods */,
+				6FB13A37D09FC09A2B879BC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +63,10 @@
 		65788EE21E37DA8300A6AC6A /* Mindfulness Niels */ = {
 			isa = PBXGroup;
 			children = (
+				65788EFA1E37DADE00A6AC6A /* Controller */,
+				65788EF91E37DAD300A6AC6A /* View */,
+				65788EF81E37DACC00A6AC6A /* Model */,
 				65788EE31E37DA8300A6AC6A /* AppDelegate.swift */,
-				65788EE51E37DA8300A6AC6A /* ViewController.swift */,
 				65788EE71E37DA8300A6AC6A /* Main.storyboard */,
 				65788EED1E37DA8300A6AC6A /* Assets.xcassets */,
 				65788EEF1E37DA8300A6AC6A /* LaunchScreen.storyboard */,
@@ -67,6 +76,45 @@
 			path = "Mindfulness Niels";
 			sourceTree = "<group>";
 		};
+		65788EF81E37DACC00A6AC6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		65788EF91E37DAD300A6AC6A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		65788EFA1E37DADE00A6AC6A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65788EE51E37DA8300A6AC6A /* MainVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6FB13A37D09FC09A2B879BC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD573AA54512CCB2557DD9D6 /* Pods_Mindfulness_Niels.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAB208018792C810B9FCA48B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B302AC870CF2B90BEB7EC470 /* Pods-Mindfulness Niels.debug.xcconfig */,
+				968AE0B665E063B8C7CDE0F6 /* Pods-Mindfulness Niels.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65788EF51E37DA8300A6AC6A /* Build configuration list for PBXNativeTarget "Mindfulness Niels" */;
 			buildPhases = (
+				D3EFA02E2E2CCDDB420DB3FA /* [CP] Check Pods Manifest.lock */,
 				65788EDC1E37DA8300A6AC6A /* Sources */,
 				65788EDD1E37DA8300A6AC6A /* Frameworks */,
 				65788EDE1E37DA8300A6AC6A /* Resources */,
+				C051CA67B75767A2E3196A21 /* [CP] Embed Pods Frameworks */,
+				4D46092FBA33F1F1AB69D202 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,13 +186,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D46092FBA33F1F1AB69D202 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mindfulness Niels/Pods-Mindfulness Niels-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C051CA67B75767A2E3196A21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mindfulness Niels/Pods-Mindfulness Niels-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3EFA02E2E2CCDDB420DB3FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		65788EDC1E37DA8300A6AC6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				65788EEC1E37DA8300A6AC6A /* Mindfulness_Niels.xcdatamodeld in Sources */,
-				65788EE61E37DA8300A6AC6A /* ViewController.swift in Sources */,
+				65788EE61E37DA8300A6AC6A /* MainVC.swift in Sources */,
 				65788EE41E37DA8300A6AC6A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,10 +289,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -208,7 +304,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -239,8 +334,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -251,16 +344,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		65788EF61E37DA8300A6AC6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B302AC870CF2B90BEB7EC470 /* Pods-Mindfulness Niels.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E6GFV94F2M;
@@ -274,6 +366,7 @@
 		};
 		65788EF71E37DA8300A6AC6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 968AE0B665E063B8C7CDE0F6 /* Pods-Mindfulness Niels.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E6GFV94F2M;
@@ -304,6 +397,7 @@
 				65788EF71E37DA8300A6AC6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
