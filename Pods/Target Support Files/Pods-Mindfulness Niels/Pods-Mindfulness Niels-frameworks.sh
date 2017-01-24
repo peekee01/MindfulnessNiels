@@ -84,8 +84,8 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/YALSideMenu/SideMenu.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ENSwiftSideMenu/ENSwiftSideMenu.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/YALSideMenu/SideMenu.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ENSwiftSideMenu/ENSwiftSideMenu.framework"
 fi
