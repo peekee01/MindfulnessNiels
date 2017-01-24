@@ -94,7 +94,7 @@
                                     <constraint firstAttribute="width" constant="100" id="poj-y6-8eh"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="jcK-n3-AKM" kind="showDetail" id="5Cy-Zx-mXX"/>
+                                    <segue destination="yuY-Pr-NSB" kind="showDetail" id="5Cy-Zx-mXX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -128,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Choose your week-->
         <scene sceneID="L7o-G6-qxc">
             <objects>
-                <viewController id="jcK-n3-AKM" sceneMemberID="viewController">
+                <viewController id="jcK-n3-AKM" customClass="ScheduleVC" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gEy-ba-zRO"/>
                         <viewControllerLayoutGuide type="bottom" id="DN4-Zv-r5H"/>
@@ -140,20 +140,126 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ViewController2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVJ-VA-Xui">
-                                <rect key="frame" x="126" y="280" width="123" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="JcF-4z-2lD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHM-6X-528">
+                                <rect key="frame" x="-190" y="64" width="180" height="603"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdm-eo-zo7">
+                                        <rect key="frame" x="36" y="21" width="110" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                        <state key="normal" title="Week 1">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="3UY-wB-Alm" kind="show" id="Y5j-Tk-jQW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Uei-Yz-YYx"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hier kun je per week zien wat je moet doen" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUd-o7-hNC">
+                                <rect key="frame" x="91" y="248.5" width="192" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="Bhu-54-OMH"/>
+                                    <constraint firstAttribute="width" constant="192" id="Pn9-ab-tR0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="yHM-6X-528" firstAttribute="leading" secondItem="ZBq-83-wXK" secondAttribute="leading" constant="-190" id="5n7-3C-gy0"/>
+                            <constraint firstItem="DN4-Zv-r5H" firstAttribute="top" secondItem="yHM-6X-528" secondAttribute="bottom" id="BiU-SL-kCC"/>
+                            <constraint firstItem="TUd-o7-hNC" firstAttribute="centerY" secondItem="ZBq-83-wXK" secondAttribute="centerY" id="LK5-dd-Gej"/>
+                            <constraint firstItem="JcF-4z-2lD" firstAttribute="leading" secondItem="ZBq-83-wXK" secondAttribute="leading" id="Sex-hR-NJL"/>
+                            <constraint firstAttribute="trailing" secondItem="JcF-4z-2lD" secondAttribute="trailing" id="Vik-J7-AUA"/>
+                            <constraint firstItem="yHM-6X-528" firstAttribute="top" secondItem="gEy-ba-zRO" secondAttribute="bottom" id="t34-fP-OXV"/>
+                            <constraint firstItem="DN4-Zv-r5H" firstAttribute="top" secondItem="JcF-4z-2lD" secondAttribute="bottom" id="y29-SD-9JY"/>
+                            <constraint firstItem="JcF-4z-2lD" firstAttribute="top" secondItem="ZBq-83-wXK" secondAttribute="top" id="zRo-kQ-0cu"/>
+                            <constraint firstItem="TUd-o7-hNC" firstAttribute="centerX" secondItem="ZBq-83-wXK" secondAttribute="centerX" id="zeA-V4-5ag"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Choose your week" id="Lgd-2c-FLm">
+                        <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="xj2-X2-zm5">
+                            <connections>
+                                <action selector="openMenu:" destination="jcK-n3-AKM" id="o3q-6O-Hcf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="leadingConstraint" destination="5n7-3C-gy0" id="wdj-d2-C6u"/>
+                        <outlet property="menuView" destination="yHM-6X-528" id="vzP-D6-3KB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXY-fT-qtK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1906.4000000000001" y="139.880059970015"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qyJ-vS-dNR">
+            <objects>
+                <viewController id="3UY-wB-Alm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QLJ-jb-FIO"/>
+                        <viewControllerLayoutGuide type="bottom" id="TjJ-TM-nJz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vYB-NG-Wi8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="lg9-3A-0u8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhc-uq-XSk">
+                                <rect key="frame" x="107" y="86" width="161" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="auh-Cu-Bsu"/>
+                                    <constraint firstAttribute="width" constant="161" id="p3S-SG-VTx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TjJ-TM-nJz" firstAttribute="top" secondItem="lg9-3A-0u8" secondAttribute="bottom" id="2V7-b6-exW"/>
+                            <constraint firstAttribute="trailing" secondItem="lg9-3A-0u8" secondAttribute="trailing" id="5YH-8h-oDK"/>
+                            <constraint firstItem="mhc-uq-XSk" firstAttribute="top" secondItem="QLJ-jb-FIO" secondAttribute="bottom" constant="22" id="Hfz-Xu-CLI"/>
+                            <constraint firstItem="mhc-uq-XSk" firstAttribute="centerX" secondItem="vYB-NG-Wi8" secondAttribute="centerX" id="K51-CJ-IpQ"/>
+                            <constraint firstItem="lg9-3A-0u8" firstAttribute="leading" secondItem="vYB-NG-Wi8" secondAttribute="leading" id="gNw-ow-JBP"/>
+                            <constraint firstItem="lg9-3A-0u8" firstAttribute="top" secondItem="vYB-NG-Wi8" secondAttribute="top" id="iNf-6q-7zx"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aXY-fT-qtK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2p9-VT-8O9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="968" y="140"/>
+            <point key="canvasLocation" x="2869.5999999999999" y="139.880059970015"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ESL-di-NuN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yuY-Pr-NSB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cIu-Is-2MG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jcK-n3-AKM" kind="relationship" relationship="rootViewController" id="IrM-gn-Ef7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rDe-fy-atj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967.20000000000005" y="139.880059970015"/>
         </scene>
     </scenes>
     <resources>

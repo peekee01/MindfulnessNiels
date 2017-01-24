@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		656C58C81E38126B009285B7 /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C58C71E38126B009285B7 /* ScheduleVC.swift */; };
 		65788EE41E37DA8300A6AC6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65788EE31E37DA8300A6AC6A /* AppDelegate.swift */; };
 		65788EE61E37DA8300A6AC6A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65788EE51E37DA8300A6AC6A /* MainVC.swift */; };
 		65788EE91E37DA8300A6AC6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65788EE71E37DA8300A6AC6A /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		656C58C71E38126B009285B7 /* ScheduleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleVC.swift; sourceTree = "<group>"; };
 		65788EE01E37DA8300A6AC6A /* Mindfulness Niels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mindfulness Niels.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65788EE31E37DA8300A6AC6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65788EE51E37DA8300A6AC6A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				65788EE51E37DA8300A6AC6A /* MainVC.swift */,
+				656C58C71E38126B009285B7 /* ScheduleVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65788EEC1E37DA8300A6AC6A /* Mindfulness_Niels.xcdatamodeld in Sources */,
+				656C58C81E38126B009285B7 /* ScheduleVC.swift in Sources */,
 				65788EE61E37DA8300A6AC6A /* MainVC.swift in Sources */,
 				65788EE41E37DA8300A6AC6A /* AppDelegate.swift in Sources */,
 			);
