@@ -29,24 +29,15 @@ class MenuTableVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        var destinationVC: UIViewController!
         
-        let indexPath = tableView.indexPathForSelectedRow
-        let currentCell = tableView.cellForRow(at: indexPath!) as UITableViewCell!
+        if indexPath.row == 0 {
+            destinationVC = storyboard.instantiateViewController(withIdentifier: "WeekVC") as! WeekVC
+        } else {
+            destinationVC = storyboard.instantiateViewController(withIdentifier: "ScheduleVC") as! ScheduleVC
+        }
         
-  //      var viewController = storyboard.instantiateViewControllerWithIdentifier("viewControllerIdentifer") as AnotherViewController
-        
-        
-    //    if indexPath.row == 0 {
-          let destinationVC = storyboard.instantiateViewController(withIdentifier: "WeekVC") as! WeekVC
-            destinationVC.weekNum = (currentCell!.textLabel!.text)!
-        print(currentCell!.textLabel!.text!)
-        
-//        } else {
-//            destinationVC = storyboard.instantiateViewController(withIdentifier: "ScheduleVC") as! ScheduleVC
-//        }
-    //    self.present(destinationVC, animated: true, completion: nil)
-        
-       sideMenuController()?.setContentViewController(destinationVC)
+        sideMenuController()?.setContentViewController(destinationVC)
     }
     
     
