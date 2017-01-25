@@ -36,7 +36,9 @@ class MenuTableVC: UITableViewController {
 
           let destinationVC = storyboard.instantiateViewController(withIdentifier: "WeekVC") as! WeekVC
             destinationVC.weekNum = (currentCell!.textLabel!.text)!
+        print(currentCell!.textLabel!.text!)
         
+
        sideMenuController()?.setContentViewController(destinationVC)
     }
     

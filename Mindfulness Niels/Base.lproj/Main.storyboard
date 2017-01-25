@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Black_circle" translatesAutoresizingMaskIntoConstraints="NO" id="L0R-MG-u7L">
-                                <rect key="frame" x="208" y="159" width="128" height="128"/>
+                                <rect key="frame" x="208" y="165" width="128" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="128" id="6lr-KJ-jXv"/>
                                     <constraint firstAttribute="height" constant="128" id="Dup-6b-9z8"/>
@@ -36,7 +36,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Black_circle" translatesAutoresizingMaskIntoConstraints="NO" id="A6J-3a-piS">
-                                <rect key="frame" x="39" y="328" width="128" height="128"/>
+                                <rect key="frame" x="39" y="334" width="128" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="dhJ-Lc-RiK"/>
                                     <constraint firstAttribute="width" constant="128" id="qPW-HP-ne9"/>
@@ -46,7 +46,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Black_circle" translatesAutoresizingMaskIntoConstraints="NO" id="PNN-6F-loI">
-                                <rect key="frame" x="208" y="328" width="128" height="128"/>
+                                <rect key="frame" x="208" y="334" width="128" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="128" id="aJU-1z-hYg"/>
                                     <constraint firstAttribute="height" constant="128" id="wlW-YT-aNF"/>
@@ -56,7 +56,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Black_circle" translatesAutoresizingMaskIntoConstraints="NO" id="kFx-9O-vRX">
-                                <rect key="frame" x="39" y="159" width="128" height="128"/>
+                                <rect key="frame" x="39" y="165" width="128" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="128" id="Ekz-GO-DaR"/>
                                     <constraint firstAttribute="height" constant="128" id="g9u-wZ-Q39"/>
@@ -66,10 +66,10 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ryj-iz-Oa1">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mindfulness Niels" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVS-mx-X9W">
-                                        <rect key="frame" x="113" y="11.5" width="149" height="21"/>
+                                        <rect key="frame" x="113" y="15" width="149" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="B4t-sB-UGW"/>
                                         </constraints>
@@ -80,26 +80,26 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="BMP-Bn-bEL"/>
+                                    <constraint firstItem="yVS-mx-X9W" firstAttribute="top" secondItem="Ryj-iz-Oa1" secondAttribute="top" constant="15" id="c8c-7Z-EEh"/>
                                     <constraint firstItem="yVS-mx-X9W" firstAttribute="centerX" secondItem="Ryj-iz-Oa1" secondAttribute="centerX" id="dAn-9e-nLz"/>
-                                    <constraint firstItem="yVS-mx-X9W" firstAttribute="centerY" secondItem="Ryj-iz-Oa1" secondAttribute="centerY" id="i4m-Zk-iNp"/>
+                                    <constraint firstItem="yVS-mx-X9W" firstAttribute="centerY" secondItem="Ryj-iz-Oa1" secondAttribute="centerY" id="jJJ-qc-ow8"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Button_schedule_white" translatesAutoresizingMaskIntoConstraints="NO" id="AAS-hc-vPP">
-                                <rect key="frame" x="232" y="178" width="80" height="80"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Button_schedule" translatesAutoresizingMaskIntoConstraints="NO" id="AAS-hc-vPP">
+                                <rect key="frame" x="232" y="189" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="rDb-Bz-ZyK"/>
                                     <constraint firstAttribute="width" constant="80" id="wOl-nd-f7k"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hig-gO-b72">
-                                <rect key="frame" x="240.5" y="259" width="63" height="17.5"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <rect key="frame" x="251" y="270" width="43" height="14"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVA-Qv-haN">
-                                <rect key="frame" x="222" y="173" width="100" height="100"/>
+                                <rect key="frame" x="222" y="179" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="VU8-xj-5sp"/>
                                     <constraint firstAttribute="width" constant="100" id="poj-y6-8eh"/>
@@ -127,7 +127,7 @@
                             <constraint firstItem="AAS-hc-vPP" firstAttribute="centerX" secondItem="L0R-MG-u7L" secondAttribute="centerX" id="dSQ-cI-oQM"/>
                             <constraint firstItem="hHj-J2-Ui9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lNa-6U-oDp"/>
                             <constraint firstItem="L0R-MG-u7L" firstAttribute="top" secondItem="Ryj-iz-Oa1" secondAttribute="bottom" constant="115" id="pss-7t-gEm"/>
-                            <constraint firstItem="AAS-hc-vPP" firstAttribute="centerY" secondItem="L0R-MG-u7L" secondAttribute="centerY" constant="-5" id="q5S-Sf-yCe"/>
+                            <constraint firstItem="AAS-hc-vPP" firstAttribute="centerY" secondItem="L0R-MG-u7L" secondAttribute="centerY" id="q5S-Sf-yCe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="L0R-MG-u7L" secondAttribute="trailing" constant="23" id="qHI-Ut-Hb1"/>
                             <constraint firstItem="MVA-Qv-haN" firstAttribute="centerX" secondItem="L0R-MG-u7L" secondAttribute="centerX" id="tYJ-xw-sgH"/>
                             <constraint firstItem="kFx-9O-vRX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="vdS-Zd-qz4"/>
@@ -490,7 +490,7 @@
     <resources>
         <image name="Background_green" width="640" height="1136"/>
         <image name="Black_circle" width="500" height="500"/>
-        <image name="Button_schedule_white" width="500" height="500"/>
+        <image name="Button_schedule" width="50" height="50"/>
         <image name="Week-30" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
