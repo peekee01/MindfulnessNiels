@@ -32,7 +32,6 @@ class WeekVC: UIViewController, UIWebViewDelegate {
 
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         if navigationType == UIWebViewNavigationType.linkClicked {
-      //  OUD    UIApplication.shared.openURL(request.url!)
             UIApplication.shared.open(request.url!, options: [:], completionHandler: nil)
             return false
         }
