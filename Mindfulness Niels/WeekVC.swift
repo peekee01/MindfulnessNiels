@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeekVC: UIViewController {
+class WeekVC: UIViewController, UIWebViewDelegate {
 
     
     @IBOutlet weak var webView: UIWebView!
@@ -16,6 +16,10 @@ class WeekVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        webView.delegate = self
+        
+        
         
         self.webView.isOpaque = false
         self.webView.backgroundColor = UIColor.clear
@@ -26,7 +30,16 @@ class WeekVC: UIViewController {
     
     }
 
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        if navigationType == UIWebViewNavigationType.linkClicked {
+      //      UIApplication.shared.openURL(request.url!)
+            UIApplication.shared.open(request.url!, options: [:], completionHandler: nil)
+            return false
+        }
+        return true
+    }
 
+    
     
     @IBAction func menuBtn(_ sender: UIBarButtonItem) {
         toggleSideMenuView()
