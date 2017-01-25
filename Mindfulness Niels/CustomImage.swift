@@ -23,10 +23,9 @@ extension UIView {
             
             if custom {
             
-
                 self.layer.shadowOpacity = 1.0
-                self.layer.shadowRadius = 8.0
-                self.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
+                self.layer.shadowRadius = 6.0
+                self.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
                 self.layer.shadowColor = UIColor(red: 105/255, green: 105/255, blue: 105/255, alpha: 0.9).cgColor
             } else {
 
