@@ -16,8 +16,14 @@ class WeekVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.webView.isOpaque = false
+        self.webView.backgroundColor = UIColor.clear
+        
+        let url = URL(fileURLWithPath: Bundle.main.path(forResource: "Week1", ofType: "html")!)
+        webView.loadRequest(URLRequest(url: url))
+ //       webView.loadHTMLString("<  asdad </body></html>", baseURL: nil)
+    
     }
 
 

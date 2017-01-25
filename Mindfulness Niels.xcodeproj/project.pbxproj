@@ -11,6 +11,7 @@
 		656C58CA1E391CB8009285B7 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C58C91E391CB8009285B7 /* SideMenuVC.swift */; };
 		656C58CC1E391D60009285B7 /* MenuTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C58CB1E391D60009285B7 /* MenuTableVC.swift */; };
 		656C58CE1E392937009285B7 /* WeekVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C58CD1E392937009285B7 /* WeekVC.swift */; };
+		656C58D01E393EC7009285B7 /* Week1.html in Resources */ = {isa = PBXBuildFile; fileRef = 656C58CF1E393EC7009285B7 /* Week1.html */; };
 		65788EE41E37DA8300A6AC6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65788EE31E37DA8300A6AC6A /* AppDelegate.swift */; };
 		65788EE61E37DA8300A6AC6A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65788EE51E37DA8300A6AC6A /* MainVC.swift */; };
 		65788EE91E37DA8300A6AC6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65788EE71E37DA8300A6AC6A /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		656C58C91E391CB8009285B7 /* SideMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		656C58CB1E391D60009285B7 /* MenuTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableVC.swift; sourceTree = "<group>"; };
 		656C58CD1E392937009285B7 /* WeekVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekVC.swift; sourceTree = "<group>"; };
+		656C58CF1E393EC7009285B7 /* Week1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Week1.html; sourceTree = "<group>"; };
 		65788EE01E37DA8300A6AC6A /* Mindfulness Niels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mindfulness Niels.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65788EE31E37DA8300A6AC6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65788EE51E37DA8300A6AC6A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		65788EF81E37DACC00A6AC6A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				656C58CF1E393EC7009285B7 /* Week1.html */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			files = (
 				65788EF11E37DA8300A6AC6A /* LaunchScreen.storyboard in Resources */,
 				65788EEE1E37DA8300A6AC6A /* Assets.xcassets in Resources */,
+				656C58D01E393EC7009285B7 /* Week1.html in Resources */,
 				65788EE91E37DA8300A6AC6A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

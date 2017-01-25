@@ -197,8 +197,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QD1-bb-aHt">
-                                <rect key="frame" x="16" y="84" width="343" height="400"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="jMH-2a-f8W"/>
                                 </constraints>
@@ -209,10 +208,10 @@
                             <constraint firstItem="TjJ-TM-nJz" firstAttribute="top" secondItem="lg9-3A-0u8" secondAttribute="bottom" id="2V7-b6-exW"/>
                             <constraint firstAttribute="trailing" secondItem="lg9-3A-0u8" secondAttribute="trailing" id="5YH-8h-oDK"/>
                             <constraint firstItem="QD1-bb-aHt" firstAttribute="top" secondItem="QLJ-jb-FIO" secondAttribute="bottom" constant="20" id="Jop-c0-qS1"/>
-                            <constraint firstItem="QD1-bb-aHt" firstAttribute="leading" secondItem="vYB-NG-Wi8" secondAttribute="leadingMargin" id="dQH-DG-GAD"/>
+                            <constraint firstItem="QD1-bb-aHt" firstAttribute="leading" secondItem="vYB-NG-Wi8" secondAttribute="leading" id="dQH-DG-GAD"/>
                             <constraint firstItem="lg9-3A-0u8" firstAttribute="leading" secondItem="vYB-NG-Wi8" secondAttribute="leading" id="gNw-ow-JBP"/>
                             <constraint firstItem="lg9-3A-0u8" firstAttribute="top" secondItem="vYB-NG-Wi8" secondAttribute="top" id="iNf-6q-7zx"/>
-                            <constraint firstItem="QD1-bb-aHt" firstAttribute="trailing" secondItem="vYB-NG-Wi8" secondAttribute="trailingMargin" id="jTF-yb-HVV"/>
+                            <constraint firstItem="QD1-bb-aHt" firstAttribute="trailing" secondItem="vYB-NG-Wi8" secondAttribute="trailing" id="jTF-yb-HVV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Week one" id="Kb4-rs-TR7">
