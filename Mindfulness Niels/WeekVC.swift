@@ -12,27 +12,27 @@ class WeekVC: UIViewController, UIWebViewDelegate {
 
     
     @IBOutlet weak var webView: UIWebView!
-    
+    var weekNum = "week 1"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = weekNum
+            
         webView.delegate = self
-        
-        
-        
         self.webView.isOpaque = false
         self.webView.backgroundColor = UIColor.clear
         
-        let url = URL(fileURLWithPath: Bundle.main.path(forResource: "Week1", ofType: "html")!)
+        let url = URL(fileURLWithPath: Bundle.main.path(forResource: weekNum, ofType: "html")!)
         webView.loadRequest(URLRequest(url: url))
- //       webView.loadHTMLString("<  asdad </body></html>", baseURL: nil)
+        
+        
     
     }
 
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         if navigationType == UIWebViewNavigationType.linkClicked {
-      //      UIApplication.shared.openURL(request.url!)
+      //  OUD    UIApplication.shared.openURL(request.url!)
             UIApplication.shared.open(request.url!, options: [:], completionHandler: nil)
             return false
         }
