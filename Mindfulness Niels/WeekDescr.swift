@@ -1,5 +1,5 @@
 //
-//  WeekVC.swift
+//  WeekDescr.swift
 //  Mindfulness Niels
 //
 //  Created by Pieter Kuijsten on 25/01/2017.
@@ -8,28 +8,30 @@
 
 import UIKit
 
-class WeekVC: UIViewController, UIWebViewDelegate {
-
+class WeekDescr: UIViewController, UIWebViewDelegate {
+    
     
     @IBOutlet weak var webView: UIWebView!
-    var weekNum = "week 1"
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = weekNum
-            
         webView.delegate = self
         self.webView.isOpaque = false
         self.webView.backgroundColor = UIColor.clear
-        
-        let url = URL(fileURLWithPath: Bundle.main.path(forResource: weekNum, ofType: "html")!)
+        let URLweek = SharedVars.sharedInstance.weekNum
+        let url = URL(fileURLWithPath: Bundle.main.path(forResource: URLweek, ofType: "html")!)
         webView.loadRequest(URLRequest(url: url))
-        
-        
-    
     }
-
+    
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         if navigationType == UIWebViewNavigationType.linkClicked {
             UIApplication.shared.open(request.url!, options: [:], completionHandler: nil)
@@ -37,12 +39,12 @@ class WeekVC: UIViewController, UIWebViewDelegate {
         }
         return true
     }
-
+    
     
     
     @IBAction func menuBtn(_ sender: UIBarButtonItem) {
         toggleSideMenuView()
     }
     
-
+    
 }

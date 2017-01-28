@@ -15,8 +15,6 @@ class ScheduleVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        
     }
     
  

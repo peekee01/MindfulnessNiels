@@ -13,7 +13,7 @@ private var custom = false
 
 extension UIView {
     
-    @IBInspectable var customImage: Bool {
+    @IBInspectable var customView: Bool {
         get {
             return custom
         }
@@ -22,7 +22,8 @@ extension UIView {
             custom = newValue
             
             if custom {
-            
+                self.layer.masksToBounds = true
+                self.layer.cornerRadius = 6.0
                 self.layer.shadowOpacity = 1.0
                 self.layer.shadowRadius = 6.0
                 self.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
