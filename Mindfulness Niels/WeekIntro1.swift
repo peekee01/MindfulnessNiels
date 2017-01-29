@@ -1,5 +1,5 @@
 //
-//  WeekDescr.swift
+//  WeekIntro.swift
 //  Mindfulness Niels
 //
 //  Created by Pieter Kuijsten on 25/01/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeekDescr2: UIViewController, UIWebViewDelegate {
+class WeekIntro1: UIViewController, UIWebViewDelegate {
     
     
     @IBOutlet weak var webView: UIWebView!
@@ -42,5 +42,4 @@ class WeekDescr2: UIViewController, UIWebViewDelegate {
     
     
     
- 
 }

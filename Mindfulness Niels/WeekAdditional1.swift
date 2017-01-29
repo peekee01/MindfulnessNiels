@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeekVideos: UIViewController {
+class WeekAdditional1: UIViewController {
 
     
     override func viewWillAppear(_ animated: Bool) {

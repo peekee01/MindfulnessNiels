@@ -1,5 +1,5 @@
 //
-//  WeekVideos.swift
+//  WeekAdditional.swift
 //  Mindfulness Niels
 //
 //  Created by Pieter Kuijsten on 28/01/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeekVideos2: UIViewController {
+class WeekAdditional2: UIViewController {
 
     
     override func viewWillAppear(_ animated: Bool) {

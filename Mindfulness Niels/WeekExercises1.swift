@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeekExercises: UIViewController {
+class WeekExercises1: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

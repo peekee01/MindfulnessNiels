@@ -12,7 +12,7 @@ class CustomSegmentedControl: UISegmentedControl {
     
     func initUI(){
         setupBackground()
-    //    setupFonts()
+        setupFonts()
     }
     
     func setupBackground(){
@@ -30,11 +30,9 @@ class CustomSegmentedControl: UISegmentedControl {
     }
     
     func setupFonts(){
-        let font = UIFont.systemFont(ofSize: 16.0)
-        
+        let font = UIFont(name: "HelveticaNeue-Light", size: 16.0)
         
         let normalTextAttributes = [
-            NSForegroundColorAttributeName: UIColor.black,
             NSFontAttributeName: font
         ]
         

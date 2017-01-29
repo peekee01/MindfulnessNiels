@@ -25,15 +25,15 @@ class WeekMain: UIViewController, ENSideMenuDelegate {
     
     var currentViewController: UIViewController?
     lazy var firstChildTabVC: UIViewController? = {
-        let firstChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "WeekDescr\(SharedVars.sharedInstance.chosenWeek)")
+        let firstChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "WeekIntro\(SharedVars.sharedInstance.chosenWeek)")
         return firstChildTabVC
     }()
     lazy var secondChildTabVC : UIViewController? = {
-        let secondChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "WeekVideos\(SharedVars.sharedInstance.chosenWeek)")
+        let secondChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "WeekExercises\(SharedVars.sharedInstance.chosenWeek)")
         return secondChildTabVC
     }()
     lazy var thirdChildTabVC : UIViewController? = {
-        let thirdChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "WeekExercises\(SharedVars.sharedInstance.chosenWeek)")
+        let thirdChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "WeekAdditional\(SharedVars.sharedInstance.chosenWeek)")
         return thirdChildTabVC
     }()
     
