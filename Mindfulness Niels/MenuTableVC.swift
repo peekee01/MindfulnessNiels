@@ -34,7 +34,6 @@ class MenuTableVC: UITableViewController {
         let currentCell = tableView.cellForRow(at: indexPath!) as UITableViewCell!
         
         SharedVars.sharedInstance.weekNum = (currentCell!.textLabel!.text)!
-        print(SharedVars.sharedInstance.weekNum)
 
           let destinationVC = storyboard.instantiateViewController(withIdentifier: "WeekMain") as! WeekMain
        //     destinationVC.weekNum = (currentCell!.textLabel!.text)!

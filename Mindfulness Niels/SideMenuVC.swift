@@ -14,12 +14,14 @@ class SideMenuVC: ENSideMenuNavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background_green.jpg")!)
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let menu = storyboard.instantiateViewController(withIdentifier: "MenuTableVC") as! MenuTableVC
 
         sideMenu = ENSideMenu(sourceView: self.view, menuViewController: menu, menuPosition: ENSideMenuPosition.left)
-        sideMenu?.menuWidth = 200
+        sideMenu?.menuWidth = 20
         view.bringSubview(toFront: navigationBar)
         
 
