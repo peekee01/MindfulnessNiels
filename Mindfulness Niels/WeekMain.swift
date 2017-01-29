@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import ENSwiftSideMenu
 
-class WeekMain: UIViewController {
+class WeekMain: UIViewController, ENSideMenuDelegate {
     
     enum TabIndex : Int {
         case firstChildTab = 0
@@ -16,28 +17,32 @@ class WeekMain: UIViewController {
         case thirdChildTab = 2
     }
     
+    var chosenWeekMain = SharedVars.sharedInstance.chosenWeek
+
     
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var segmentedBtn: UISegmentedControl!
     
     var currentViewController: UIViewController?
     lazy var firstChildTabVC: UIViewController? = {
-        let firstChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "WeekDescr")
-        //      firstChildTabVC.weekNum = self.weekNum
+        let firstChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "WeekDescr\(SharedVars.sharedInstance.chosenWeek)")
         return firstChildTabVC
     }()
     lazy var secondChildTabVC : UIViewController? = {
-        let secondChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "WeekVideos")
+        let secondChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "WeekVideos\(SharedVars.sharedInstance.chosenWeek)")
         return secondChildTabVC
     }()
     lazy var thirdChildTabVC : UIViewController? = {
-        let thirdChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "WeekExercises")
+        let thirdChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "WeekExercises\(SharedVars.sharedInstance.chosenWeek)")
         return thirdChildTabVC
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(chosenWeekMain)
         self.navigationItem.title = SharedVars.sharedInstance.weekNum
+        
+        self.sideMenuController()?.sideMenu?.delegate = self
         
         //    segmentedBtn.initUI()
         segmentedBtn.selectedSegmentIndex = TabIndex.firstChildTab.rawValue
@@ -52,9 +57,15 @@ class WeekMain: UIViewController {
         }
     }
     
+    func sideMenuShouldOpenSideMenu() -> Bool {
+        return true;
+    }
+
+    
     @IBAction func menuBtn(_ sender: UIBarButtonItem) {
         toggleSideMenuView()
     }
+    
     
     
     @IBAction func switchTabs(_ sender: UISegmentedControl) {

@@ -32,18 +32,13 @@ class MenuTableVC: UITableViewController {
         
         let indexPath = tableView.indexPathForSelectedRow
         let currentCell = tableView.cellForRow(at: indexPath!) as UITableViewCell!
+   //     let chosenWeek = indexPath!.row + 1
         
         SharedVars.sharedInstance.weekNum = (currentCell!.textLabel!.text)!
+        SharedVars.sharedInstance.chosenWeek = indexPath!.row + 1
 
-          let destinationVC = storyboard.instantiateViewController(withIdentifier: "WeekMain") as! WeekMain
-       //     destinationVC.weekNum = (currentCell!.textLabel!.text)!
-       
-        
-       // let weekDescrNum = storyboard.instantiateViewController(withIdentifier: "WeekDescr") as! WeekDescr
-        
-    //    weekDescrNum.weekNum = (currentCell!.textLabel!.text)!
-   //     print(weekDescrNum.weekNum)
-    
+        let destinationVC = storyboard.instantiateViewController(withIdentifier: "WeekMain") as! WeekMain
+
        sideMenuController()?.setContentViewController(destinationVC)
     }
     

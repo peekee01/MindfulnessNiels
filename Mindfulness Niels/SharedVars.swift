@@ -10,5 +10,6 @@ import Foundation
 
 class SharedVars {
     var weekNum: String = "Week 1"
+    var chosenWeek: Int = 1
     static let sharedInstance = SharedVars()    
 }

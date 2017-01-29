@@ -10,45 +10,44 @@ import UIKit
 import ENSwiftSideMenu
 
 class ScheduleTableVC: UITableViewController, ENSideMenuDelegate {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.sideMenuController()?.sideMenu?.delegate = self
-
+        
         self.tableView.tableHeaderView = UIView()
         self.tableView.tableFooterView = UIView()
         self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "Background_green.jpg")!)
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
     
     //disable SideMenu
     func sideMenuShouldOpenSideMenu() -> Bool {
         return false;
     }
     
-    // MARK: - Table view data source
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let indexPath = tableView.indexPathForSelectedRow
+      //  let currentCell = tableView.cellForRow(at: indexPath!) as UITableViewCell!
+        
+        print("current indexpath is \(indexPath!.row)")
+        let chosenWeek = indexPath!.row + 1
+  //      let identifier = "WeekMain\(chosenWeek)"
+        SharedVars.sharedInstance.weekNum = "Week \(chosenWeek)"
+        SharedVars.sharedInstance.chosenWeek = indexPath!.row + 1
+        
+        let nextViewController = storyboard.instantiateViewController(withIdentifier: "WeekMain") as! WeekMain
 
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 0
-//    }
-//
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        // #warning Incomplete implementation, return the number of rows
-//        return 0
-//    }
-
-   
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+        
+        //   SharedVars.sharedInstance.weekNum = (currentCell!.textLabel!.text)!
+        
+        //  let destinationVC = storyboard.instantiateViewController(withIdentifier: "WeekMain") as! WeekMain
+        
+        //    sideMenuController()?.setContentViewController(destinationVC)
+    }
 }
