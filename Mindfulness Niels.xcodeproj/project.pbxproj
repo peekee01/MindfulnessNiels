@@ -37,6 +37,7 @@
 		65DE955E1E3CDCC000A569D1 /* Week 7.html in Resources */ = {isa = PBXBuildFile; fileRef = 65DE955D1E3CDCC000A569D1 /* Week 7.html */; };
 		65DE95601E3CDCCB00A569D1 /* Week 8.html in Resources */ = {isa = PBXBuildFile; fileRef = 65DE955F1E3CDCCB00A569D1 /* Week 8.html */; };
 		65DE956D1E3D277800A569D1 /* SharedVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE956C1E3D277800A569D1 /* SharedVars.swift */; };
+		65E337C41E3E8430001FFE30 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E337C31E3E8430001FFE30 /* SegmentedControl.swift */; };
 		95067312A9A2FF60ED238C66 /* Pods_Mindfulness_Niels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD573AA54512CCB2557DD9D6 /* Pods_Mindfulness_Niels.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		65DE955D1E3CDCC000A569D1 /* Week 7.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Week 7.html"; sourceTree = "<group>"; };
 		65DE955F1E3CDCCB00A569D1 /* Week 8.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Week 8.html"; sourceTree = "<group>"; };
 		65DE956C1E3D277800A569D1 /* SharedVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedVars.swift; sourceTree = "<group>"; };
+		65E337C31E3E8430001FFE30 /* SegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 		968AE0B665E063B8C7CDE0F6 /* Pods-Mindfulness Niels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindfulness Niels.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mindfulness Niels/Pods-Mindfulness Niels.release.xcconfig"; sourceTree = "<group>"; };
 		B302AC870CF2B90BEB7EC470 /* Pods-Mindfulness Niels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindfulness Niels.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mindfulness Niels/Pods-Mindfulness Niels.debug.xcconfig"; sourceTree = "<group>"; };
 		FD573AA54512CCB2557DD9D6 /* Pods_Mindfulness_Niels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mindfulness_Niels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +203,7 @@
 			children = (
 				659299591E395907001B9B10 /* CustomView.swift */,
 				65DE95531E3CD9BC00A569D1 /* CustomQuote.swift */,
+				65E337C31E3E8430001FFE30 /* SegmentedControl.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				651B09C61E3E3DFB009075A9 /* WeekVideos.swift in Sources */,
 				651B09BE1E3E3D7F009075A9 /* WeekVideos2.swift in Sources */,
 				65788EE61E37DA8300A6AC6A /* MainVC.swift in Sources */,
+				65E337C41E3E8430001FFE30 /* SegmentedControl.swift in Sources */,
 				651B09C51E3E3DFB009075A9 /* WeekMain.swift in Sources */,
 				6592995A1E395907001B9B10 /* CustomView.swift in Sources */,
 				659934A11E3E267F004C2ADF /* ScheduleTableVC.swift in Sources */,

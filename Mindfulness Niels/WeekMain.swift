@@ -21,7 +21,7 @@ class WeekMain: UIViewController, ENSideMenuDelegate {
 
     
     @IBOutlet weak var contentView: UIView!
-    @IBOutlet weak var segmentedBtn: UISegmentedControl!
+    @IBOutlet weak var segmentedBtn: CustomSegmentedControl!
     
     var currentViewController: UIViewController?
     lazy var firstChildTabVC: UIViewController? = {
@@ -39,12 +39,11 @@ class WeekMain: UIViewController, ENSideMenuDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(chosenWeekMain)
         self.navigationItem.title = SharedVars.sharedInstance.weekNum
         
         self.sideMenuController()?.sideMenu?.delegate = self
         
-        //    segmentedBtn.initUI()
+        segmentedBtn.initUI()
         segmentedBtn.selectedSegmentIndex = TabIndex.firstChildTab.rawValue
         displayCurrentTab(TabIndex.firstChildTab.rawValue)
     }
@@ -65,8 +64,7 @@ class WeekMain: UIViewController, ENSideMenuDelegate {
     @IBAction func menuBtn(_ sender: UIBarButtonItem) {
         toggleSideMenuView()
     }
-    
-    
+
     
     @IBAction func switchTabs(_ sender: UISegmentedControl) {
         self.currentViewController!.view.removeFromSuperview()

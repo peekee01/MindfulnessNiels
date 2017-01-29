@@ -42,9 +42,4 @@ class WeekDescr: UIViewController, UIWebViewDelegate {
     
     
     
-    @IBAction func menuBtn(_ sender: UIBarButtonItem) {
-        toggleSideMenuView()
-    }
-    
-    
 }

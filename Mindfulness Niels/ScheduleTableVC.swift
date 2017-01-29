@@ -32,10 +32,8 @@ class ScheduleTableVC: UITableViewController, ENSideMenuDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let indexPath = tableView.indexPathForSelectedRow
-      //  let currentCell = tableView.cellForRow(at: indexPath!) as UITableViewCell!
         
         let chosenWeek = indexPath!.row + 1
-  //      let identifier = "WeekMain\(chosenWeek)"
         SharedVars.sharedInstance.weekNum = "Week \(chosenWeek)"
         SharedVars.sharedInstance.chosenWeek = indexPath!.row + 1
         
@@ -43,11 +41,7 @@ class ScheduleTableVC: UITableViewController, ENSideMenuDelegate {
 
  //       sideMenuController()?.setContentViewController(nextViewController)
        self.navigationController?.pushViewController(nextViewController, animated: true)
-        
-        //   SharedVars.sharedInstance.weekNum = (currentCell!.textLabel!.text)!
-        
-        //  let destinationVC = storyboard.instantiateViewController(withIdentifier: "WeekMain") as! WeekMain
-        
+            
         //    sideMenuController()?.setContentViewController(destinationVC)
     }
 }

@@ -22,14 +22,14 @@ extension UIView {
             custom = newValue
             
             if custom {
-                self.layer.masksToBounds = true
+                self.layer.masksToBounds = false
                 self.layer.cornerRadius = 6.0
                 self.layer.shadowOpacity = 1.0
-                self.layer.shadowRadius = 6.0
-                self.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
-                self.layer.shadowColor = UIColor(red: 105/255, green: 105/255, blue: 105/255, alpha: 0.9).cgColor
+                self.layer.shadowRadius = 8.0
+                self.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
+                self.layer.shadowColor = UIColor(red: 80/255, green: 80/255, blue: 80/255, alpha: 1.0).cgColor
             } else {
-
+                self.layer.masksToBounds = false
                 self.layer.shadowOpacity = 0.0
                 self.layer.shadowRadius = 0.0
                 self.layer.shadowColor = nil
