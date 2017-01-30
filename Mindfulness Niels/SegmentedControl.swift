@@ -13,7 +13,7 @@ class CustomSegmentedControl: UISegmentedControl {
     func initUI(){
         setupBackground()
         setupFonts()
-    }
+    }	
     
     func setupBackground(){
         let backgroundImage = UIImage(named: "segmented_unselected_bg")

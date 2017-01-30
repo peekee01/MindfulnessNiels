@@ -16,6 +16,7 @@ class WeekAdditional1: UIViewController {
     
     let videoOne = "https://www.youtube.com/embed/GLjelIPg3ys"
     let videoTwo = "https://www.youtube.com/embed/9YRjX3A_8cM"
+    let code = "?&modestbranding=1&playsinline=1&controls=1&showinfo=0&rel=0\" frameborder=\"0\" allowfullscreen></iframe>"
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -35,10 +36,10 @@ class WeekAdditional1: UIViewController {
 
         
         videoView.allowsInlineMediaPlayback = true
-       videoView.loadHTMLString("<iframe width=\"\(videoView.frame.width)\" height=\"\(videoView.frame.height)\" src=\"\(videoOne)?&modestbranding=1&playsinline=1&showinfo=0&show_suggested_video=0&show_logo=0\" frameborder=\"0\" allowfullscreen></iframe>", baseURL: nil)
+       videoView.loadHTMLString("<iframe width=\"\(videoView.frame.width)\" height=\"\(videoView.frame.height)\" src=\"\(videoOne)\(code)", baseURL: nil)
         
         videoView2.allowsInlineMediaPlayback = true
-        videoView2.loadHTMLString("<iframe width=\"\(videoView.frame.width)\" height=\"\(videoView.frame.height)\" src=\"\(videoTwo)?&playsinline=1\" frameborder=\"0\" allowfullscreen></iframe>", baseURL: nil)
+        videoView2.loadHTMLString("<iframe width=\"\(videoView.frame.width)\" height=\"\(videoView.frame.height)\" src=\"\(videoTwo)\(code)", baseURL: nil)
     
         
         // Do any additional setup after loading the view.
