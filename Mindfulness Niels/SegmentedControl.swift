@@ -30,11 +30,9 @@ class CustomSegmentedControl: UISegmentedControl {
     }
     
     func setupFonts(){
-        let font = UIFont(name: "HelveticaNeue-Light", size: 16.0)
+        let font = UIFont.init(name: "HelveticaNeue-Light", size: 16.0)
         
-        let normalTextAttributes = [
-            NSFontAttributeName: font
-        ]
+        let normalTextAttributes = [NSFontAttributeName: font as Any]
         
         self.setTitleTextAttributes(normalTextAttributes, for: UIControlState())
         self.setTitleTextAttributes(normalTextAttributes, for: .highlighted)

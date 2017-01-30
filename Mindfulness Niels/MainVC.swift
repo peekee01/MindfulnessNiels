@@ -17,6 +17,8 @@ class MainVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        preLoadWebView()
+
         
         dailyQuote = DailyQuote()
         dailyQuote.dailyQuote()
@@ -28,6 +30,17 @@ class MainVC: UIViewController {
         quoteLbl.text = dailyQuote.currentQuote
         quoteAuthorLbl.text = dailyQuote.currentQuoteAuthor
         
+    }
+    
+    func preLoadWebView() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let webViewController = storyboard.instantiateViewController(withIdentifier: "WeekIntro1") as? WeekIntro1 {
+            webViewController.view.setNeedsLayout()
+        }
+        
+        if let webViewController2 = storyboard.instantiateViewController(withIdentifier: "WeekAdditional1") as? WeekAdditional1 {
+            webViewController2.view.setNeedsLayout()
+        }
     }
     
     //    func dailyQuote() {

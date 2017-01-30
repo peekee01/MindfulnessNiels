@@ -7,5 +7,6 @@ target 'Mindfulness Niels' do
 
  platform :ios, '8.0'
 pod 'ENSwiftSideMenu', '~> 0.1.1'
+pod "XCDYouTubeKit", "~> 2.5"
 
 end

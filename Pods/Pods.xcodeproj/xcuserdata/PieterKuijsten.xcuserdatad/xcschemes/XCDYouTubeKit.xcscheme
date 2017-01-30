@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E1C1806B93D7F3F64ADC36CCFBBD7D87'
-               BlueprintName = 'ENSwiftSideMenu'
+               BlueprintIdentifier = '81CE81472A91E03C98C0D38A847BB4B9'
+               BlueprintName = 'XCDYouTubeKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'ENSwiftSideMenu.framework'>
+               BuildableName = 'XCDYouTubeKit.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
