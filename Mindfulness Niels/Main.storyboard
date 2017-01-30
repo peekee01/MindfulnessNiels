@@ -1801,24 +1801,63 @@
                                     <action selector="pausePlayBtn:" destination="3ZW-az-Th9" eventType="touchUpInside" id="eOP-eE-Qmq"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ioD-VQ-Qft">
+                                <rect key="frame" x="64" y="166" width="247" height="31"/>
+                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeAudioTime:" destination="3ZW-az-Th9" eventType="valueChanged" id="35u-s5-ZN7"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OU-oY-7cw">
+                                <rect key="frame" x="66" y="196" width="62" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Vxf-ft-i6o"/>
+                                    <constraint firstAttribute="width" constant="62" id="eUa-7l-Hdw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDr-qm-bhp">
+                                <rect key="frame" x="247" y="196" width="62" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="FYw-eF-fag"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="62" id="VJ6-bR-LNK"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="azd-1v-0PH"/>
+                                    <constraint firstAttribute="height" constant="21" id="hMh-JP-Vxb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="EDr-qm-bhp" firstAttribute="top" secondItem="ioD-VQ-Qft" secondAttribute="bottom" id="4kL-S8-4eT"/>
+                            <constraint firstItem="ioD-VQ-Qft" firstAttribute="top" secondItem="I8b-d2-HzU" secondAttribute="bottom" constant="146" id="A66-Hc-ZdD"/>
                             <constraint firstItem="3q9-sc-pQZ" firstAttribute="centerY" secondItem="B5G-Gg-iWa" secondAttribute="centerY" id="InD-MO-UVE"/>
                             <constraint firstAttribute="trailing" secondItem="tVc-wf-Oav" secondAttribute="trailing" id="NBO-ZL-nWP"/>
                             <constraint firstItem="taK-tZ-3qL" firstAttribute="top" secondItem="tVc-wf-Oav" secondAttribute="bottom" id="OoF-nP-GtL"/>
                             <constraint firstItem="tVc-wf-Oav" firstAttribute="leading" secondItem="B5G-Gg-iWa" secondAttribute="leading" id="Uzh-IT-fWf"/>
+                            <constraint firstItem="ioD-VQ-Qft" firstAttribute="leading" secondItem="B5G-Gg-iWa" secondAttribute="leadingMargin" constant="50" id="m4t-7d-WA8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ioD-VQ-Qft" secondAttribute="trailing" constant="50" id="na6-Xu-uI7"/>
+                            <constraint firstItem="EDr-qm-bhp" firstAttribute="trailing" secondItem="ioD-VQ-Qft" secondAttribute="trailing" id="oHr-uF-UdG"/>
                             <constraint firstItem="3q9-sc-pQZ" firstAttribute="centerX" secondItem="B5G-Gg-iWa" secondAttribute="centerX" id="oVi-vE-Thv"/>
                             <constraint firstItem="tVc-wf-Oav" firstAttribute="top" secondItem="I8b-d2-HzU" secondAttribute="bottom" id="tdI-MH-1En"/>
+                            <constraint firstItem="3OU-oY-7cw" firstAttribute="top" secondItem="ioD-VQ-Qft" secondAttribute="bottom" id="vQu-tM-XYa"/>
+                            <constraint firstItem="3OU-oY-7cw" firstAttribute="leading" secondItem="ioD-VQ-Qft" secondAttribute="leading" id="y9R-sH-ypW"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="audioSlider" destination="ioD-VQ-Qft" id="bJ7-ML-3Jj"/>
                         <outlet property="pausePlay" destination="3q9-sc-pQZ" id="GdK-0s-7KV"/>
+                        <outlet property="timeElapsed" destination="3OU-oY-7cw" id="CiD-lx-0U3"/>
+                        <outlet property="timeRemaining" destination="EDr-qm-bhp" id="g2c-FB-qqD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oD1-SH-LHh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3676" y="-570"/>
+            <point key="canvasLocation" x="3676" y="-570.76461769115451"/>
         </scene>
     </scenes>
     <resources>
