@@ -15,27 +15,37 @@ class AudioPlayerVC: UIViewController {
     @IBOutlet weak var audioSlider: UISlider!
     @IBOutlet weak var timeElapsed: UILabel!
     @IBOutlet weak var timeRemaining: UILabel!
+    @IBOutlet weak var audioTitle: UILabel!
     
-    var AudioURL = URL(fileURLWithPath: Bundle.main.path(forResource: "22 De soldaat", ofType: "mp3")!)
     var AudioPlayer: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.layer.opacity = 0.8
+        self.showAnimate()
+        
         loadAudioPlayer()
+        
+        audioTitle.text = SharedVars.sharedInstance.audioTitle
+        
+        if audioTitle.text == SharedVars.sharedInstance.currentSong && SharedVars.sharedInstance.currentElapsed != 0 {
+            AudioPlayer!.currentTime = SharedVars.sharedInstance.currentElapsed
+        } else {
+            loadAudioPlayer()
+            //self.AudioPlayer!.currentTime = 0
+        }
+        
+        updateTimeLabels()
         audioSlider.maximumValue = Float(AudioPlayer!.duration)
-        print(TimeInterval(AudioPlayer!.duration))
         
         _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AudioPlayerVC.updateAudioSlider), userInfo: nil, repeats: true)
-        _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(AudioPlayerVC.updateTimeLabels), userInfo: nil, repeats: true)
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AudioPlayerVC.updateTimeLabels), userInfo: nil, repeats: true)
     }
     
     func loadAudioPlayer() {
+        let AudioURL = URL(fileURLWithPath: Bundle.main.path(forResource: SharedVars.sharedInstance.audioTitle, ofType: "mp3")!)
+    
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             try AVAudioSession.sharedInstance().setActive(true)
@@ -63,6 +73,14 @@ class AudioPlayerVC: UIViewController {
         pausePlay.setImage(UIImage(named: "Audio_pause.png"), for: UIControlState.normal)
     }
     
+    func stopPlaying() {
+        if AudioPlayer!.isPlaying == true {
+            AudioPlayer!.stop()
+        } else {
+            print("er speelde niets")
+        }
+    }
+    
     func updateAudioSlider() {
         audioSlider.value = Float(AudioPlayer!.currentTime)
     }
@@ -77,17 +95,32 @@ class AudioPlayerVC: UIViewController {
         timeRemaining.text = String(format: "%0.2d:%0.2d",remainingMinutes,remainingSeconds)
     }
     
-    //    func updateRemainingTime() {
-    //        var seconds = 0
-    //        var minutes = 0
-    //        let time = AudioPlayer!.duration - AudioPlayer!.currentTime
-    //        seconds = Int(time) % 60
-    //        minutes = (Int(time) / 60) % 60
-    //
-    //
-    //        timeRemaining.text = String(format: "%0.2d:%0.2d",minutes,seconds)
-    //    }
+    @IBAction func closePopUp(_ sender: UIButton) {
+        self.removeAnimate()
+    }
     
+    func showAnimate() {
+        self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+        self.view.alpha = 0.0;
+        UIView.animate(withDuration: 0.25, animations: {
+            self.view.alpha = 1.0
+            self.view.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+        })
+    }
     
+    func removeAnimate() {
+        UIView.animate(withDuration: 0.25, animations: {
+            self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+            self.view.alpha = 0.0;
+        }, completion:{(finished : Bool)  in
+            if (finished)
+            {
+                self.view.removeFromSuperview()
+                SharedVars.sharedInstance.currentElapsed = self.AudioPlayer!.currentTime
+                SharedVars.sharedInstance.currentSong = self.audioTitle.text!
+                self.AudioPlayer!.stop()
+            }
+        })
+    }
     
 }

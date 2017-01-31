@@ -24,6 +24,7 @@ class WeekMain: UIViewController, ENSideMenuDelegate {
     @IBOutlet weak var segmentedBtn: CustomSegmentedControl!
     
     var currentViewController: UIViewController?
+    
     lazy var firstChildTabVC: UIViewController? = {
         let firstChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "WeekIntro\(SharedVars.sharedInstance.chosenWeek)")
         return firstChildTabVC

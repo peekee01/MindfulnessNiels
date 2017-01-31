@@ -29,6 +29,7 @@
 		6592995A1E395907001B9B10 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659299591E395907001B9B10 /* CustomView.swift */; };
 		659934A11E3E267F004C2ADF /* ScheduleTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659934A01E3E267F004C2ADF /* ScheduleTableVC.swift */; };
 		65B6246F1E3FE02000A89488 /* 22 De soldaat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B6246E1E3FE02000A89488 /* 22 De soldaat.mp3 */; };
+		65B78C221E4001AB00DBE1E2 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B78C211E4001AB00DBE1E2 /* AudioPlayer.swift */; };
 		65D452C51E3FBE0A0023EAA9 /* AudioPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D452C41E3FBE0A0023EAA9 /* AudioPlayerVC.swift */; };
 		65D452C91E3FCD180023EAA9 /* 10. Mindfulness of the Breath.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65D452C61E3FCD180023EAA9 /* 10. Mindfulness of the Breath.mp3 */; };
 		65D452CA1E3FCD180023EAA9 /* 11.  Mindfulness of breathing and body mediation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65D452C71E3FCD180023EAA9 /* 11.  Mindfulness of breathing and body mediation.mp3 */; };
@@ -71,6 +72,7 @@
 		659299591E395907001B9B10 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		659934A01E3E267F004C2ADF /* ScheduleTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableVC.swift; sourceTree = "<group>"; };
 		65B6246E1E3FE02000A89488 /* 22 De soldaat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "22 De soldaat.mp3"; path = "../../../../Music/iTunes/iTunes Media/Music/Nick & Simon/Altijd Dichtbij (Live)/22 De soldaat.mp3"; sourceTree = "<group>"; };
+		65B78C211E4001AB00DBE1E2 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		65D452C41E3FBE0A0023EAA9 /* AudioPlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerVC.swift; sourceTree = "<group>"; };
 		65D452C61E3FCD180023EAA9 /* 10. Mindfulness of the Breath.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10. Mindfulness of the Breath.mp3"; sourceTree = "<group>"; };
 		65D452C71E3FCD180023EAA9 /* 11.  Mindfulness of breathing and body mediation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "11.  Mindfulness of breathing and body mediation.mp3"; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				656C58CB1E391D60009285B7 /* MenuTableVC.swift */,
 				659934A01E3E267F004C2ADF /* ScheduleTableVC.swift */,
 				65D452C41E3FBE0A0023EAA9 /* AudioPlayerVC.swift */,
+				65B78C211E4001AB00DBE1E2 /* AudioPlayer.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -315,6 +318,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = E6GFV94F2M;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -422,6 +430,7 @@
 				65DE95541E3CD9BC00A569D1 /* CustomQuote.swift in Sources */,
 				651B09C41E3E3DFB009075A9 /* WeekExercises1.swift in Sources */,
 				651B09BC1E3E3D7F009075A9 /* WeekExercises2.swift in Sources */,
+				65B78C221E4001AB00DBE1E2 /* AudioPlayer.swift in Sources */,
 				651B09C61E3E3DFB009075A9 /* WeekAdditional1.swift in Sources */,
 				651B09BE1E3E3D7F009075A9 /* WeekAdditional2.swift in Sources */,
 				65788EE61E37DA8300A6AC6A /* MainVC.swift in Sources */,
