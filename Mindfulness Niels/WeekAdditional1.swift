@@ -17,15 +17,15 @@ class WeekAdditional1: UIViewController {
     let videoOne = "https://www.youtube.com/embed/GLjelIPg3ys"
     let videoTwo = "https://www.youtube.com/embed/9YRjX3A_8cM"
     let code = "?&modestbranding=1&playsinline=1&controls=1&showinfo=0&rel=0\" frameborder=\"0\" allowfullscreen></iframe>"
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-    }
-    
+//    
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//    }
+//    
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//    }
+//    
     override func viewDidLoad() {
         super.viewDidLoad()
 
