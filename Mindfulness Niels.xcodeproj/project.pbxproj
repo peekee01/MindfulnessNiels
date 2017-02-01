@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6505F0981E3E7E650065D0A7 /* DailyQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6505F0971E3E7E650065D0A7 /* DailyQuote.swift */; };
+		651506221E42991C00B44936 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651506211E42991C00B44936 /* TextCell.swift */; };
+		651506241E429BC500B44936 /* AudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651506231E429BC500B44936 /* AudioCell.swift */; };
 		651B09AE1E3E30A6009075A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651B09AD1E3E30A6009075A9 /* Main.storyboard */; };
 		651B09BB1E3E3D7F009075A9 /* WeekIntro2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651B09B71E3E3D7F009075A9 /* WeekIntro2.swift */; };
 		651B09BC1E3E3D7F009075A9 /* WeekExercises2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651B09B81E3E3D7F009075A9 /* WeekExercises2.swift */; };
@@ -49,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		6505F0971E3E7E650065D0A7 /* DailyQuote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyQuote.swift; sourceTree = "<group>"; };
+		651506211E42991C00B44936 /* TextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		651506231E429BC500B44936 /* AudioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioCell.swift; sourceTree = "<group>"; };
 		651B09AD1E3E30A6009075A9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		651B09B71E3E3D7F009075A9 /* WeekIntro2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekIntro2.swift; sourceTree = "<group>"; };
 		651B09B81E3E3D7F009075A9 /* WeekExercises2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekExercises2.swift; sourceTree = "<group>"; };
@@ -218,6 +222,8 @@
 				659299591E395907001B9B10 /* CustomView.swift */,
 				65DE95531E3CD9BC00A569D1 /* CustomQuote.swift */,
 				65E337C31E3E8430001FFE30 /* SegmentedControl.swift */,
+				651506211E42991C00B44936 /* TextCell.swift */,
+				651506231E429BC500B44936 /* AudioCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -427,12 +433,14 @@
 				65B78C241E4084D600DBE1E2 /* SharedAudioPlayer.swift in Sources */,
 				65DE956D1E3D277800A569D1 /* SharedVars.swift in Sources */,
 				651B09BB1E3E3D7F009075A9 /* WeekIntro2.swift in Sources */,
+				651506241E429BC500B44936 /* AudioCell.swift in Sources */,
 				651B09C31E3E3DFB009075A9 /* WeekIntro1.swift in Sources */,
 				65DE95541E3CD9BC00A569D1 /* CustomQuote.swift in Sources */,
 				651B09C41E3E3DFB009075A9 /* WeekExercises1.swift in Sources */,
 				651B09BC1E3E3D7F009075A9 /* WeekExercises2.swift in Sources */,
 				651B09C61E3E3DFB009075A9 /* WeekAdditional1.swift in Sources */,
 				651B09BE1E3E3D7F009075A9 /* WeekAdditional2.swift in Sources */,
+				651506221E42991C00B44936 /* TextCell.swift in Sources */,
 				65788EE61E37DA8300A6AC6A /* MainVC.swift in Sources */,
 				65E337C41E3E8430001FFE30 /* SegmentedControl.swift in Sources */,
 				651B09C51E3E3DFB009075A9 /* WeekMain.swift in Sources */,
