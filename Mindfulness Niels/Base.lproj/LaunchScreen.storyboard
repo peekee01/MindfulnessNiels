@@ -21,10 +21,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="Okr-GT-7Z2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sun_green" translatesAutoresizingMaskIntoConstraints="NO" id="Okr-GT-7Z2">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Mindfulness Niels" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yG7-kc-74o">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bmd-e1-qbx">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.72032855308219179" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School of Mindfulness" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yG7-kc-74o">
                                 <rect key="frame" x="85" y="282.5" width="205" height="102"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="205" id="Ofh-8b-b09"/>
@@ -38,10 +42,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Okr-GT-7Z2" secondAttribute="trailing" id="BGD-5h-FT4"/>
+                            <constraint firstItem="Bmd-e1-qbx" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Du6-Cx-3SD"/>
                             <constraint firstItem="yG7-kc-74o" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PAK-yf-WfD"/>
+                            <constraint firstItem="Bmd-e1-qbx" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="e2s-fq-WaG"/>
                             <constraint firstItem="Okr-GT-7Z2" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="iOx-t8-1gq"/>
                             <constraint firstItem="yG7-kc-74o" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="mv7-UV-Kp4"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Okr-GT-7Z2" secondAttribute="bottom" id="ojJ-Hj-jjC"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Bmd-e1-qbx" secondAttribute="bottom" id="r27-bD-73c"/>
+                            <constraint firstAttribute="trailing" secondItem="Bmd-e1-qbx" secondAttribute="trailing" id="tQN-37-wy6"/>
                             <constraint firstItem="Okr-GT-7Z2" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="ufI-Sq-83B"/>
                         </constraints>
                     </view>
@@ -52,6 +60,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background_green" width="640" height="1136"/>
+        <image name="Sun_green" width="4287" height="2392"/>
     </resources>
 </document>

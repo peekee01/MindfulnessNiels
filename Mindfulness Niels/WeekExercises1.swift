@@ -36,7 +36,7 @@ class WeekExercises1: UIViewController {
             print("scherm bestaat niet")
             self.addChildViewController(popOverAudioVC)
             SharedVars.sharedInstance.audioTitle = sender.titleLabel!.text!
-            popOverAudioVC.view.frame = CGRect(x: 0, y: self.view.frame.height - 251, width: self.view.frame.width, height: 250)
+            popOverAudioVC.view.frame = CGRect(x: 0, y: self.view.frame.height - 249, width: self.view.frame.width, height: 250)
             popOverAudioVC.view.tag = 100
             self.view.addSubview(popOverAudioVC.view)
             popOverAudioVC.didMove(toParentViewController: self)
