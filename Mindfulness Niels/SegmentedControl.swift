@@ -33,10 +33,14 @@ class CustomSegmentedControl: UISegmentedControl {
         let font = UIFont.init(name: "HelveticaNeue-Light", size: 16.0)
         
         let normalTextAttributes = [NSFontAttributeName: font as Any]
-        
+
         self.setTitleTextAttributes(normalTextAttributes, for: UIControlState())
         self.setTitleTextAttributes(normalTextAttributes, for: .highlighted)
         self.setTitleTextAttributes(normalTextAttributes, for: .selected)
+        
+        self.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: UIControlState())
+        self.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: .highlighted)
+        self.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: .selected)
     }
     
 }

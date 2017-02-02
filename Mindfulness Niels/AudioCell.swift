@@ -10,7 +10,6 @@ import UIKit
 
 class AudioCell: UITableViewCell {
 
-    @IBOutlet weak var fakeLbl: UILabel!
     @IBOutlet weak var titleLbl: UILabel!
     
 

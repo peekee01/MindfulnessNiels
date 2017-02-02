@@ -8,43 +8,56 @@
 
 import UIKit
 
-class WeekAdditional1: UIViewController {
-
-    @IBOutlet weak var videoView: UIWebView!
+class WeekAdditional1: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var videoView2: UIWebView!
+    @IBOutlet weak var tableView: UITableView!
     
-    let videoOne = "https://www.youtube.com/embed/GLjelIPg3ys"
-    let videoTwo = "https://www.youtube.com/embed/9YRjX3A_8cM"
+    let videoCellIdentifier = "VideoCell"
     let code = "?&modestbranding=1&playsinline=1&controls=1&showinfo=0&rel=0\" frameborder=\"0\" allowfullscreen></iframe>"
-//    
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//    }
-//    
-//    override func viewWillDisappear(_ animated: Bool) {
-//        super.viewWillDisappear(animated)
-//    }
-//    
+    
+    var textVideo = ["Dit is filmpje 1", "Dit is filmpje 2", "en nog filmpje 3"]
+    var videoArray = ["https://www.youtube.com/embed/GLjelIPg3ys", "https://www.youtube.com/embed/9YRjX3A_8cM", "https://www.youtube.com/embed/BSmToj9VZ4s"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
 
-        videoView.scrollView.isScrollEnabled = false
-        videoView.scrollView.bounces = false
-        videoView2.scrollView.isScrollEnabled = false
-        videoView2.scrollView.bounces = false
-
-        
-        videoView.allowsInlineMediaPlayback = true
-       videoView.loadHTMLString("<iframe width=\"\(videoView.frame.width)\" height=\"\(videoView.frame.height)\" src=\"\(videoOne)\(code)", baseURL: nil)
-        
-        videoView2.allowsInlineMediaPlayback = true
-        videoView2.loadHTMLString("<iframe width=\"\(videoView.frame.width)\" height=\"\(videoView.frame.height)\" src=\"\(videoTwo)\(code)", baseURL: nil)
-    
-        
-        // Do any additional setup after loading the view.
     }
-
-
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return videoArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: videoCellIdentifier , for: indexPath) as! VideoCell
+        let videoURL = videoArray[indexPath.row]
+        cell.videoLbl.text = textVideo[indexPath.row]
+        cell.webView.scrollView.isScrollEnabled = false
+        cell.webView.scrollView.bounces = false
+        cell.webView.allowsInlineMediaPlayback = true
+        cell.webView.loadHTMLString("<iframe width=\"\(cell.webView.frame.width)\" height=\"\(cell.webView.frame.height)\" src=\"\(videoURL)\(code)", baseURL: nil)
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Videos"
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel?.textColor = UIColor.white
+        header.textLabel?.font = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
+        header.backgroundView?.backgroundColor = UIColor(red: 0/255, green: 128/255, blue: 128/255, alpha: 1.0)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 35
+    }
 }
+
