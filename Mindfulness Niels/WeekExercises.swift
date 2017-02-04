@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeekExercises1: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class WeekExercises: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     

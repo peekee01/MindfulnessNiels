@@ -8,21 +8,25 @@
 
 import UIKit
 
-class WeekIntro1: UIViewController, UIWebViewDelegate {
+class WeekIntro: UIViewController, UIWebViewDelegate {
     
     
     @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var imageIntro: UIImageView!
+    var imageName = "bg_\(SharedVars.sharedInstance.weekNum)"
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//    }
+//    
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imageIntro.image = UIImage(named: imageName)
         
         webView.delegate = self
         self.webView.isOpaque = false

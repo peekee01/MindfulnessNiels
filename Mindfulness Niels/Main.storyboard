@@ -197,10 +197,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ecc-9T-5gM" id="hQA-DW-o7o">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week1" translatesAutoresizingMaskIntoConstraints="NO" id="klL-qe-ewn">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week 1" translatesAutoresizingMaskIntoConstraints="NO" id="klL-qe-ewn">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="169.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Living on autopilot" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJk-vr-s9G">
@@ -233,10 +233,10 @@
                                         <rect key="frame" x="0.0" y="170" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gtW-ER-oh8" id="H7h-yP-tMz">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week2" translatesAutoresizingMaskIntoConstraints="NO" id="GPe-TH-WVj">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week 2" translatesAutoresizingMaskIntoConstraints="NO" id="GPe-TH-WVj">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="169.5"/>
                                                     <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="0.0703125" colorSpace="calibratedRGB"/>
                                                     <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="0.26888912669999998" colorSpace="calibratedRGB"/>
@@ -271,10 +271,10 @@
                                         <rect key="frame" x="0.0" y="340" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Hb-1C-qv2" id="9Q8-vZ-FpS">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week3" translatesAutoresizingMaskIntoConstraints="NO" id="FMb-qB-cOW">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week 3" translatesAutoresizingMaskIntoConstraints="NO" id="FMb-qB-cOW">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="169.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week 3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rut-p0-dXV">
@@ -307,10 +307,10 @@
                                         <rect key="frame" x="0.0" y="510" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LTP-yd-VYz" id="i6h-hG-efz">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week1" translatesAutoresizingMaskIntoConstraints="NO" id="bcj-JJ-mUo">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week 1" translatesAutoresizingMaskIntoConstraints="NO" id="bcj-JJ-mUo">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="169.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bju-Nr-6vx">
@@ -343,10 +343,10 @@
                                         <rect key="frame" x="0.0" y="680" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zdg-Ue-hxe" id="856-KL-7BV">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week2" translatesAutoresizingMaskIntoConstraints="NO" id="4xD-xn-nsu">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week 2" translatesAutoresizingMaskIntoConstraints="NO" id="4xD-xn-nsu">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="169.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week 5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MF-Ms-BRd">
@@ -379,10 +379,10 @@
                                         <rect key="frame" x="0.0" y="850" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sRJ-RN-CPd" id="LY0-tk-Ta9">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week3" translatesAutoresizingMaskIntoConstraints="NO" id="oot-r1-hNG">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week 3" translatesAutoresizingMaskIntoConstraints="NO" id="oot-r1-hNG">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="169.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week 6" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fZ-0T-yJj">
@@ -415,10 +415,10 @@
                                         <rect key="frame" x="0.0" y="1020" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yuq-Gm-1Rv" id="Gcj-VK-4ua">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week1" translatesAutoresizingMaskIntoConstraints="NO" id="T6N-Gc-VDI">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week 1" translatesAutoresizingMaskIntoConstraints="NO" id="T6N-Gc-VDI">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="169.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week 7" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPB-ab-AAB">
@@ -451,10 +451,10 @@
                                         <rect key="frame" x="0.0" y="1190" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="70F-gb-udX" id="XAz-Id-MLF">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week2" translatesAutoresizingMaskIntoConstraints="NO" id="fNA-IJ-FwB">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week 2" translatesAutoresizingMaskIntoConstraints="NO" id="fNA-IJ-FwB">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="169.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week 8" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiz-9A-oW3">
@@ -504,10 +504,10 @@
             </objects>
             <point key="canvasLocation" x="1797.5999999999999" y="139.880059970015"/>
         </scene>
-        <!--Week Intro 1-->
+        <!--Week Intro-->
         <scene sceneID="qyJ-vS-dNR">
             <objects>
-                <viewController storyboardIdentifier="WeekIntro1" automaticallyAdjustsScrollViewInsets="NO" id="3UY-wB-Alm" userLabel="Week Intro 1" customClass="WeekIntro1" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WeekIntro" automaticallyAdjustsScrollViewInsets="NO" id="3UY-wB-Alm" userLabel="Week Intro" customClass="WeekIntro" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QLJ-jb-FIO"/>
                         <viewControllerLayoutGuide type="bottom" id="TjJ-TM-nJz"/>
@@ -520,7 +520,7 @@
                                 <rect key="frame" x="10" y="149" width="355" height="518"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week1" translatesAutoresizingMaskIntoConstraints="NO" id="k7M-H2-apf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k7M-H2-apf">
                                 <rect key="frame" x="0.0" y="20" width="375" height="159"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="0.47710649923312892" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -544,17 +544,18 @@
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="imageIntro" destination="k7M-H2-apf" id="kRE-0H-0hc"/>
                         <outlet property="webView" destination="QD1-bb-aHt" id="HT8-xa-lec"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2p9-VT-8O9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4792.8000000000002" y="-941.37931034482767"/>
+            <point key="canvasLocation" x="3543" y="140"/>
         </scene>
-        <!--Week Additional 1-->
+        <!--Week Additional-->
         <scene sceneID="dvr-P4-zcL">
             <objects>
-                <viewController storyboardIdentifier="WeekAdditional1" automaticallyAdjustsScrollViewInsets="NO" id="Xf7-OA-PbK" userLabel="Week Additional 1" customClass="WeekAdditional1" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WeekAdditional" automaticallyAdjustsScrollViewInsets="NO" id="Xf7-OA-PbK" userLabel="Week Additional" customClass="WeekAdditional" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D71-Po-fU9"/>
                         <viewControllerLayoutGuide type="bottom" id="i9Q-4b-KE8"/>
@@ -627,7 +628,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GzA-Nb-aXs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6333.6000000000004" y="-941.37931034482767"/>
+            <point key="canvasLocation" x="5084" y="140"/>
         </scene>
         <!--Side MenuVC-->
         <scene sceneID="ESL-di-NuN">
@@ -687,18 +688,18 @@
                                         <rect key="frame" x="0.0" y="55" width="200" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="puW-QH-E1r" id="Rdc-KB-Iqa">
-                                            <rect key="frame" x="0.0" y="0.0" width="200" height="54"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Week 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zZ3-vX-gNq">
-                                                    <rect key="frame" x="15" y="9" width="53" height="19"/>
+                                                    <rect key="frame" x="15" y="10" width="53" height="19"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Living in our heads" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DLT-Ra-g3a">
-                                                    <rect key="frame" x="15" y="28" width="109" height="17"/>
+                                                    <rect key="frame" x="15" y="29" width="109" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
                                                     <nil key="textColor"/>
@@ -807,18 +808,18 @@
                                         <rect key="frame" x="0.0" y="330" width="200" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ewY-Di-nG0" id="k9N-Gd-Tc2">
-                                            <rect key="frame" x="0.0" y="0.0" width="200" height="54"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Week 7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Q2U-PW-ch8">
-                                                    <rect key="frame" x="15" y="9" width="53" height="19"/>
+                                                    <rect key="frame" x="15" y="10" width="53" height="19"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Taking care of ourselves" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KII-CF-608">
-                                                    <rect key="frame" x="15" y="28" width="140" height="17"/>
+                                                    <rect key="frame" x="15" y="29" width="140" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
                                                     <nil key="textColor"/>
@@ -889,7 +890,7 @@
                                     <constraint firstAttribute="height" constant="50" id="ui9-MX-qLF"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="Introduction"/>
+                                    <segment title="Description"/>
                                     <segment title="Excercises"/>
                                     <segment title="Additional"/>
                                 </segments>
@@ -939,286 +940,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJ8-Xa-dXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2584.8000000000002" y="139.880059970015"/>
-        </scene>
-        <!--Week Intro 2-->
-        <scene sceneID="duj-ft-esZ">
-            <objects>
-                <viewController storyboardIdentifier="WeekIntro2" id="2mS-hF-HoC" userLabel="Week Intro 2" customClass="WeekIntro2" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FZR-gn-w2v"/>
-                        <viewControllerLayoutGuide type="bottom" id="HO5-rj-9Q8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9L2-VH-wER">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="Nxq-7e-iYV">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KuO-eH-Cmu">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="HO5-rj-9Q8" firstAttribute="top" secondItem="Nxq-7e-iYV" secondAttribute="bottom" id="2CI-Jg-qrf"/>
-                            <constraint firstItem="Nxq-7e-iYV" firstAttribute="top" secondItem="9L2-VH-wER" secondAttribute="top" id="6je-Zg-1cw"/>
-                            <constraint firstAttribute="trailing" secondItem="Nxq-7e-iYV" secondAttribute="trailing" id="7CV-3d-LzG"/>
-                            <constraint firstItem="KuO-eH-Cmu" firstAttribute="top" secondItem="FZR-gn-w2v" secondAttribute="bottom" id="DWS-l7-Skn"/>
-                            <constraint firstItem="HO5-rj-9Q8" firstAttribute="top" secondItem="KuO-eH-Cmu" secondAttribute="bottom" id="NRW-KP-aCF"/>
-                            <constraint firstAttribute="trailing" secondItem="KuO-eH-Cmu" secondAttribute="trailing" id="ZrP-qp-aJI"/>
-                            <constraint firstItem="KuO-eH-Cmu" firstAttribute="leading" secondItem="9L2-VH-wER" secondAttribute="leading" id="dKp-Hm-g09"/>
-                            <constraint firstItem="Nxq-7e-iYV" firstAttribute="leading" secondItem="9L2-VH-wER" secondAttribute="leading" id="j3Q-0N-OZ7"/>
-                        </constraints>
-                    </view>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <connections>
-                        <outlet property="webView" destination="KuO-eH-Cmu" id="RHe-2l-55x"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hUk-Dh-0Ur" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4794" y="-208"/>
-        </scene>
-        <!--Week Intro 3-->
-        <scene sceneID="w0h-to-lJa">
-            <objects>
-                <viewController storyboardIdentifier="WeekIntro3" id="g37-Fq-ZLi" userLabel="Week Intro 3" customClass="WeekIntro1" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="i9c-Zo-bcL"/>
-                        <viewControllerLayoutGuide type="bottom" id="DbN-3P-zsp"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="jkV-mx-ePG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="ZQS-R5-Mtb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hft-xI-feE">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ZQS-R5-Mtb" secondAttribute="trailing" id="53I-Fm-ZVF"/>
-                            <constraint firstItem="ZQS-R5-Mtb" firstAttribute="leading" secondItem="jkV-mx-ePG" secondAttribute="leading" id="6hB-tx-nat"/>
-                            <constraint firstItem="DbN-3P-zsp" firstAttribute="top" secondItem="ZQS-R5-Mtb" secondAttribute="bottom" id="OVD-hb-hEq"/>
-                            <constraint firstAttribute="trailing" secondItem="hft-xI-feE" secondAttribute="trailing" id="Q76-Uc-Wi7"/>
-                            <constraint firstItem="hft-xI-feE" firstAttribute="top" secondItem="i9c-Zo-bcL" secondAttribute="bottom" id="RTy-cb-ybZ"/>
-                            <constraint firstItem="ZQS-R5-Mtb" firstAttribute="top" secondItem="jkV-mx-ePG" secondAttribute="top" id="RqX-un-xFn"/>
-                            <constraint firstItem="hft-xI-feE" firstAttribute="leading" secondItem="jkV-mx-ePG" secondAttribute="leading" id="Rv4-Cj-WBh"/>
-                            <constraint firstItem="DbN-3P-zsp" firstAttribute="top" secondItem="hft-xI-feE" secondAttribute="bottom" id="ynn-JU-nLo"/>
-                        </constraints>
-                    </view>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <connections>
-                        <outlet property="webView" destination="hft-xI-feE" id="ewP-pB-1Qf"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P3h-xA-rMq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4794" y="514"/>
-        </scene>
-        <!--Week Intro 4-->
-        <scene sceneID="v5P-ve-D1L">
-            <objects>
-                <viewController storyboardIdentifier="WeekIntro4" id="8nv-pX-wAo" userLabel="Week Intro 4" customClass="WeekIntro1" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Jfa-QQ-hRL"/>
-                        <viewControllerLayoutGuide type="bottom" id="xAT-PJ-Ftv"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lh9-2s-Jn0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="0dO-JB-hh0">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zZe-s8-Tti">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="zZe-s8-Tti" secondAttribute="trailing" id="4SF-e5-O9s"/>
-                            <constraint firstItem="zZe-s8-Tti" firstAttribute="top" secondItem="Jfa-QQ-hRL" secondAttribute="bottom" id="5uZ-q1-XSq"/>
-                            <constraint firstItem="xAT-PJ-Ftv" firstAttribute="top" secondItem="0dO-JB-hh0" secondAttribute="bottom" id="7dZ-e2-TAc"/>
-                            <constraint firstItem="0dO-JB-hh0" firstAttribute="top" secondItem="lh9-2s-Jn0" secondAttribute="top" id="P9S-ce-XNP"/>
-                            <constraint firstItem="zZe-s8-Tti" firstAttribute="leading" secondItem="lh9-2s-Jn0" secondAttribute="leading" id="g4I-ik-fWU"/>
-                            <constraint firstItem="xAT-PJ-Ftv" firstAttribute="top" secondItem="zZe-s8-Tti" secondAttribute="bottom" id="lRC-9y-JLI"/>
-                            <constraint firstItem="0dO-JB-hh0" firstAttribute="leading" secondItem="lh9-2s-Jn0" secondAttribute="leading" id="oap-Iu-2AP"/>
-                            <constraint firstAttribute="trailing" secondItem="0dO-JB-hh0" secondAttribute="trailing" id="vmJ-hG-2rV"/>
-                        </constraints>
-                    </view>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <connections>
-                        <outlet property="webView" destination="zZe-s8-Tti" id="6ZI-Ry-4XB"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g9w-0y-AHW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4794" y="1232"/>
-        </scene>
-        <!--Week Intro 5-->
-        <scene sceneID="bgO-YE-OF3">
-            <objects>
-                <viewController storyboardIdentifier="WeekIntro5" id="HHc-Xd-8aF" userLabel="Week Intro 5" customClass="WeekIntro1" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tql-dL-V3t"/>
-                        <viewControllerLayoutGuide type="bottom" id="97m-xw-Hew"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vMn-oH-bfx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="v3X-C8-RnB">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7N-fE-6dr">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="v3X-C8-RnB" firstAttribute="top" secondItem="vMn-oH-bfx" secondAttribute="top" id="C4K-MY-jGl"/>
-                            <constraint firstItem="v3X-C8-RnB" firstAttribute="leading" secondItem="vMn-oH-bfx" secondAttribute="leading" id="GZo-Ps-2WA"/>
-                            <constraint firstItem="97m-xw-Hew" firstAttribute="top" secondItem="a7N-fE-6dr" secondAttribute="bottom" id="cEF-nx-oj3"/>
-                            <constraint firstAttribute="trailing" secondItem="v3X-C8-RnB" secondAttribute="trailing" id="eTa-j4-gTF"/>
-                            <constraint firstAttribute="trailing" secondItem="a7N-fE-6dr" secondAttribute="trailing" id="g8s-6B-du9"/>
-                            <constraint firstItem="97m-xw-Hew" firstAttribute="top" secondItem="v3X-C8-RnB" secondAttribute="bottom" id="ipe-Jj-dDO"/>
-                            <constraint firstItem="a7N-fE-6dr" firstAttribute="top" secondItem="tql-dL-V3t" secondAttribute="bottom" id="jxC-yd-i0a"/>
-                            <constraint firstItem="a7N-fE-6dr" firstAttribute="leading" secondItem="vMn-oH-bfx" secondAttribute="leading" id="ymA-dM-6W8"/>
-                        </constraints>
-                    </view>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <connections>
-                        <outlet property="webView" destination="a7N-fE-6dr" id="FGh-5S-n4X"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KTO-Jj-Ag2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4794" y="1983"/>
-        </scene>
-        <!--Week Intro 6-->
-        <scene sceneID="eRP-ym-kGz">
-            <objects>
-                <viewController storyboardIdentifier="WeekIntro6" id="kbU-wZ-Tpd" userLabel="Week Intro 6" customClass="WeekIntro1" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YSl-NL-d7C"/>
-                        <viewControllerLayoutGuide type="bottom" id="bHS-y4-fao"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1It-KI-eqz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="5DE-sr-DFE">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2U-ki-tlA">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="i2U-ki-tlA" firstAttribute="leading" secondItem="1It-KI-eqz" secondAttribute="leading" id="09V-jM-ROu"/>
-                            <constraint firstItem="5DE-sr-DFE" firstAttribute="top" secondItem="1It-KI-eqz" secondAttribute="top" id="0r8-hV-1KP"/>
-                            <constraint firstItem="5DE-sr-DFE" firstAttribute="leading" secondItem="1It-KI-eqz" secondAttribute="leading" id="9JW-9F-dcn"/>
-                            <constraint firstAttribute="trailing" secondItem="5DE-sr-DFE" secondAttribute="trailing" id="LFZ-Af-mCw"/>
-                            <constraint firstItem="bHS-y4-fao" firstAttribute="top" secondItem="i2U-ki-tlA" secondAttribute="bottom" id="Oqp-D7-ysF"/>
-                            <constraint firstItem="i2U-ki-tlA" firstAttribute="top" secondItem="YSl-NL-d7C" secondAttribute="bottom" id="mS1-0e-7Jz"/>
-                            <constraint firstAttribute="trailing" secondItem="i2U-ki-tlA" secondAttribute="trailing" id="way-6B-fCu"/>
-                            <constraint firstItem="bHS-y4-fao" firstAttribute="top" secondItem="5DE-sr-DFE" secondAttribute="bottom" id="xrA-fP-M7M"/>
-                        </constraints>
-                    </view>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <connections>
-                        <outlet property="webView" destination="i2U-ki-tlA" id="u83-w7-qQT"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ddU-JT-G5L" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4794" y="2721"/>
-        </scene>
-        <!--Week Intro 7-->
-        <scene sceneID="oOy-DB-mJ6">
-            <objects>
-                <viewController storyboardIdentifier="WeekIntro7" id="yx1-Uz-8ge" userLabel="Week Intro 7" customClass="WeekIntro1" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Nuy-ak-89N"/>
-                        <viewControllerLayoutGuide type="bottom" id="JJr-NI-Zgk"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="jhg-kv-SKn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="82k-cu-mYx">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D9g-ov-r2z">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="D9g-ov-r2z" secondAttribute="trailing" id="8Tw-6p-MHx"/>
-                            <constraint firstAttribute="trailing" secondItem="82k-cu-mYx" secondAttribute="trailing" id="Pgj-gd-mdq"/>
-                            <constraint firstItem="JJr-NI-Zgk" firstAttribute="top" secondItem="D9g-ov-r2z" secondAttribute="bottom" id="SE3-p4-Acm"/>
-                            <constraint firstItem="82k-cu-mYx" firstAttribute="top" secondItem="jhg-kv-SKn" secondAttribute="top" id="bs1-iV-9g2"/>
-                            <constraint firstItem="82k-cu-mYx" firstAttribute="leading" secondItem="jhg-kv-SKn" secondAttribute="leading" id="kYm-2g-MYB"/>
-                            <constraint firstItem="D9g-ov-r2z" firstAttribute="leading" secondItem="jhg-kv-SKn" secondAttribute="leading" id="nhi-aD-Aea"/>
-                            <constraint firstItem="JJr-NI-Zgk" firstAttribute="top" secondItem="82k-cu-mYx" secondAttribute="bottom" id="qJ3-QG-vrC"/>
-                            <constraint firstItem="D9g-ov-r2z" firstAttribute="top" secondItem="Nuy-ak-89N" secondAttribute="bottom" id="xcH-xa-edY"/>
-                        </constraints>
-                    </view>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <connections>
-                        <outlet property="webView" destination="D9g-ov-r2z" id="er5-sQ-312"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5ok-ui-w26" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4794" y="3475"/>
-        </scene>
-        <!--Week Intro-->
-        <scene sceneID="DDv-Vf-Q5C">
-            <objects>
-                <viewController storyboardIdentifier="WeekIntro8" id="yj3-CU-fne" userLabel="Week Intro" customClass="WeekIntro1" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZdI-sh-dWX"/>
-                        <viewControllerLayoutGuide type="bottom" id="Hm5-tE-YeY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="S1m-hf-qsq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="W0K-KV-npM">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhV-G6-Pm7">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="W0K-KV-npM" firstAttribute="leading" secondItem="S1m-hf-qsq" secondAttribute="leading" id="60g-jK-mca"/>
-                            <constraint firstItem="hhV-G6-Pm7" firstAttribute="top" secondItem="ZdI-sh-dWX" secondAttribute="bottom" id="M17-iC-46M"/>
-                            <constraint firstAttribute="trailing" secondItem="W0K-KV-npM" secondAttribute="trailing" id="Qx0-mc-OBL"/>
-                            <constraint firstItem="Hm5-tE-YeY" firstAttribute="top" secondItem="hhV-G6-Pm7" secondAttribute="bottom" id="T5q-No-tOR"/>
-                            <constraint firstItem="W0K-KV-npM" firstAttribute="top" secondItem="S1m-hf-qsq" secondAttribute="top" id="oAC-pd-9EU"/>
-                            <constraint firstItem="Hm5-tE-YeY" firstAttribute="top" secondItem="W0K-KV-npM" secondAttribute="bottom" id="oW3-cV-vSG"/>
-                            <constraint firstItem="hhV-G6-Pm7" firstAttribute="leading" secondItem="S1m-hf-qsq" secondAttribute="leading" id="yqY-Zo-Vd0"/>
-                            <constraint firstAttribute="trailing" secondItem="hhV-G6-Pm7" secondAttribute="trailing" id="zvm-L4-fGO"/>
-                        </constraints>
-                    </view>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <connections>
-                        <outlet property="webView" destination="hhV-G6-Pm7" id="Hme-tp-q72"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fu0-vD-BZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4794" y="4229"/>
         </scene>
         <!--AudioPlayerPopUp-->
         <scene sceneID="7zz-Vd-cRD">
@@ -1332,12 +1053,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oD1-SH-LHh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3597.5999999999999" y="139.43028485757122"/>
+            <point key="canvasLocation" x="3268" y="929"/>
         </scene>
-        <!--Week Exercises1-->
+        <!--Week Exercises-->
         <scene sceneID="JKv-Mr-IZ5">
             <objects>
-                <viewController storyboardIdentifier="WeekExercises1" automaticallyAdjustsScrollViewInsets="NO" id="VgO-vy-8Sy" userLabel="Week Exercises1" customClass="WeekExercises1" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WeekExercises" automaticallyAdjustsScrollViewInsets="NO" id="VgO-vy-8Sy" userLabel="Week Exercises" customClass="WeekExercises" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ymv-Cq-EY4"/>
                         <viewControllerLayoutGuide type="bottom" id="unz-YB-cpj"/>
@@ -1432,20 +1153,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XHt-Jj-RG4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5569" y="-941"/>
+            <point key="canvasLocation" x="4319" y="140"/>
         </scene>
     </scenes>
     <resources>
         <image name="Audio_play" width="100" height="100"/>
         <image name="Back-30" width="30" height="30"/>
-        <image name="Background_green" width="640" height="1136"/>
         <image name="Button_schedule_white" width="500" height="500"/>
         <image name="Circled Play-25" width="25" height="25"/>
         <image name="Menu Filled_30" width="30" height="30"/>
         <image name="Sun_green" width="4287" height="2392"/>
-        <image name="bg_Week1" width="1560" height="641"/>
-        <image name="bg_Week2" width="1559" height="642"/>
-        <image name="bg_Week3" width="1560" height="643"/>
+        <image name="bg_Week 1" width="1560" height="641"/>
+        <image name="bg_Week 2" width="1559" height="642"/>
+        <image name="bg_Week 3" width="1560" height="643"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="mej-fv-Fmx"/>

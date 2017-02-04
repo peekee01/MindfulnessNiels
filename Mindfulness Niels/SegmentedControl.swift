@@ -30,17 +30,29 @@ class CustomSegmentedControl: UISegmentedControl {
     }
     
     func setupFonts(){
-        let font = UIFont.init(name: "HelveticaNeue-Light", size: 16.0)
+//        let font = UIFont(name: "HelveticaNeue-Bold", size: 16.0)
+//        
+//        self.setTitleTextAttributes(normalTextAttributes, for: UIControlState())
+//        self.setTitleTextAttributes(normalTextAttributes, for: .highlighted)
+//        self.setTitleTextAttributes(normalTextAttributes, for: .selected)
+//        
+//        self.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: UIControlState())
+//        self.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: .highlighted)
+//        self.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: .selected)
+//        
+//        let normalTextAttributes: [NSObject : AnyObject] = [
+//            NSForegroundColorAttributeName: UIColor.white,
+//            NSFontAttributeName: UIFont.systemFontOfSize(fontSize, weight: UIFontWeightRegular)
+//        ]
         
-        let normalTextAttributes = [NSFontAttributeName: font as Any]
-
-        self.setTitleTextAttributes(normalTextAttributes, for: UIControlState())
-        self.setTitleTextAttributes(normalTextAttributes, for: .highlighted)
-        self.setTitleTextAttributes(normalTextAttributes, for: .selected)
+        let boldTextAttributes: [NSObject : AnyObject] = [
+            NSForegroundColorAttributeName as NSObject : UIColor.white,
+            NSFontAttributeName as NSObject : UIFont(name:"HelveticaNeue-Bold", size: 14.0)!,
+            ]
         
-        self.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: UIControlState())
-        self.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: .highlighted)
-        self.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: .selected)
+        self.setTitleTextAttributes(boldTextAttributes, for: .normal)
+        self.setTitleTextAttributes(boldTextAttributes, for: .highlighted)
+        self.setTitleTextAttributes(boldTextAttributes, for: .selected)
     }
     
 }

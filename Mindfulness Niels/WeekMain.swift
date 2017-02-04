@@ -18,7 +18,6 @@ class WeekMain: UIViewController, ENSideMenuDelegate {
     }
     
     var chosenWeekMain = SharedVars.sharedInstance.chosenWeek
-
     
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var segmentedBtn: CustomSegmentedControl!
@@ -26,15 +25,15 @@ class WeekMain: UIViewController, ENSideMenuDelegate {
     var currentViewController: UIViewController?
     
     lazy var firstChildTabVC: UIViewController? = {
-        let firstChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "WeekIntro\(SharedVars.sharedInstance.chosenWeek)")
+        let firstChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "WeekIntro")
         return firstChildTabVC
     }()
     lazy var secondChildTabVC : UIViewController? = {
-        let secondChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "WeekExercises1")
+        let secondChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "WeekExercises")
         return secondChildTabVC
     }()
     lazy var thirdChildTabVC : UIViewController? = {
-        let thirdChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "WeekAdditional1")
+        let thirdChildTabVC = self.storyboard?.instantiateViewController(withIdentifier: "WeekAdditional")
         return thirdChildTabVC
     }()
     

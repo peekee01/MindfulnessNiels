@@ -33,11 +33,11 @@ class MainVC: UIViewController {
     
     func preLoadWebView() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let webViewController = storyboard.instantiateViewController(withIdentifier: "WeekIntro1") as? WeekIntro1 {
+        if let webViewController = storyboard.instantiateViewController(withIdentifier: "WeekIntro") as? WeekIntro {
             webViewController.view.setNeedsLayout()
         }
         
-        if let webViewController2 = storyboard.instantiateViewController(withIdentifier: "WeekAdditional1") as? WeekAdditional1 {
+        if let webViewController2 = storyboard.instantiateViewController(withIdentifier: "WeekAdditional") as? WeekAdditional {
             webViewController2.view.setNeedsLayout()
         }
     }

@@ -30,17 +30,14 @@ class ScheduleTableVC: UITableViewController, ENSideMenuDelegate {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
         let indexPath = tableView.indexPathForSelectedRow
         
-        let chosenWeek = indexPath!.row + 1
-        SharedVars.sharedInstance.weekNum = "Week \(chosenWeek)"
+        SharedVars.sharedInstance.weekNum = "Week \(indexPath!.row + 1)"
         SharedVars.sharedInstance.chosenWeek = indexPath!.row + 1
         
         let nextViewController = storyboard.instantiateViewController(withIdentifier: "WeekMain") as! WeekMain
 
- //       sideMenuController()?.setContentViewController(nextViewController)
-       self.navigationController?.pushViewController(nextViewController, animated: true)
+        self.navigationController?.pushViewController(nextViewController, animated: true)
             
         //    sideMenuController()?.setContentViewController(destinationVC)
     }
