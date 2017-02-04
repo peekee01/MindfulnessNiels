@@ -32,6 +32,7 @@
 		6592995A1E395907001B9B10 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659299591E395907001B9B10 /* CustomView.swift */; };
 		659934A11E3E267F004C2ADF /* ScheduleTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659934A01E3E267F004C2ADF /* ScheduleTableVC.swift */; };
 		659E55A61E45FB2400FABE77 /* ExerciseContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659E55A51E45FB2400FABE77 /* ExerciseContent.swift */; };
+		659E55A81E46109900FABE77 /* AdditionalContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659E55A71E46109900FABE77 /* AdditionalContent.swift */; };
 		65B6246F1E3FE02000A89488 /* 22 De soldaat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B6246E1E3FE02000A89488 /* 22 De soldaat.mp3 */; };
 		65B78C241E4084D600DBE1E2 /* SharedAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B78C231E4084D600DBE1E2 /* SharedAudioPlayer.swift */; };
 		65CEB9A11E43EE920001FC16 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CEB9A01E43EE920001FC16 /* VideoCell.swift */; };
@@ -80,6 +81,7 @@
 		659299591E395907001B9B10 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		659934A01E3E267F004C2ADF /* ScheduleTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableVC.swift; sourceTree = "<group>"; };
 		659E55A51E45FB2400FABE77 /* ExerciseContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseContent.swift; sourceTree = "<group>"; };
+		659E55A71E46109900FABE77 /* AdditionalContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionalContent.swift; sourceTree = "<group>"; };
 		65B6246E1E3FE02000A89488 /* 22 De soldaat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "22 De soldaat.mp3"; path = "../../../../Music/iTunes/iTunes Media/Music/Nick & Simon/Altijd Dichtbij (Live)/22 De soldaat.mp3"; sourceTree = "<group>"; };
 		65B78C231E4084D600DBE1E2 /* SharedAudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedAudioPlayer.swift; sourceTree = "<group>"; };
 		65CEB9A01E43EE920001FC16 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				6505F0971E3E7E650065D0A7 /* DailyQuote.swift */,
 				65B78C231E4084D600DBE1E2 /* SharedAudioPlayer.swift */,
 				659E55A51E45FB2400FABE77 /* ExerciseContent.swift */,
+				659E55A71E46109900FABE77 /* AdditionalContent.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				651B09C31E3E3DFB009075A9 /* WeekIntro1.swift in Sources */,
 				659E55A61E45FB2400FABE77 /* ExerciseContent.swift in Sources */,
 				653468BF1E43DF7500F6DE0A /* CustomImage.swift in Sources */,
+				659E55A81E46109900FABE77 /* AdditionalContent.swift in Sources */,
 				65DE95541E3CD9BC00A569D1 /* CustomQuote.swift in Sources */,
 				651B09C41E3E3DFB009075A9 /* WeekExercises1.swift in Sources */,
 				651B09BC1E3E3D7F009075A9 /* WeekExercises2.swift in Sources */,

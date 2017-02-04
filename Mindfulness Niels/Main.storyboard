@@ -980,42 +980,6 @@
             </objects>
             <point key="canvasLocation" x="4794" y="-208"/>
         </scene>
-        <!--Week Additional 2-->
-        <scene sceneID="xNc-7q-qZD">
-            <objects>
-                <viewController storyboardIdentifier="WeekAdditional2" id="rcF-7K-DFo" userLabel="Week Additional 2" customClass="WeekAdditional2" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="R4B-Ui-IVk"/>
-                        <viewControllerLayoutGuide type="bottom" id="eDp-zJ-qjz"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dil-nA-h2c">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="O4l-bj-j0X">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Videos2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3re-ih-atF">
-                                <rect key="frame" x="166" y="323" width="170" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="O4l-bj-j0X" secondAttribute="trailing" id="1Ee-A0-Qqr"/>
-                            <constraint firstItem="eDp-zJ-qjz" firstAttribute="top" secondItem="O4l-bj-j0X" secondAttribute="bottom" id="94a-CG-UVt"/>
-                            <constraint firstItem="O4l-bj-j0X" firstAttribute="leading" secondItem="dil-nA-h2c" secondAttribute="leading" id="AHn-eF-d9r"/>
-                            <constraint firstItem="O4l-bj-j0X" firstAttribute="top" secondItem="R4B-Ui-IVk" secondAttribute="bottom" id="d13-gT-QyP"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8te-RA-1Ms" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6334" y="-207"/>
-        </scene>
         <!--Week Intro 3-->
         <scene sceneID="w0h-to-lJa">
             <objects>
@@ -1055,42 +1019,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P3h-xA-rMq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4794" y="514"/>
-        </scene>
-        <!--Week Additional 3-->
-        <scene sceneID="5I8-Pq-mY5">
-            <objects>
-                <viewController storyboardIdentifier="WeekAdditional3" id="lcj-3j-rI1" userLabel="Week Additional 3" customClass="WeekAdditional2" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="bO5-Rz-IwE"/>
-                        <viewControllerLayoutGuide type="bottom" id="wII-wH-80r"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="EVI-Pk-hcs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="jNb-c5-QE5">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Videos3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJN-na-5Ij">
-                                <rect key="frame" x="166" y="323" width="170" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="jNb-c5-QE5" secondAttribute="trailing" id="LtN-6P-M93"/>
-                            <constraint firstItem="wII-wH-80r" firstAttribute="top" secondItem="jNb-c5-QE5" secondAttribute="bottom" id="On3-Xk-Mmq"/>
-                            <constraint firstItem="jNb-c5-QE5" firstAttribute="top" secondItem="bO5-Rz-IwE" secondAttribute="bottom" id="g4u-Xr-LPy"/>
-                            <constraint firstItem="jNb-c5-QE5" firstAttribute="leading" secondItem="EVI-Pk-hcs" secondAttribute="leading" id="nl9-Xl-kQg"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BQg-ZH-0di" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6334" y="515"/>
         </scene>
         <!--Week Intro 4-->
         <scene sceneID="v5P-ve-D1L">
@@ -1132,42 +1060,6 @@
             </objects>
             <point key="canvasLocation" x="4794" y="1232"/>
         </scene>
-        <!--Week Additional 4-->
-        <scene sceneID="9Wy-ve-8Yn">
-            <objects>
-                <viewController storyboardIdentifier="WeekAdditional4" id="pAV-Py-uG5" userLabel="Week Additional 4" customClass="WeekAdditional2" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tgH-Zk-CaT"/>
-                        <viewControllerLayoutGuide type="bottom" id="nff-c0-A2u"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6FR-Fd-bgM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="q8Y-nY-Mg2">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Videos4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3p-JN-2Sg">
-                                <rect key="frame" x="166" y="323" width="170" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="q8Y-nY-Mg2" secondAttribute="trailing" id="1ce-d0-1wh"/>
-                            <constraint firstItem="q8Y-nY-Mg2" firstAttribute="leading" secondItem="6FR-Fd-bgM" secondAttribute="leading" id="VUp-xO-BZR"/>
-                            <constraint firstItem="nff-c0-A2u" firstAttribute="top" secondItem="q8Y-nY-Mg2" secondAttribute="bottom" id="ueC-tS-GJG"/>
-                            <constraint firstItem="q8Y-nY-Mg2" firstAttribute="top" secondItem="tgH-Zk-CaT" secondAttribute="bottom" id="yzM-S8-9qx"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o1d-Ho-FCP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6334" y="1233"/>
-        </scene>
         <!--Week Intro 5-->
         <scene sceneID="bgO-YE-OF3">
             <objects>
@@ -1207,42 +1099,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KTO-Jj-Ag2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4794" y="1983"/>
-        </scene>
-        <!--Week Additional 5-->
-        <scene sceneID="NJQ-n2-UoI">
-            <objects>
-                <viewController storyboardIdentifier="WeekAdditional5" id="SEx-dc-6B5" userLabel="Week Additional 5" customClass="WeekAdditional2" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LWo-Xn-msc"/>
-                        <viewControllerLayoutGuide type="bottom" id="G8i-ih-1rx"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Txy-IR-Gry">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="Sve-jb-HxW">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Videos5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aL-Oy-sXc">
-                                <rect key="frame" x="166" y="323" width="170" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Sve-jb-HxW" secondAttribute="trailing" id="5bb-72-d5A"/>
-                            <constraint firstItem="G8i-ih-1rx" firstAttribute="top" secondItem="Sve-jb-HxW" secondAttribute="bottom" id="iXa-6U-Xtd"/>
-                            <constraint firstItem="Sve-jb-HxW" firstAttribute="leading" secondItem="Txy-IR-Gry" secondAttribute="leading" id="psF-h7-A6p"/>
-                            <constraint firstItem="Sve-jb-HxW" firstAttribute="top" secondItem="LWo-Xn-msc" secondAttribute="bottom" id="qBt-tA-Pwd"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YOl-Jl-BCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6334" y="1984"/>
         </scene>
         <!--Week Intro 6-->
         <scene sceneID="eRP-ym-kGz">
@@ -1284,42 +1140,6 @@
             </objects>
             <point key="canvasLocation" x="4794" y="2721"/>
         </scene>
-        <!--Week Additional 6-->
-        <scene sceneID="fd2-OH-BDj">
-            <objects>
-                <viewController storyboardIdentifier="WeekAdditional6" id="4EV-fs-fsb" userLabel="Week Additional 6" customClass="WeekAdditional2" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lg7-Qa-xJe"/>
-                        <viewControllerLayoutGuide type="bottom" id="aKz-xe-aVU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zQX-aT-3Mb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="Vds-tN-zch">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Videos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7v-4w-iEg">
-                                <rect key="frame" x="166" y="323" width="170" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Vds-tN-zch" firstAttribute="leading" secondItem="zQX-aT-3Mb" secondAttribute="leading" id="BtX-22-blm"/>
-                            <constraint firstAttribute="trailing" secondItem="Vds-tN-zch" secondAttribute="trailing" id="Qmi-FA-IhN"/>
-                            <constraint firstItem="aKz-xe-aVU" firstAttribute="top" secondItem="Vds-tN-zch" secondAttribute="bottom" id="YQM-CZ-RzR"/>
-                            <constraint firstItem="Vds-tN-zch" firstAttribute="top" secondItem="lg7-Qa-xJe" secondAttribute="bottom" id="a7L-5E-ISL"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Re3-XS-V83" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6334" y="2722"/>
-        </scene>
         <!--Week Intro 7-->
         <scene sceneID="oOy-DB-mJ6">
             <objects>
@@ -1360,42 +1180,6 @@
             </objects>
             <point key="canvasLocation" x="4794" y="3475"/>
         </scene>
-        <!--Week Additional 7-->
-        <scene sceneID="cCE-mb-grk">
-            <objects>
-                <viewController storyboardIdentifier="WeekAdditional7" id="wdi-SR-uHe" userLabel="Week Additional 7" customClass="WeekAdditional2" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gEW-QB-lMr"/>
-                        <viewControllerLayoutGuide type="bottom" id="Yhf-Zp-vFm"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="djM-lw-ffR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="3jd-ZX-jNi">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Videos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thh-Vu-GbY">
-                                <rect key="frame" x="166" y="323" width="170" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="3jd-ZX-jNi" firstAttribute="leading" secondItem="djM-lw-ffR" secondAttribute="leading" id="Hua-fv-Hen"/>
-                            <constraint firstAttribute="trailing" secondItem="3jd-ZX-jNi" secondAttribute="trailing" id="VGU-t9-E3q"/>
-                            <constraint firstItem="3jd-ZX-jNi" firstAttribute="top" secondItem="gEW-QB-lMr" secondAttribute="bottom" id="a35-qN-0gT"/>
-                            <constraint firstItem="Yhf-Zp-vFm" firstAttribute="top" secondItem="3jd-ZX-jNi" secondAttribute="bottom" id="v3M-Of-S9P"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CVg-Lu-rgo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6334" y="3475"/>
-        </scene>
         <!--Week Intro-->
         <scene sceneID="DDv-Vf-Q5C">
             <objects>
@@ -1435,42 +1219,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fu0-vD-BZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4794" y="4229"/>
-        </scene>
-        <!--Week Additional 8-->
-        <scene sceneID="KNP-fQ-lKq">
-            <objects>
-                <viewController storyboardIdentifier="WeekAdditional8" id="zU1-ic-TX8" userLabel="Week Additional 8" customClass="WeekAdditional2" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gqQ-uN-R3w"/>
-                        <viewControllerLayoutGuide type="bottom" id="dOb-tl-eEo"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mNg-68-4kZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="cNj-dD-d0E">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Videos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcb-mE-uuP">
-                                <rect key="frame" x="166" y="323" width="170" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="dOb-tl-eEo" firstAttribute="top" secondItem="cNj-dD-d0E" secondAttribute="bottom" id="dRW-VW-kbH"/>
-                            <constraint firstAttribute="trailing" secondItem="cNj-dD-d0E" secondAttribute="trailing" id="k0k-JJ-YDE"/>
-                            <constraint firstItem="cNj-dD-d0E" firstAttribute="top" secondItem="gqQ-uN-R3w" secondAttribute="bottom" id="kFM-Yt-Ip0"/>
-                            <constraint firstItem="cNj-dD-d0E" firstAttribute="leading" secondItem="mNg-68-4kZ" secondAttribute="leading" id="r4f-hZ-pdp"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZeG-Uf-a1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6334" y="4230"/>
         </scene>
         <!--AudioPlayerPopUp-->
         <scene sceneID="7zz-Vd-cRD">

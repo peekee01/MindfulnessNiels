@@ -15,8 +15,8 @@ class WeekAdditional1: UIViewController, UITableViewDelegate, UITableViewDataSou
     let videoCellIdentifier = "VideoCell"
     let code = "?&modestbranding=1&playsinline=1&controls=1&showinfo=0&rel=0\" frameborder=\"0\" allowfullscreen></iframe>"
     
-    var textVideo = ["Dit is filmpje 1", "Dit is filmpje 2", "en nog filmpje 3"]
-    var videoArray = ["https://www.youtube.com/embed/GLjelIPg3ys", "https://www.youtube.com/embed/9YRjX3A_8cM", "https://www.youtube.com/embed/BSmToj9VZ4s"]
+ //   var textVideo = ["Dit is filmpje 1", "Dit is filmpje 2", "en nog filmpje 3"]
+  //  var videoArray = ["https://www.youtube.com/embed/GLjelIPg3ys", "https://www.youtube.com/embed/9YRjX3A_8cM", "https://www.youtube.com/embed/BSmToj9VZ4s"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,17 +27,17 @@ class WeekAdditional1: UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return AdditionalContent.sharedInstance.objectsArray.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return videoArray.count
+        return AdditionalContent.sharedInstance.objectsArray[section].sectionDescriptions.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: videoCellIdentifier , for: indexPath) as! VideoCell
-        let videoURL = videoArray[indexPath.row]
-        cell.videoLbl.text = textVideo[indexPath.row]
+        let videoURL = AdditionalContent.sharedInstance.objectsArray[indexPath.section].sectionURLS[indexPath.row]
+        cell.videoLbl.text = AdditionalContent.sharedInstance.objectsArray[indexPath.section].sectionDescriptions[indexPath.row]
         cell.webView.scrollView.isScrollEnabled = false
         cell.webView.scrollView.bounces = false
         cell.webView.allowsInlineMediaPlayback = true
@@ -46,7 +46,7 @@ class WeekAdditional1: UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Videos"
+        return AdditionalContent.sharedInstance.objectsArray[section].sectionName
     }
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
