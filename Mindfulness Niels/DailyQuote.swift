@@ -39,8 +39,7 @@ class DailyQuote {
                 
                 quotes = data.components(separatedBy: "\n")
                 quotesAuthors = dataAuthor.components(separatedBy: "\n")
-
-
+                
                 // return the integer value of the date
                 
                 if quotes != nil {

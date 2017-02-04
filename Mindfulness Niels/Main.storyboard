@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -197,7 +197,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ecc-9T-5gM" id="hQA-DW-o7o">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week1" translatesAutoresizingMaskIntoConstraints="NO" id="klL-qe-ewn">
@@ -233,7 +233,7 @@
                                         <rect key="frame" x="0.0" y="170" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gtW-ER-oh8" id="H7h-yP-tMz">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week2" translatesAutoresizingMaskIntoConstraints="NO" id="GPe-TH-WVj">
@@ -271,7 +271,7 @@
                                         <rect key="frame" x="0.0" y="340" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Hb-1C-qv2" id="9Q8-vZ-FpS">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week3" translatesAutoresizingMaskIntoConstraints="NO" id="FMb-qB-cOW">
@@ -307,7 +307,7 @@
                                         <rect key="frame" x="0.0" y="510" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LTP-yd-VYz" id="i6h-hG-efz">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week1" translatesAutoresizingMaskIntoConstraints="NO" id="bcj-JJ-mUo">
@@ -343,7 +343,7 @@
                                         <rect key="frame" x="0.0" y="680" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zdg-Ue-hxe" id="856-KL-7BV">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week2" translatesAutoresizingMaskIntoConstraints="NO" id="4xD-xn-nsu">
@@ -379,7 +379,7 @@
                                         <rect key="frame" x="0.0" y="850" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sRJ-RN-CPd" id="LY0-tk-Ta9">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week3" translatesAutoresizingMaskIntoConstraints="NO" id="oot-r1-hNG">
@@ -415,7 +415,7 @@
                                         <rect key="frame" x="0.0" y="1020" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yuq-Gm-1Rv" id="Gcj-VK-4ua">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week1" translatesAutoresizingMaskIntoConstraints="NO" id="T6N-Gc-VDI">
@@ -451,7 +451,7 @@
                                         <rect key="frame" x="0.0" y="1190" width="375" height="170"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="70F-gb-udX" id="XAz-Id-MLF">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Week2" translatesAutoresizingMaskIntoConstraints="NO" id="fNA-IJ-FwB">
@@ -687,18 +687,18 @@
                                         <rect key="frame" x="0.0" y="55" width="200" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="puW-QH-E1r" id="Rdc-KB-Iqa">
-                                            <rect key="frame" x="0.0" y="0.0" width="200" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Week 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zZ3-vX-gNq">
-                                                    <rect key="frame" x="15" y="10" width="53" height="19"/>
+                                                    <rect key="frame" x="15" y="9" width="53" height="19"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Living in our heads" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DLT-Ra-g3a">
-                                                    <rect key="frame" x="15" y="29" width="109" height="17"/>
+                                                    <rect key="frame" x="15" y="28" width="109" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
                                                     <nil key="textColor"/>
@@ -807,18 +807,18 @@
                                         <rect key="frame" x="0.0" y="330" width="200" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ewY-Di-nG0" id="k9N-Gd-Tc2">
-                                            <rect key="frame" x="0.0" y="0.0" width="200" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Week 7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Q2U-PW-ch8">
-                                                    <rect key="frame" x="15" y="10" width="53" height="19"/>
+                                                    <rect key="frame" x="15" y="9" width="53" height="19"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Taking care of ourselves" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KII-CF-608">
-                                                    <rect key="frame" x="15" y="29" width="140" height="17"/>
+                                                    <rect key="frame" x="15" y="28" width="140" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
                                                     <nil key="textColor"/>
@@ -1016,123 +1016,6 @@
             </objects>
             <point key="canvasLocation" x="6334" y="-207"/>
         </scene>
-        <!--Week Exercises2-->
-        <scene sceneID="0G3-Tg-Wpd">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QhJ-Wh-Xrk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="WeekExercises2" id="DIw-5z-2l8" userLabel="Week Exercises2" customClass="WeekExercises2" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3Iy-24-lfI"/>
-                        <viewControllerLayoutGuide type="bottom" id="sbd-hr-Nj3"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kw8-Tf-dXX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_grey" translatesAutoresizingMaskIntoConstraints="NO" id="Zog-St-tzA">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="OFf-Je-SDt">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="sectionIndexBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TextCell" id="njU-jL-VIg" customClass="TextCell" customModule="Mindfulness_Niels" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="njU-jL-VIg" id="uvn-tS-g0Z">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="343" translatesAutoresizingMaskIntoConstraints="NO" id="N6I-lb-HOt">
-                                                    <rect key="frame" x="16" y="11" width="343" height="21.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="N6I-lb-HOt" firstAttribute="top" secondItem="uvn-tS-g0Z" secondAttribute="topMargin" constant="3" id="5GN-6e-TS5"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="N6I-lb-HOt" secondAttribute="bottom" constant="3" id="EfP-CB-JkC"/>
-                                                <constraint firstItem="N6I-lb-HOt" firstAttribute="leading" secondItem="uvn-tS-g0Z" secondAttribute="leadingMargin" constant="8" id="Jrz-X0-Jc3"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="N6I-lb-HOt" secondAttribute="trailing" constant="8" id="y8g-tH-cGj"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="0.89791027607361962" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <outlet property="cellLabel" destination="N6I-lb-HOt" id="g5D-wa-gCo"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AudioCell" id="mxs-Mh-7CH" customClass="AudioCell" customModule="Mindfulness_Niels" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="100" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mxs-Mh-7CH" id="usx-VX-eCo">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AudioTitle" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="343" translatesAutoresizingMaskIntoConstraints="NO" id="khf-cs-n8G">
-                                                    <rect key="frame" x="41" y="11" width="318" height="21.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circled Play-25" translatesAutoresizingMaskIntoConstraints="NO" id="aie-wg-qKg">
-                                                    <rect key="frame" x="8" y="9.5" width="25" height="25"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="25" id="EPK-Bs-a5Q"/>
-                                                        <constraint firstAttribute="height" constant="25" id="MR4-rz-xg7"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="343" translatesAutoresizingMaskIntoConstraints="NO" id="zTK-9u-72U">
-                                                    <rect key="frame" x="16" y="11" width="343" height="21.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="zTK-9u-72U" secondAttribute="trailing" constant="8" id="5bP-cx-wVS"/>
-                                                <constraint firstItem="zTK-9u-72U" firstAttribute="leading" secondItem="usx-VX-eCo" secondAttribute="leadingMargin" constant="8" id="MfF-qW-Nd0"/>
-                                                <constraint firstItem="khf-cs-n8G" firstAttribute="leading" secondItem="aie-wg-qKg" secondAttribute="trailing" constant="8" id="QkZ-Li-pjV"/>
-                                                <constraint firstItem="aie-wg-qKg" firstAttribute="centerY" secondItem="usx-VX-eCo" secondAttribute="centerY" id="SXz-5I-yua"/>
-                                                <constraint firstItem="aie-wg-qKg" firstAttribute="leading" secondItem="usx-VX-eCo" secondAttribute="leading" constant="8" id="cnQ-oj-sjZ"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="khf-cs-n8G" secondAttribute="bottom" constant="3" id="jL6-Ur-zI1"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="zTK-9u-72U" secondAttribute="bottom" constant="3" id="t2Y-Vx-X1h"/>
-                                                <constraint firstItem="zTK-9u-72U" firstAttribute="top" secondItem="usx-VX-eCo" secondAttribute="topMargin" constant="3" id="vJQ-RG-UyP"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="khf-cs-n8G" secondAttribute="trailing" constant="8" id="vYn-qi-GRG"/>
-                                                <constraint firstItem="khf-cs-n8G" firstAttribute="top" secondItem="usx-VX-eCo" secondAttribute="topMargin" constant="3" id="z65-Cs-7zA"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <outlet property="fakeLbl" destination="zTK-9u-72U" id="ifO-5b-0oZ"/>
-                                            <outlet property="titleLbl" destination="khf-cs-n8G" id="qGR-pN-Vh2"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Zog-St-tzA" secondAttribute="trailing" id="3N6-yE-7By"/>
-                            <constraint firstAttribute="trailing" secondItem="OFf-Je-SDt" secondAttribute="trailing" id="7DV-Qr-h0m"/>
-                            <constraint firstItem="OFf-Je-SDt" firstAttribute="top" secondItem="3Iy-24-lfI" secondAttribute="bottom" id="Ltt-wV-Y87"/>
-                            <constraint firstItem="Zog-St-tzA" firstAttribute="top" secondItem="3Iy-24-lfI" secondAttribute="bottom" id="dnY-3b-3hX"/>
-                            <constraint firstItem="Zog-St-tzA" firstAttribute="leading" secondItem="kw8-Tf-dXX" secondAttribute="leading" id="gGr-Wo-Shh"/>
-                            <constraint firstItem="sbd-hr-Nj3" firstAttribute="top" secondItem="Zog-St-tzA" secondAttribute="bottom" id="gNk-Hj-63x"/>
-                            <constraint firstItem="OFf-Je-SDt" firstAttribute="leading" secondItem="kw8-Tf-dXX" secondAttribute="leading" id="ok7-EM-Mxa"/>
-                            <constraint firstItem="sbd-hr-Nj3" firstAttribute="top" secondItem="OFf-Je-SDt" secondAttribute="bottom" id="qif-AF-J2h"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="tableView" destination="OFf-Je-SDt" id="vzC-8h-Lch"/>
-                    </connections>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="5549.6000000000004" y="-207.34632683658174"/>
-        </scene>
         <!--Week Intro 3-->
         <scene sceneID="w0h-to-lJa">
             <objects>
@@ -1208,42 +1091,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQg-ZH-0di" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6334" y="515"/>
-        </scene>
-        <!--Week Exercises3-->
-        <scene sceneID="nUA-dm-tNO">
-            <objects>
-                <viewController storyboardIdentifier="WeekExercises3" id="J0g-F7-b8C" userLabel="Week Exercises3" customClass="WeekExercises1" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="f4n-QA-zOV"/>
-                        <viewControllerLayoutGuide type="bottom" id="4Sp-3B-Mit"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Kgn-rj-qC7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="jZk-aQ-Pvf">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Excercises3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXd-NI-7hE">
-                                <rect key="frame" x="166" y="323" width="170" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="4Sp-3B-Mit" firstAttribute="top" secondItem="jZk-aQ-Pvf" secondAttribute="bottom" id="3me-HO-fc6"/>
-                            <constraint firstItem="jZk-aQ-Pvf" firstAttribute="top" secondItem="f4n-QA-zOV" secondAttribute="bottom" id="Gbq-hh-lP6"/>
-                            <constraint firstItem="jZk-aQ-Pvf" firstAttribute="leading" secondItem="Kgn-rj-qC7" secondAttribute="leading" id="GxN-Um-Mnn"/>
-                            <constraint firstAttribute="trailing" secondItem="jZk-aQ-Pvf" secondAttribute="trailing" id="m0m-Bu-iyA"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tzI-mS-ouP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5550" y="515"/>
         </scene>
         <!--Week Intro 4-->
         <scene sceneID="v5P-ve-D1L">
@@ -1321,42 +1168,6 @@
             </objects>
             <point key="canvasLocation" x="6334" y="1233"/>
         </scene>
-        <!--Week Exercises4-->
-        <scene sceneID="MxH-kO-Lri">
-            <objects>
-                <viewController storyboardIdentifier="WeekExercises4" id="XpZ-nv-6cN" userLabel="Week Exercises4" customClass="WeekExercises1" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mLF-rp-iTE"/>
-                        <viewControllerLayoutGuide type="bottom" id="vli-J0-6IZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6hF-LI-gCB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="3HW-bR-6rV">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Excercises4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FwU-86-HEa">
-                                <rect key="frame" x="166" y="323" width="170" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="3HW-bR-6rV" firstAttribute="top" secondItem="mLF-rp-iTE" secondAttribute="bottom" id="Ruw-uy-0Yh"/>
-                            <constraint firstItem="3HW-bR-6rV" firstAttribute="leading" secondItem="6hF-LI-gCB" secondAttribute="leading" id="fAV-yn-E3U"/>
-                            <constraint firstAttribute="trailing" secondItem="3HW-bR-6rV" secondAttribute="trailing" id="kLb-NX-5zm"/>
-                            <constraint firstItem="vli-J0-6IZ" firstAttribute="top" secondItem="3HW-bR-6rV" secondAttribute="bottom" id="kmg-E1-WtN"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2Mn-5Y-lab" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5550" y="1233"/>
-        </scene>
         <!--Week Intro 5-->
         <scene sceneID="bgO-YE-OF3">
             <objects>
@@ -1432,42 +1243,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOl-Jl-BCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6334" y="1984"/>
-        </scene>
-        <!--Week Exercises5-->
-        <scene sceneID="xDq-RD-cQB">
-            <objects>
-                <viewController storyboardIdentifier="WeekExercises5" id="JZl-A4-mt9" userLabel="Week Exercises5" customClass="WeekExercises1" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3W9-AN-LCi"/>
-                        <viewControllerLayoutGuide type="bottom" id="Xmn-EJ-8BJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aTk-Au-Qd8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="cky-YY-oeU">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Excercises5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdw-Y5-GnO">
-                                <rect key="frame" x="166" y="323" width="170" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="cky-YY-oeU" firstAttribute="leading" secondItem="aTk-Au-Qd8" secondAttribute="leading" id="JSr-nW-iDu"/>
-                            <constraint firstItem="cky-YY-oeU" firstAttribute="top" secondItem="3W9-AN-LCi" secondAttribute="bottom" id="MBe-4w-6Ej"/>
-                            <constraint firstAttribute="trailing" secondItem="cky-YY-oeU" secondAttribute="trailing" id="XnH-eN-FgU"/>
-                            <constraint firstItem="Xmn-EJ-8BJ" firstAttribute="top" secondItem="cky-YY-oeU" secondAttribute="bottom" id="hlt-aF-hRG"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HG0-gC-2aA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5550" y="1984"/>
         </scene>
         <!--Week Intro 6-->
         <scene sceneID="eRP-ym-kGz">
@@ -1545,42 +1320,6 @@
             </objects>
             <point key="canvasLocation" x="6334" y="2722"/>
         </scene>
-        <!--Week Exercises6-->
-        <scene sceneID="deI-xf-3Rq">
-            <objects>
-                <viewController storyboardIdentifier="WeekExercises6" id="XhY-W6-0s2" userLabel="Week Exercises6" customClass="WeekExercises1" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="O6L-zy-8pQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="6Jg-oA-hmT"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="daV-YX-dka">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="FaP-iJ-YTu">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Excercises" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Qt-8t-vq1">
-                                <rect key="frame" x="166" y="323" width="170" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="FaP-iJ-YTu" firstAttribute="leading" secondItem="daV-YX-dka" secondAttribute="leading" id="EEs-ct-orN"/>
-                            <constraint firstItem="FaP-iJ-YTu" firstAttribute="top" secondItem="O6L-zy-8pQ" secondAttribute="bottom" id="HKh-0n-cmT"/>
-                            <constraint firstItem="6Jg-oA-hmT" firstAttribute="top" secondItem="FaP-iJ-YTu" secondAttribute="bottom" id="iyg-ML-pnH"/>
-                            <constraint firstAttribute="trailing" secondItem="FaP-iJ-YTu" secondAttribute="trailing" id="q9k-Yw-iHE"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SpY-gg-JEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5550" y="2722"/>
-        </scene>
         <!--Week Intro 7-->
         <scene sceneID="oOy-DB-mJ6">
             <objects>
@@ -1657,42 +1396,6 @@
             </objects>
             <point key="canvasLocation" x="6334" y="3475"/>
         </scene>
-        <!--Week Exercises7-->
-        <scene sceneID="64Y-rC-Hb2">
-            <objects>
-                <viewController storyboardIdentifier="WeekExercises7" id="4LL-fg-Fug" userLabel="Week Exercises7" customClass="WeekExercises1" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Tvs-a5-ea6"/>
-                        <viewControllerLayoutGuide type="bottom" id="IOl-G4-uyk"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QCm-N9-yUo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="ApI-H3-m7i">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Excercises" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvs-zb-rZu">
-                                <rect key="frame" x="166" y="323" width="170" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ApI-H3-m7i" firstAttribute="leading" secondItem="QCm-N9-yUo" secondAttribute="leading" id="CGw-Qp-202"/>
-                            <constraint firstAttribute="trailing" secondItem="ApI-H3-m7i" secondAttribute="trailing" id="G4M-1y-tG6"/>
-                            <constraint firstItem="ApI-H3-m7i" firstAttribute="top" secondItem="Tvs-a5-ea6" secondAttribute="bottom" id="aHR-ze-GBP"/>
-                            <constraint firstItem="IOl-G4-uyk" firstAttribute="top" secondItem="ApI-H3-m7i" secondAttribute="bottom" id="q2t-mf-RO9"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PoB-vY-P8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5550" y="3476"/>
-        </scene>
         <!--Week Intro-->
         <scene sceneID="DDv-Vf-Q5C">
             <objects>
@@ -1768,42 +1471,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZeG-Uf-a1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6334" y="4230"/>
-        </scene>
-        <!--Week Exercises8-->
-        <scene sceneID="SBj-cj-Cne">
-            <objects>
-                <viewController storyboardIdentifier="WeekExercises8" id="A6E-oM-R7y" userLabel="Week Exercises8" customClass="WeekExercises1" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Uvq-fa-oDr"/>
-                        <viewControllerLayoutGuide type="bottom" id="Bxy-ei-gCz"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Lzx-Ye-LXV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_green" translatesAutoresizingMaskIntoConstraints="NO" id="5cr-fG-RBq">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Excercises" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yai-xI-Q0M">
-                                <rect key="frame" x="166" y="323" width="170" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="5cr-fG-RBq" firstAttribute="top" secondItem="Uvq-fa-oDr" secondAttribute="bottom" id="Ayj-Sx-gV0"/>
-                            <constraint firstItem="5cr-fG-RBq" firstAttribute="leading" secondItem="Lzx-Ye-LXV" secondAttribute="leading" id="DBy-h5-ODo"/>
-                            <constraint firstItem="Bxy-ei-gCz" firstAttribute="top" secondItem="5cr-fG-RBq" secondAttribute="bottom" id="LQF-1y-p0r"/>
-                            <constraint firstAttribute="trailing" secondItem="5cr-fG-RBq" secondAttribute="trailing" id="zJa-Re-Lho"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ME3-kJ-TEQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5550" y="4231"/>
         </scene>
         <!--AudioPlayerPopUp-->
         <scene sceneID="7zz-Vd-cRD">
@@ -1922,7 +1589,6 @@
         <!--Week Exercises1-->
         <scene sceneID="JKv-Mr-IZ5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XHt-Jj-RG4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="WeekExercises1" automaticallyAdjustsScrollViewInsets="NO" id="VgO-vy-8Sy" userLabel="Week Exercises1" customClass="WeekExercises1" customModule="Mindfulness_Niels" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ymv-Cq-EY4"/>
@@ -2016,6 +1682,7 @@
                         <outlet property="tableView" destination="mhb-p5-HIu" id="zzC-Kh-qTI"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XHt-Jj-RG4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5569" y="-941"/>
         </scene>
@@ -2031,7 +1698,6 @@
         <image name="bg_Week1" width="1560" height="641"/>
         <image name="bg_Week2" width="1559" height="642"/>
         <image name="bg_Week3" width="1560" height="643"/>
-        <image name="bg_grey" width="695" height="1280"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="mej-fv-Fmx"/>
