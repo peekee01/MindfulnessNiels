@@ -66,7 +66,6 @@ class WeekMain: UIViewController, ENSideMenuDelegate {
         toggleSideMenuView()
     }
 
-    
     @IBAction func switchTabs(_ sender: UISegmentedControl) {
         self.currentViewController!.view.removeFromSuperview()
         self.currentViewController!.removeFromParentViewController()

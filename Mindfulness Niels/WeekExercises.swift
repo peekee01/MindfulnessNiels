@@ -37,7 +37,7 @@ class WeekExercises: UIViewController, UITableViewDelegate, UITableViewDataSourc
         NotificationCenter.default.addObserver(self, selector: #selector(WeekExercises.showRemoveBlur), name:NSNotification.Name(rawValue: "showRemoveBlur"), object: nil)
         
         
-        //        objectsArray = [Objects(sectionName: "Formal practice", sectionObjects: ["Go through the week 1 pages of the Home Practice Handbook", "Do the guided audio practice (Body Scan, 15 to 15 min) six days a week"]), Objects(sectionName: "Informal practice", sectionObjects: ["Eat one meal (or one bite) mindfully", "Attempt to solve the 9 dots exercise, while noticing how you go about solving it"]), Objects(sectionName: "Insight practice", sectionObjects: ["Keeping a daily log of your practice (use the form in your Home Practice Handbook) to record your experience", "Identify your intentions for this course"]), Objects(sectionName: "Audio", sectionObjects: ["22 De soldaat", "Body Scan", "11.  Mindfulness of breathing and body mediation"])]
+        //        objectsArray = [Objects(sectionName: "Formal practice", sectionObjects: ["Go through the week 1 pages of the Home Practice Handbook", "Do the guided audio practice (Body Scan, 15 to 15 min) six days a week"]), Objects(sectionName: "Informal practice", sectionObjects: ["Eat one meal (or one bite) mindfully", "Attempt to solve the 9 dots exercise, while noticing how you go about solving it"]), Objects(sectionName: "Insight practice", sectionObjects: ["Keeping a daily log of your practice (use the form in your Home Practice Handbook) to record your experience", "Identify your intentions for this course"]), Objects(sectionName: "Audio", sectionObjects: ["De soldaat", "Body Scan", "Mindfulness of breathing and body mediation"])]
     }
     
     
@@ -76,7 +76,7 @@ class WeekExercises: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 35
+        return 30
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -109,23 +109,19 @@ class WeekExercises: UIViewController, UITableViewDelegate, UITableViewDataSourc
             blurView = UIVisualEffectView(effect: blurEffect)
             blurView?.frame.size = CGSize(width: self.view.frame.size.width, height: self.view.frame.size.height)
             blurView?.center = CGPoint(x: self.view.frame.size.width/2, y:  self.view.frame.size.height/2)
+            blurView?.layer.masksToBounds = false
+            blurView?.layer.cornerRadius = 6.0
             
             self.view.addSubview(blurView!)
-            UIView.animate(withDuration: 1.0) {
-                self.blurView?.alpha = 1
-            }
-            
+//            UIView.animate(withDuration: 2.5) {
+//                self.blurView?.effect = UIBlurEffect(style: .regular)
+//            }
             isBlurred = true
         } else {
-            //            blurView!.removeFromSuperview()
-            //            UIView.animate(withDuration: 2.8) {
-            //                self.blurView?.effect = UIBlurEffect(style: .dark)
-            //            }
             UIView.animate(withDuration: 0.5, animations: {
-                //  EITHER...
-                //                self.blurView!.effect = UIBlurEffect(nil)
-                //  OR...
-                self.blurView?.alpha = 0
+                self.blurView?.effect = UIBlurEffect(style: .dark)
+
+//                self.blurView?.alpha = 0
             }, completion: { (finished: Bool) -> Void in
                 self.blurView?.removeFromSuperview()
             } )

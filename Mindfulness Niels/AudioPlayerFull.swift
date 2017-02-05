@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MediaPlayer
 
 class AudioPlayerFull: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -18,26 +19,52 @@ class AudioPlayerFull: UIViewController, UITableViewDelegate, UITableViewDataSou
     @IBOutlet weak var tableView: UITableView!
     
     let audioCellIdentifier = "AudioCell"
+    var mp3FileNames: [String] = []
     
     struct Objects {
         var sectionName: String!
         var sectionObjects: [String]!
     }
     
-    var objectsArray = [Objects(sectionName: "Audio", sectionObjects: ["22 De soldaat", "Body Scan", "11.  Mindfulness of breathing and body mediation"])]
+    var objectsArray = [Objects(sectionName: "Audio", sectionObjects: ["initial file"])]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UIApplication.shared.beginReceivingRemoteControlEvents()
+        
+        findAudioFiles()
+        objectsArray = [Objects(sectionName: "Audio", sectionObjects: mp3FileNames)]
+        
         SharedAudioPlayer.sharedInstance.loadAudioPlayer()
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AudioPlayerVC.updateAudioSlider), userInfo: nil, repeats: true)
-        _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AudioPlayerVC.updateLabels), userInfo: nil, repeats: true)
-        _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AudioPlayerVC.checkPlaying), userInfo: nil, repeats: true)
+        _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AudioPlayerFull.updateAudioSlider), userInfo: nil, repeats: true)
+        _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AudioPlayerFull.updateLabels), userInfo: nil, repeats: true)
+        _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AudioPlayerFull.checkPlaying), userInfo: nil, repeats: true)
+        _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(AudioPlayerFull.updateNowPlayingInfoCenter), userInfo: nil, repeats: true)
         updateLabels()
     }
+    
+    func findAudioFiles() {
+        let audioPath = Bundle.main.resourcePath!
+        let fileManager = FileManager.default
+        
+        do {
+            let audioArray = try fileManager.contentsOfDirectory(atPath: audioPath)
+            for i in audioArray {
+                if i.hasSuffix("mp3") {
+                    let fileNameWithoutSuffix = i.components(separatedBy: ".").first!
+                    mp3FileNames.append(fileNameWithoutSuffix)
+                }
+            }
+        } catch {
+            print(error)
+        }
+    }
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return objectsArray.count
@@ -66,7 +93,7 @@ class AudioPlayerFull: UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 35
+        return 30
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -96,13 +123,10 @@ class AudioPlayerFull: UIViewController, UITableViewDelegate, UITableViewDataSou
     
     @IBAction func pausePlayBtn(_ sender: UIButton) {
         if audioTitle.text == "" {
-            print("choose a song first")
             // create the alert
             let alert = UIAlertController(title: "No song selected", message: "Please choose a song first", preferredStyle: UIAlertControllerStyle.alert)
-            
             // add an action (button)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            
             // show the alert
             self.present(alert, animated: true, completion: nil)
         } else {
@@ -112,10 +136,11 @@ class AudioPlayerFull: UIViewController, UITableViewDelegate, UITableViewDataSou
             } else {
                 SharedAudioPlayer.sharedInstance.sharedPlayer.play()
                 pausePlay.setImage(UIImage(named: "Audio_pause.png"), for: UIControlState.normal)
+                updateNowPlayingInfoCenter()
             }
         }
     }
-    
+
     func checkPlaying() {
         if SharedAudioPlayer.sharedInstance.sharedPlayer.isPlaying == true {
             pausePlay.setImage(UIImage(named: "Audio_pause.png"), for: UIControlState.normal)
@@ -157,6 +182,34 @@ class AudioPlayerFull: UIViewController, UITableViewDelegate, UITableViewDataSou
             timeRemaining.text = String(format: "%0.2d:%0.2d",remainingMinutes,remainingSeconds)
             audioTitle.text = SharedVars.sharedInstance.audioTitle
         }
+    }
+    
+    override func remoteControlReceived(with event: UIEvent?) {
+        if event?.type == UIEventType.remoteControl {
+            if event?.subtype == UIEventSubtype.remoteControlTogglePlayPause {
+                print("pauze gedrukt")
+                SharedAudioPlayer.sharedInstance.sharedPlayer.stop()
+            } else if event?.subtype == UIEventSubtype.remoteControlNextTrack {
+                SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime = SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime + 15
+                updateNowPlayingInfoCenter()
+            } else if event?.subtype == UIEventSubtype.remoteControlPause {
+                SharedAudioPlayer.sharedInstance.sharedPlayer.stop()
+            } else if event?.subtype == UIEventSubtype.remoteControlPlay {
+                SharedAudioPlayer.sharedInstance.sharedPlayer.play()
+            } else if event?.subtype == UIEventSubtype.remoteControlPreviousTrack {
+                SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime = SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime - 15
+            }
+        }
+    }
+    
+    func updateNowPlayingInfoCenter() {
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = [
+            MPMediaItemPropertyTitle: audioTitle.text as Any,
+            MPMediaItemPropertyArtist: "School of Mindfulness",
+            MPMediaItemPropertyPlaybackDuration: SharedAudioPlayer.sharedInstance.sharedPlayer.duration,
+            MPNowPlayingInfoPropertyElapsedPlaybackTime: SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime
+        ]
+
     }
     
 }

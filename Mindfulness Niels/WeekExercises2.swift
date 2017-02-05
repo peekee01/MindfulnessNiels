@@ -33,7 +33,7 @@ class WeekExercises2: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.estimatedRowHeight = 70
         self.tableView.rowHeight = UITableViewAutomaticDimension
         
-        objectsArray = [Objects(sectionName: "Formal practice", sectionObjects: ["Go through the week 1 pages of the Home Practice Handbook", "Do the guided audio practice (Body Scan, 15 to 15 min) six days a week"]), Objects(sectionName: "Informal practice", sectionObjects: ["Eat one meal (or one bite) mindfully", "Attempt to solve the 9 dots exercise, while noticing how you go about solving it"]), Objects(sectionName: "Insight practice", sectionObjects: ["Keeping a daily log of your practice (use the form in your Home Practice Handbook) to record your experience", "Identify your intentions for this course"]), Objects(sectionName: "Audio", sectionObjects: ["22 De soldaat", "Body Scan", "11.  Mindfulness of breathing and body mediation"])]
+        objectsArray = [Objects(sectionName: "Formal practice", sectionObjects: ["Go through the week 1 pages of the Home Practice Handbook", "Do the guided audio practice (Body Scan, 15 to 15 min) six days a week"]), Objects(sectionName: "Informal practice", sectionObjects: ["Eat one meal (or one bite) mindfully", "Attempt to solve the 9 dots exercise, while noticing how you go about solving it"]), Objects(sectionName: "Insight practice", sectionObjects: ["Keeping a daily log of your practice (use the form in your Home Practice Handbook) to record your experience", "Identify your intentions for this course"]), Objects(sectionName: "Audio", sectionObjects: ["De soldaat", "Body Scan", "Mindfulness of breathing and body mediation"])]
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

@@ -57,7 +57,7 @@ class WeekAdditional: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 35
+        return 30
     }
 }
 

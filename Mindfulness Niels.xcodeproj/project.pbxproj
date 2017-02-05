@@ -20,6 +20,11 @@
 		651B09C61E3E3DFB009075A9 /* WeekAdditional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651B09C21E3E3DFB009075A9 /* WeekAdditional.swift */; };
 		653468BF1E43DF7500F6DE0A /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653468BE1E43DF7500F6DE0A /* CustomImage.swift */; };
 		6547F60E1E4750B7006CF37C /* AudioPlayerFull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6547F60D1E4750B6006CF37C /* AudioPlayerFull.swift */; };
+		6547F6101E4772A1006CF37C /* Bitter Sweet Symphony.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6547F60F1E4772A1006CF37C /* Bitter Sweet Symphony.mp3 */; };
+		6547F6121E4776B1006CF37C /* Behind Blue Eyes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6547F6111E4776B1006CF37C /* Behind Blue Eyes.mp3 */; };
+		6547F6141E4776B7006CF37C /* 15 Miljoen Mensen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6547F6131E4776B7006CF37C /* 15 Miljoen Mensen.mp3 */; };
+		6547F6161E4776BD006CF37C /* (Sittin' On) The Dock Of The Bay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6547F6151E4776BD006CF37C /* (Sittin' On) The Dock Of The Bay.mp3 */; };
+		6547F6181E4776C4006CF37C /* Angie.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6547F6171E4776C4006CF37C /* Angie.mp3 */; };
 		6561BAB01E39514000B468BA /* Week 3.html in Resources */ = {isa = PBXBuildFile; fileRef = 6561BAAF1E39514000B468BA /* Week 3.html */; };
 		656C58CA1E391CB8009285B7 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C58C91E391CB8009285B7 /* SideMenuVC.swift */; };
 		656C58CC1E391D60009285B7 /* MenuTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C58CB1E391D60009285B7 /* MenuTableVC.swift */; };
@@ -33,12 +38,12 @@
 		659934A11E3E267F004C2ADF /* ScheduleTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659934A01E3E267F004C2ADF /* ScheduleTableVC.swift */; };
 		659E55A61E45FB2400FABE77 /* ExerciseContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659E55A51E45FB2400FABE77 /* ExerciseContent.swift */; };
 		659E55A81E46109900FABE77 /* AdditionalContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659E55A71E46109900FABE77 /* AdditionalContent.swift */; };
-		65B6246F1E3FE02000A89488 /* 22 De soldaat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B6246E1E3FE02000A89488 /* 22 De soldaat.mp3 */; };
+		65B6246F1E3FE02000A89488 /* De soldaat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65B6246E1E3FE02000A89488 /* De soldaat.mp3 */; };
 		65B78C241E4084D600DBE1E2 /* SharedAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B78C231E4084D600DBE1E2 /* SharedAudioPlayer.swift */; };
 		65CEB9A11E43EE920001FC16 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CEB9A01E43EE920001FC16 /* VideoCell.swift */; };
 		65D452C51E3FBE0A0023EAA9 /* AudioPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D452C41E3FBE0A0023EAA9 /* AudioPlayerVC.swift */; };
 		65D452C91E3FCD180023EAA9 /* Body Scan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65D452C61E3FCD180023EAA9 /* Body Scan.mp3 */; };
-		65D452CA1E3FCD180023EAA9 /* 11.  Mindfulness of breathing and body mediation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65D452C71E3FCD180023EAA9 /* 11.  Mindfulness of breathing and body mediation.mp3 */; };
+		65D452CA1E3FCD180023EAA9 /* Mindfulness of breathing and body mediation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65D452C71E3FCD180023EAA9 /* Mindfulness of breathing and body mediation.mp3 */; };
 		65D452CD1E3FCEE10023EAA9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D452CC1E3FCEE10023EAA9 /* AVFoundation.framework */; };
 		65DE95521E3CD7A600A569D1 /* Quotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 65DE95511E3CD7A600A569D1 /* Quotes.txt */; };
 		65DE95541E3CD9BC00A569D1 /* CustomQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE95531E3CD9BC00A569D1 /* CustomQuote.swift */; };
@@ -68,6 +73,11 @@
 		651B09C21E3E3DFB009075A9 /* WeekAdditional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekAdditional.swift; sourceTree = "<group>"; };
 		653468BE1E43DF7500F6DE0A /* CustomImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
 		6547F60D1E4750B6006CF37C /* AudioPlayerFull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerFull.swift; sourceTree = "<group>"; };
+		6547F60F1E4772A1006CF37C /* Bitter Sweet Symphony.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bitter Sweet Symphony.mp3"; sourceTree = "<group>"; };
+		6547F6111E4776B1006CF37C /* Behind Blue Eyes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Behind Blue Eyes.mp3"; sourceTree = "<group>"; };
+		6547F6131E4776B7006CF37C /* 15 Miljoen Mensen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "15 Miljoen Mensen.mp3"; sourceTree = "<group>"; };
+		6547F6151E4776BD006CF37C /* (Sittin' On) The Dock Of The Bay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "(Sittin' On) The Dock Of The Bay.mp3"; sourceTree = "<group>"; };
+		6547F6171E4776C4006CF37C /* Angie.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Angie.mp3; sourceTree = "<group>"; };
 		6561BAAF1E39514000B468BA /* Week 3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Week 3.html"; sourceTree = "<group>"; };
 		656C58C91E391CB8009285B7 /* SideMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		656C58CB1E391D60009285B7 /* MenuTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableVC.swift; sourceTree = "<group>"; };
@@ -83,12 +93,12 @@
 		659934A01E3E267F004C2ADF /* ScheduleTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableVC.swift; sourceTree = "<group>"; };
 		659E55A51E45FB2400FABE77 /* ExerciseContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseContent.swift; sourceTree = "<group>"; };
 		659E55A71E46109900FABE77 /* AdditionalContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionalContent.swift; sourceTree = "<group>"; };
-		65B6246E1E3FE02000A89488 /* 22 De soldaat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "22 De soldaat.mp3"; path = "../../../../Music/iTunes/iTunes Media/Music/Nick & Simon/Altijd Dichtbij (Live)/22 De soldaat.mp3"; sourceTree = "<group>"; };
+		65B6246E1E3FE02000A89488 /* De soldaat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "De soldaat.mp3"; path = "../../../../Music/iTunes/iTunes Media/Music/Nick & Simon/Altijd Dichtbij (Live)/De soldaat.mp3"; sourceTree = "<group>"; };
 		65B78C231E4084D600DBE1E2 /* SharedAudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedAudioPlayer.swift; sourceTree = "<group>"; };
 		65CEB9A01E43EE920001FC16 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		65D452C41E3FBE0A0023EAA9 /* AudioPlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerVC.swift; sourceTree = "<group>"; };
 		65D452C61E3FCD180023EAA9 /* Body Scan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Body Scan.mp3"; sourceTree = "<group>"; };
-		65D452C71E3FCD180023EAA9 /* 11.  Mindfulness of breathing and body mediation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "11.  Mindfulness of breathing and body mediation.mp3"; sourceTree = "<group>"; };
+		65D452C71E3FCD180023EAA9 /* Mindfulness of breathing and body mediation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mindfulness of breathing and body mediation.mp3"; sourceTree = "<group>"; };
 		65D452CC1E3FCEE10023EAA9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		65DE95511E3CD7A600A569D1 /* Quotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Quotes.txt; sourceTree = "<group>"; };
 		65DE95531E3CD9BC00A569D1 /* CustomQuote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomQuote.swift; sourceTree = "<group>"; };
@@ -143,9 +153,14 @@
 		6547F60B1E474D89006CF37C /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				65B6246E1E3FE02000A89488 /* 22 De soldaat.mp3 */,
+				6547F6111E4776B1006CF37C /* Behind Blue Eyes.mp3 */,
+				6547F6171E4776C4006CF37C /* Angie.mp3 */,
+				6547F6131E4776B7006CF37C /* 15 Miljoen Mensen.mp3 */,
+				6547F6151E4776BD006CF37C /* (Sittin' On) The Dock Of The Bay.mp3 */,
+				65B6246E1E3FE02000A89488 /* De soldaat.mp3 */,
+				6547F60F1E4772A1006CF37C /* Bitter Sweet Symphony.mp3 */,
 				65D452C61E3FCD180023EAA9 /* Body Scan.mp3 */,
-				65D452C71E3FCD180023EAA9 /* 11.  Mindfulness of breathing and body mediation.mp3 */,
+				65D452C71E3FCD180023EAA9 /* Mindfulness of breathing and body mediation.mp3 */,
 			);
 			name = Audio;
 			sourceTree = "<group>";
@@ -339,18 +354,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				65788EF11E37DA8300A6AC6A /* LaunchScreen.storyboard in Resources */,
+				6547F6101E4772A1006CF37C /* Bitter Sweet Symphony.mp3 in Resources */,
 				65DE95581E3CDC9C00A569D1 /* Week 4.html in Resources */,
 				656C58D01E393EC7009285B7 /* Week 1.html in Resources */,
-				65B6246F1E3FE02000A89488 /* 22 De soldaat.mp3 in Resources */,
+				65B6246F1E3FE02000A89488 /* De soldaat.mp3 in Resources */,
 				65DE95521E3CD7A600A569D1 /* Quotes.txt in Resources */,
+				6547F6161E4776BD006CF37C /* (Sittin' On) The Dock Of The Bay.mp3 in Resources */,
+				6547F6181E4776C4006CF37C /* Angie.mp3 in Resources */,
 				65DE955E1E3CDCC000A569D1 /* Week 7.html in Resources */,
 				65D452C91E3FCD180023EAA9 /* Body Scan.mp3 in Resources */,
 				657065B01E3951050029239E /* Week 2.html in Resources */,
 				65EB06921E469FCF007E2E10 /* Assets.xcassets in Resources */,
-				65D452CA1E3FCD180023EAA9 /* 11.  Mindfulness of breathing and body mediation.mp3 in Resources */,
+				65D452CA1E3FCD180023EAA9 /* Mindfulness of breathing and body mediation.mp3 in Resources */,
 				651B09AE1E3E30A6009075A9 /* Main.storyboard in Resources */,
 				65DE955C1E3CDCB300A569D1 /* Week 6.html in Resources */,
+				6547F6141E4776B7006CF37C /* 15 Miljoen Mensen.mp3 in Resources */,
 				65DE95601E3CDCCB00A569D1 /* Week 8.html in Resources */,
+				6547F6121E4776B1006CF37C /* Behind Blue Eyes.mp3 in Resources */,
 				65DE955A1E3CDCA700A569D1 /* Week 5.html in Resources */,
 				65DE95561E3CDC4A00A569D1 /* QuotesAuthors.txt in Resources */,
 				6561BAB01E39514000B468BA /* Week 3.html in Resources */,
