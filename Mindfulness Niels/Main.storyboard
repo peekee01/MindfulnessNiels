@@ -1123,7 +1123,7 @@
                             <constraint firstItem="3OU-oY-7cw" firstAttribute="leading" secondItem="ioD-VQ-Qft" secondAttribute="leading" id="y9R-sH-ypW"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="customQuote" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="customAudioPlayerPopUp" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

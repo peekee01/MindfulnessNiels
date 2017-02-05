@@ -11,8 +11,6 @@ import Foundation
 class SharedVars {
     var weekNum: String = "Week 1"
     var chosenWeek: Int = 1
-    var currentElapsed: TimeInterval = 0
     var audioTitle: String = ""
-    var currentSong: String = ""
-    static let sharedInstance = SharedVars()    
+    static let sharedInstance = SharedVars()
 }

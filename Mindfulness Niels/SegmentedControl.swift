@@ -30,21 +30,6 @@ class CustomSegmentedControl: UISegmentedControl {
     }
     
     func setupFonts(){
-//        let font = UIFont(name: "HelveticaNeue-Bold", size: 16.0)
-//        
-//        self.setTitleTextAttributes(normalTextAttributes, for: UIControlState())
-//        self.setTitleTextAttributes(normalTextAttributes, for: .highlighted)
-//        self.setTitleTextAttributes(normalTextAttributes, for: .selected)
-//        
-//        self.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: UIControlState())
-//        self.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: .highlighted)
-//        self.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: .selected)
-//        
-//        let normalTextAttributes: [NSObject : AnyObject] = [
-//            NSForegroundColorAttributeName: UIColor.white,
-//            NSFontAttributeName: UIFont.systemFontOfSize(fontSize, weight: UIFontWeightRegular)
-//        ]
-        
         let boldTextAttributes: [NSObject : AnyObject] = [
             NSForegroundColorAttributeName as NSObject : UIColor.white,
             NSFontAttributeName as NSObject : UIFont(name:"HelveticaNeue-Bold", size: 14.0)!,

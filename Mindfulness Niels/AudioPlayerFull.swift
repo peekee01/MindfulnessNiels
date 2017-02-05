@@ -30,7 +30,6 @@ class AudioPlayerFull: UIViewController, UITableViewDelegate, UITableViewDataSou
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         UIApplication.shared.beginReceivingRemoteControlEvents()
         
         findAudioFiles()
@@ -45,26 +44,9 @@ class AudioPlayerFull: UIViewController, UITableViewDelegate, UITableViewDataSou
         _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AudioPlayerFull.updateLabels), userInfo: nil, repeats: true)
         _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AudioPlayerFull.checkPlaying), userInfo: nil, repeats: true)
         _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(AudioPlayerFull.updateNowPlayingInfoCenter), userInfo: nil, repeats: true)
+        
         updateLabels()
     }
-    
-    func findAudioFiles() {
-        let audioPath = Bundle.main.resourcePath!
-        let fileManager = FileManager.default
-        
-        do {
-            let audioArray = try fileManager.contentsOfDirectory(atPath: audioPath)
-            for i in audioArray {
-                if i.hasSuffix("mp3") {
-                    let fileNameWithoutSuffix = i.components(separatedBy: ".").first!
-                    mp3FileNames.append(fileNameWithoutSuffix)
-                }
-            }
-        } catch {
-            print(error)
-        }
-    }
-    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return objectsArray.count
@@ -103,22 +85,8 @@ class AudioPlayerFull: UIViewController, UITableViewDelegate, UITableViewDataSou
         SharedAudioPlayer.sharedInstance.sharedPlayer.play()
     }
     
-    //    override func viewWillAppear(_ animated: Bool) {
-    //        if SharedAudioPlayer.sharedInstance.sharedPlayer.isPlaying == true {
-    //            pausePlay.setImage(UIImage(named: "Audio_pause.png"), for: UIControlState.normal)
-    //        } else {
-    //            pausePlay.setImage(UIImage(named: "Audio_play.png"), for: UIControlState.normal)
-    //            if audioTitle.text == SharedVars.sharedInstance.currentSong && SharedVars.sharedInstance.currentElapsed != 0 {
-    //                SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime = SharedVars.sharedInstance.currentElapsed
-    //            } else {
-    //                SharedAudioPlayer.sharedInstance.loadAudioPlayer()
-    //            }
-    //        }
-    //    }
-    
     override func viewWillDisappear(_ animated: Bool) {
         SharedAudioPlayer.sharedInstance.sharedPlayer.stop()
-        SharedVars.sharedInstance.audioTitle = ""
     }
     
     @IBAction func pausePlayBtn(_ sender: UIButton) {
@@ -140,7 +108,7 @@ class AudioPlayerFull: UIViewController, UITableViewDelegate, UITableViewDataSou
             }
         }
     }
-
+    
     func checkPlaying() {
         if SharedAudioPlayer.sharedInstance.sharedPlayer.isPlaying == true {
             pausePlay.setImage(UIImage(named: "Audio_pause.png"), for: UIControlState.normal)
@@ -184,32 +152,53 @@ class AudioPlayerFull: UIViewController, UITableViewDelegate, UITableViewDataSou
         }
     }
     
-    override func remoteControlReceived(with event: UIEvent?) {
-        if event?.type == UIEventType.remoteControl {
-            if event?.subtype == UIEventSubtype.remoteControlTogglePlayPause {
-                print("pauze gedrukt")
-                SharedAudioPlayer.sharedInstance.sharedPlayer.stop()
-            } else if event?.subtype == UIEventSubtype.remoteControlNextTrack {
-                SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime = SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime + 15
-                updateNowPlayingInfoCenter()
-            } else if event?.subtype == UIEventSubtype.remoteControlPause {
-                SharedAudioPlayer.sharedInstance.sharedPlayer.stop()
-            } else if event?.subtype == UIEventSubtype.remoteControlPlay {
-                SharedAudioPlayer.sharedInstance.sharedPlayer.play()
-            } else if event?.subtype == UIEventSubtype.remoteControlPreviousTrack {
-                SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime = SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime - 15
+    func findAudioFiles() {
+        let audioPath = Bundle.main.resourcePath!
+        let fileManager = FileManager.default
+        
+        do {
+            let audioArray = try fileManager.contentsOfDirectory(atPath: audioPath)
+            for i in audioArray {
+                if i.hasSuffix("mp3") {
+                    let fileNameWithoutSuffix = i.components(separatedBy: ".").first!
+                    mp3FileNames.append(fileNameWithoutSuffix)
+                }
             }
+        } catch {
+            print(error)
         }
     }
     
+    override func remoteControlReceived(with event: UIEvent?) {
+        if event?.type == UIEventType.remoteControl {
+            if event?.subtype == UIEventSubtype.remoteControlTogglePlayPause {
+                if SharedAudioPlayer.sharedInstance.sharedPlayer.isPlaying == true {
+                    pausePlay.setImage(UIImage(named: "Audio_pause.png"), for: UIControlState.normal)
+                    SharedAudioPlayer.sharedInstance.sharedPlayer.stop()
+                } else {
+                    pausePlay.setImage(UIImage(named: "Audio_play.png"), for: UIControlState.normal)
+                    SharedAudioPlayer.sharedInstance.sharedPlayer.play()
+                }
+            }
+        } else if event?.subtype == UIEventSubtype.remoteControlNextTrack {
+            SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime = SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime + 15
+        } else if event?.subtype == UIEventSubtype.remoteControlPause {
+            SharedAudioPlayer.sharedInstance.sharedPlayer.stop()
+        } else if event?.subtype == UIEventSubtype.remoteControlPlay {
+            SharedAudioPlayer.sharedInstance.sharedPlayer.play()
+        } else if event?.subtype == UIEventSubtype.remoteControlPreviousTrack {
+            SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime = SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime - 15
+        }
+    }
+    
+    
     func updateNowPlayingInfoCenter() {
         MPNowPlayingInfoCenter.default().nowPlayingInfo = [
-            MPMediaItemPropertyTitle: audioTitle.text as Any,
+            MPMediaItemPropertyTitle: SharedVars.sharedInstance.audioTitle,
             MPMediaItemPropertyArtist: "School of Mindfulness",
             MPMediaItemPropertyPlaybackDuration: SharedAudioPlayer.sharedInstance.sharedPlayer.duration,
             MPNowPlayingInfoPropertyElapsedPlaybackTime: SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime
         ]
-
     }
     
 }

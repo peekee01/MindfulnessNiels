@@ -70,9 +70,16 @@ class WeekExercises: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let header = view as! UITableViewHeaderFooterView
-        header.textLabel?.textColor = UIColor.white
+        if section == 3 {
+            header.textLabel?.font = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
+            header.textLabel?.textColor = UIColor.white
+            //(red: 128/255, green: 128/255, blue: 128/255, alpha: 1.0) /* #808080 */
+            header.backgroundView?.backgroundColor = UIColor(red: 242/255, green: 137/255, blue: 49/255, alpha: 1.0) /* #f28931 */
+        } else {
         header.textLabel?.font = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-        header.backgroundView?.backgroundColor = UIColor(red: 0/255, green: 128/255, blue: 128/255, alpha: 1.0)
+        header.textLabel?.textColor = UIColor.white
+        header.backgroundView?.backgroundColor = UIColor(red: 0/255, green: 128/255, blue: 128/255, alpha: 1.0) //greenish
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -93,11 +100,10 @@ class WeekExercises: UIViewController, UITableViewDelegate, UITableViewDataSourc
             SharedAudioPlayer.sharedInstance.loadAudioPlayer()
         } else {
             self.addChildViewController(popOverAudioVC)
-            
             popOverAudioVC.view.frame = CGRect(x: 50, y: (self.view.frame.height/2)-125, width: self.view.frame.width-100, height: 250)
             popOverAudioVC.view.tag = 100
-            
             self.view.addSubview(popOverAudioVC.view)
+            SharedAudioPlayer.sharedInstance.loadAudioPlayer()
             //    popOverAudioVC.didMove(toParentViewController: self)
             
         }
@@ -109,19 +115,12 @@ class WeekExercises: UIViewController, UITableViewDelegate, UITableViewDataSourc
             blurView = UIVisualEffectView(effect: blurEffect)
             blurView?.frame.size = CGSize(width: self.view.frame.size.width, height: self.view.frame.size.height)
             blurView?.center = CGPoint(x: self.view.frame.size.width/2, y:  self.view.frame.size.height/2)
-            blurView?.layer.masksToBounds = false
-            blurView?.layer.cornerRadius = 6.0
-            
             self.view.addSubview(blurView!)
-//            UIView.animate(withDuration: 2.5) {
-//                self.blurView?.effect = UIBlurEffect(style: .regular)
-//            }
             isBlurred = true
         } else {
             UIView.animate(withDuration: 0.5, animations: {
                 self.blurView?.effect = UIBlurEffect(style: .dark)
 
-//                self.blurView?.alpha = 0
             }, completion: { (finished: Bool) -> Void in
                 self.blurView?.removeFromSuperview()
             } )

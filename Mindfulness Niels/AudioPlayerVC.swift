@@ -18,10 +18,9 @@ class AudioPlayerVC: UIViewController {
     @IBOutlet weak var timeRemaining: UILabel!
     @IBOutlet weak var audioTitle: UILabel!
     
-    //   var AudioPlayer: AVAudioPlayer?
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIApplication.shared.beginReceivingRemoteControlEvents()
         
         self.view.layer.opacity = 0.8
         self.showAnimate()
@@ -29,8 +28,8 @@ class AudioPlayerVC: UIViewController {
         _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AudioPlayerVC.updateAudioSlider), userInfo: nil, repeats: true)
         _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AudioPlayerVC.updateLabels), userInfo: nil, repeats: true)
         _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AudioPlayerVC.checkPlaying), userInfo: nil, repeats: true)
+        _ = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(AudioPlayerVC.updateNowPlayingInfoCenter), userInfo: nil, repeats: true)
         updateLabels()
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -38,18 +37,12 @@ class AudioPlayerVC: UIViewController {
             pausePlay.setImage(UIImage(named: "Audio_pause.png"), for: UIControlState.normal)
         } else {
             pausePlay.setImage(UIImage(named: "Audio_play.png"), for: UIControlState.normal)
-            if audioTitle.text == SharedVars.sharedInstance.currentSong && SharedVars.sharedInstance.currentElapsed != 0 {
-                SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime = SharedVars.sharedInstance.currentElapsed
-            } else {
-                SharedAudioPlayer.sharedInstance.loadAudioPlayer()
-            }
+            SharedAudioPlayer.sharedInstance.loadAudioPlayer()
         }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         SharedAudioPlayer.sharedInstance.sharedPlayer.stop()
-        SharedVars.sharedInstance.currentElapsed = SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime
-        SharedVars.sharedInstance.currentSong = self.audioTitle.text!
     }
     
     @IBAction func pausePlayBtn(_ sender: UIButton) {
@@ -93,10 +86,42 @@ class AudioPlayerVC: UIViewController {
         audioTitle.text = SharedVars.sharedInstance.audioTitle
     }
     
+    override func remoteControlReceived(with event: UIEvent?) {
+        if event?.type == UIEventType.remoteControl {
+            if event?.subtype == UIEventSubtype.remoteControlTogglePlayPause {
+                if SharedAudioPlayer.sharedInstance.sharedPlayer.isPlaying == true {
+                    pausePlay.setImage(UIImage(named: "Audio_pause.png"), for: UIControlState.normal)
+                    SharedAudioPlayer.sharedInstance.sharedPlayer.stop()
+                } else {
+                    pausePlay.setImage(UIImage(named: "Audio_play.png"), for: UIControlState.normal)
+                    SharedAudioPlayer.sharedInstance.sharedPlayer.play()
+                }
+            }
+        } else if event?.subtype == UIEventSubtype.remoteControlNextTrack {
+            SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime = SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime + 15
+        } else if event?.subtype == UIEventSubtype.remoteControlPause {
+            SharedAudioPlayer.sharedInstance.sharedPlayer.stop()
+        } else if event?.subtype == UIEventSubtype.remoteControlPlay {
+            SharedAudioPlayer.sharedInstance.sharedPlayer.play()
+        } else if event?.subtype == UIEventSubtype.remoteControlPreviousTrack {
+            SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime = SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime - 15
+        }
+    }
+    
+    
+    func updateNowPlayingInfoCenter() {
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = [
+            MPMediaItemPropertyTitle: SharedVars.sharedInstance.audioTitle,
+            MPMediaItemPropertyArtist: "School of Mindfulness",
+            MPMediaItemPropertyPlaybackDuration: SharedAudioPlayer.sharedInstance.sharedPlayer.duration,
+            MPNowPlayingInfoPropertyElapsedPlaybackTime: SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime
+        ]
+    }
+    
     @IBAction func closeAudioPop(_ sender: Any) {
         self.removeAnimate()
     }
-
+    
     func showAnimate() {
         self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
         self.view.alpha = 0.0;
@@ -115,10 +140,8 @@ class AudioPlayerVC: UIViewController {
             {
                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: "showRemoveBlur"), object: nil)
                 self.view.removeFromSuperview()
-                SharedVars.sharedInstance.currentElapsed = SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime
-                SharedVars.sharedInstance.currentSong = self.audioTitle.text!
                 SharedAudioPlayer.sharedInstance.sharedPlayer.stop()
-
+                
             }
         })
     }

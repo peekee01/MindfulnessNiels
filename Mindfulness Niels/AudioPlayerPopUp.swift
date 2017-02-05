@@ -1,11 +1,12 @@
-
 //
-//  CustomQuote.swift
+//  AudioPlayerPopUp.swift
 //  Mindfulness Niels
 //
-//  Created by Pieter Kuijsten on 25/01/2017.
+//  Created by Pieter Kuijsten on 05/02/2017.
 //  Copyright © 2017 Pieter Kuijsten. All rights reserved.
 //
+
+import UIKit
 
 import UIKit
 
@@ -13,7 +14,7 @@ private var custom = false
 
 extension UIView {
     
-    @IBInspectable var customQuote: Bool {
+    @IBInspectable var customAudioPlayerPopUp: Bool {
         get {
             return custom
         }
@@ -24,7 +25,7 @@ extension UIView {
             if custom {
                 
                 self.layer.masksToBounds = true
-                self.layer.cornerRadius = 6.0
+                self.layer.cornerRadius = 10.0
             } else {
                 self.layer.masksToBounds = false
                 self.layer.cornerRadius = 0.0
@@ -32,4 +33,5 @@ extension UIView {
         }
     }
 }
+
 

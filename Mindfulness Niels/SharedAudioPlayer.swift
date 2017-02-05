@@ -22,7 +22,6 @@ class SharedAudioPlayer {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             try AVAudioSession.sharedInstance().setActive(true)
             UIApplication.shared.beginReceivingRemoteControlEvents()
-            
             SharedAudioPlayer.sharedInstance.sharedPlayer = try AVAudioPlayer(contentsOf: AudioURL)
        //     SharedAudioPlayer.sharedInstance.sharedPlayer.play()
         } catch let error as NSError {
