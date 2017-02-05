@@ -17,9 +17,7 @@ class ScheduleTableVC: UITableViewController, ENSideMenuDelegate {
         self.sideMenuController()?.sideMenu?.delegate = self
         
         self.tableView.tableHeaderView = UIView()
-        self.tableView.tableFooterView = UIView()
-        self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "Background_green.jpg")!)
-        
+        self.tableView.tableFooterView = UIView()        
     }
     
     

@@ -25,13 +25,25 @@ class AudioPlayerVC: UIViewController {
         self.view.layer.opacity = 0.8
         self.showAnimate()
         
-     //   audioTitle.text = SharedVars.sharedInstance.audioTitle
+        //        if !UIAccessibilityIsReduceTransparencyEnabled() {
+        //            self.view.backgroundColor = UIColor.clear
+        //
+        //            let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
+        //            let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        //            //always fill the view
+        //            blurEffectView.frame = self.view.bounds
+        //            blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        //
+        //            self.view.addSubview(blurEffectView) //if you have more UIViews, use an insertSubview API to place it where needed
+        //        } else {
+        //            self.view.backgroundColor = UIColor.black
+        //        }
         
         _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AudioPlayerVC.updateAudioSlider), userInfo: nil, repeats: true)
         _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AudioPlayerVC.updateLabels), userInfo: nil, repeats: true)
         _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AudioPlayerVC.checkPlaying), userInfo: nil, repeats: true)
         updateLabels()
-
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -114,19 +126,25 @@ class AudioPlayerVC: UIViewController {
             self.view.alpha = 1.0
             self.view.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         })
+        
+                for view in self.view.subviews {
+                    print(view)
+        }
     }
     
     func removeAnimate() {
-        UIView.animate(withDuration: 0.25, animations: {
+        UIView.animate(withDuration: 0.5, animations: {
             self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
             self.view.alpha = 0.0;
         }, completion:{(finished : Bool)  in
             if (finished)
             {
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "showRemoveBlur"), object: nil)
                 self.view.removeFromSuperview()
                 SharedVars.sharedInstance.currentElapsed = SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime
                 SharedVars.sharedInstance.currentSong = self.audioTitle.text!
                 SharedAudioPlayer.sharedInstance.sharedPlayer.stop()
+
             }
         })
     }

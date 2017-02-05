@@ -27,7 +27,6 @@
 		65788EE41E37DA8300A6AC6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65788EE31E37DA8300A6AC6A /* AppDelegate.swift */; };
 		65788EE61E37DA8300A6AC6A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65788EE51E37DA8300A6AC6A /* MainVC.swift */; };
 		65788EEC1E37DA8300A6AC6A /* Mindfulness_Niels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65788EEA1E37DA8300A6AC6A /* Mindfulness_Niels.xcdatamodeld */; };
-		65788EEE1E37DA8300A6AC6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65788EED1E37DA8300A6AC6A /* Assets.xcassets */; };
 		65788EF11E37DA8300A6AC6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65788EEF1E37DA8300A6AC6A /* LaunchScreen.storyboard */; };
 		6592995A1E395907001B9B10 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659299591E395907001B9B10 /* CustomView.swift */; };
 		659934A11E3E267F004C2ADF /* ScheduleTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659934A01E3E267F004C2ADF /* ScheduleTableVC.swift */; };
@@ -50,6 +49,7 @@
 		65DE95601E3CDCCB00A569D1 /* Week 8.html in Resources */ = {isa = PBXBuildFile; fileRef = 65DE955F1E3CDCCB00A569D1 /* Week 8.html */; };
 		65DE956D1E3D277800A569D1 /* SharedVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE956C1E3D277800A569D1 /* SharedVars.swift */; };
 		65E337C41E3E8430001FFE30 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E337C31E3E8430001FFE30 /* SegmentedControl.swift */; };
+		65EB06921E469FCF007E2E10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65EB06911E469FCF007E2E10 /* Assets.xcassets */; };
 		95067312A9A2FF60ED238C66 /* Pods_Mindfulness_Niels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD573AA54512CCB2557DD9D6 /* Pods_Mindfulness_Niels.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +75,6 @@
 		65788EE31E37DA8300A6AC6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65788EE51E37DA8300A6AC6A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		65788EEB1E37DA8300A6AC6A /* Mindfulness_Niels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mindfulness_Niels.xcdatamodel; sourceTree = "<group>"; };
-		65788EED1E37DA8300A6AC6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65788EF01E37DA8300A6AC6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65788EF21E37DA8300A6AC6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		659299591E395907001B9B10 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
@@ -99,6 +98,7 @@
 		65DE955F1E3CDCCB00A569D1 /* Week 8.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Week 8.html"; sourceTree = "<group>"; };
 		65DE956C1E3D277800A569D1 /* SharedVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedVars.swift; sourceTree = "<group>"; };
 		65E337C31E3E8430001FFE30 /* SegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		65EB06911E469FCF007E2E10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		968AE0B665E063B8C7CDE0F6 /* Pods-Mindfulness Niels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindfulness Niels.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mindfulness Niels/Pods-Mindfulness Niels.release.xcconfig"; sourceTree = "<group>"; };
 		B302AC870CF2B90BEB7EC470 /* Pods-Mindfulness Niels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindfulness Niels.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mindfulness Niels/Pods-Mindfulness Niels.debug.xcconfig"; sourceTree = "<group>"; };
 		FD573AA54512CCB2557DD9D6 /* Pods_Mindfulness_Niels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mindfulness_Niels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,14 +127,14 @@
 			name = Weekdetails;
 			sourceTree = "<group>";
 		};
-		651B09B01E3E3B36009075A9 /* Week2 */ = {
+		651B09B01E3E3B36009075A9 /* backup */ = {
 			isa = PBXGroup;
 			children = (
 				651B09B71E3E3D7F009075A9 /* WeekIntro2.swift */,
 				651B09B81E3E3D7F009075A9 /* WeekExercises2.swift */,
 				651B09BA1E3E3D7F009075A9 /* WeekAdditional2.swift */,
 			);
-			name = Week2;
+			name = backup;
 			sourceTree = "<group>";
 		};
 		65788ED71E37DA8300A6AC6A = {
@@ -164,7 +164,7 @@
 				65788EF81E37DACC00A6AC6A /* Model */,
 				65788EE31E37DA8300A6AC6A /* AppDelegate.swift */,
 				651B09AD1E3E30A6009075A9 /* Main.storyboard */,
-				65788EED1E37DA8300A6AC6A /* Assets.xcassets */,
+				65EB06911E469FCF007E2E10 /* Assets.xcassets */,
 				65788EEF1E37DA8300A6AC6A /* LaunchScreen.storyboard */,
 				65788EF21E37DA8300A6AC6A /* Info.plist */,
 				65788EEA1E37DA8300A6AC6A /* Mindfulness_Niels.xcdatamodeld */,
@@ -201,7 +201,7 @@
 		65788EFA1E37DADE00A6AC6A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				651B09B01E3E3B36009075A9 /* Week2 */,
+				651B09B01E3E3B36009075A9 /* backup */,
 				651B09AF1E3E397D009075A9 /* Weekdetails */,
 				65788EE51E37DA8300A6AC6A /* MainVC.swift */,
 				651B09C11E3E3DFB009075A9 /* WeekMain.swift */,
@@ -320,7 +320,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				65788EF11E37DA8300A6AC6A /* LaunchScreen.storyboard in Resources */,
-				65788EEE1E37DA8300A6AC6A /* Assets.xcassets in Resources */,
 				65DE95581E3CDC9C00A569D1 /* Week 4.html in Resources */,
 				656C58D01E393EC7009285B7 /* Week 1.html in Resources */,
 				65B6246F1E3FE02000A89488 /* 22 De soldaat.mp3 in Resources */,
@@ -328,6 +327,7 @@
 				65DE955E1E3CDCC000A569D1 /* Week 7.html in Resources */,
 				65D452C91E3FCD180023EAA9 /* Body Scan.mp3 in Resources */,
 				657065B01E3951050029239E /* Week 2.html in Resources */,
+				65EB06921E469FCF007E2E10 /* Assets.xcassets in Resources */,
 				65D452CA1E3FCD180023EAA9 /* 11.  Mindfulness of breathing and body mediation.mp3 in Resources */,
 				651B09AE1E3E30A6009075A9 /* Main.storyboard in Resources */,
 				65DE955C1E3CDCB300A569D1 /* Week 6.html in Resources */,

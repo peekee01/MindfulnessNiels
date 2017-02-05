@@ -14,13 +14,15 @@ class WeekExercises: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     let textCellIdentifier = "TextCell"
     let audioCellIdentifier = "AudioCell"
+    var isBlurred: Bool = false
+    var blurView: UIVisualEffectView?
     
-//    struct Objects {
-//        var sectionName: String!
-//        var sectionObjects: [String]!
-//    }
-//    
-//var objectsArray = [Objects]()
+    //    struct Objects {
+    //        var sectionName: String!
+    //        var sectionObjects: [String]!
+    //    }
+    //
+    //var objectsArray = [Objects]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,10 +34,13 @@ class WeekExercises: UIViewController, UITableViewDelegate, UITableViewDataSourc
         self.tableView.estimatedRowHeight = 70
         self.tableView.rowHeight = UITableViewAutomaticDimension
         
-//        objectsArray = [Objects(sectionName: "Formal practice", sectionObjects: ["Go through the week 1 pages of the Home Practice Handbook", "Do the guided audio practice (Body Scan, 15 to 15 min) six days a week"]), Objects(sectionName: "Informal practice", sectionObjects: ["Eat one meal (or one bite) mindfully", "Attempt to solve the 9 dots exercise, while noticing how you go about solving it"]), Objects(sectionName: "Insight practice", sectionObjects: ["Keeping a daily log of your practice (use the form in your Home Practice Handbook) to record your experience", "Identify your intentions for this course"]), Objects(sectionName: "Audio", sectionObjects: ["22 De soldaat", "Body Scan", "11.  Mindfulness of breathing and body mediation"])]
+        NotificationCenter.default.addObserver(self, selector: #selector(WeekExercises.showRemoveBlur), name:NSNotification.Name(rawValue: "showRemoveBlur"), object: nil)
+        
+        
+        //        objectsArray = [Objects(sectionName: "Formal practice", sectionObjects: ["Go through the week 1 pages of the Home Practice Handbook", "Do the guided audio practice (Body Scan, 15 to 15 min) six days a week"]), Objects(sectionName: "Informal practice", sectionObjects: ["Eat one meal (or one bite) mindfully", "Attempt to solve the 9 dots exercise, while noticing how you go about solving it"]), Objects(sectionName: "Insight practice", sectionObjects: ["Keeping a daily log of your practice (use the form in your Home Practice Handbook) to record your experience", "Identify your intentions for this course"]), Objects(sectionName: "Audio", sectionObjects: ["22 De soldaat", "Body Scan", "11.  Mindfulness of breathing and body mediation"])]
     }
-
-
+    
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return ExerciseContent.sharedInstance.objectsArray.count
     }
@@ -74,23 +79,58 @@ class WeekExercises: UIViewController, UITableViewDelegate, UITableViewDataSourc
         return 35
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 3 {
-            let popOverAudioVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "audioPlayerPopUp") as! AudioPlayerVC
-            if  self.view.viewWithTag(100) != nil {
-                SharedVars.sharedInstance.audioTitle = ExerciseContent.sharedInstance.objectsArray[indexPath.section].sectionObjects[indexPath.row]
-                SharedAudioPlayer.sharedInstance.loadAudioPlayer()
-                for view in self.view.subviews {
-                    print(view)
-                }
-            } else {
-                self.addChildViewController(popOverAudioVC)
-                SharedVars.sharedInstance.audioTitle = ExerciseContent.sharedInstance.objectsArray[indexPath.section].sectionObjects[indexPath.row]
-                popOverAudioVC.view.frame = CGRect(x: 0, y: self.view.frame.height - 249, width: self.view.frame.width, height: 250)
-                popOverAudioVC.view.tag = 100
-                self.view.addSubview(popOverAudioVC.view)
-                popOverAudioVC.didMove(toParentViewController: self)
+    func showRemoveBlur() {
+        if !isBlurred {
+            let blurEffect = UIBlurEffect(style: .dark)
+            blurView = UIVisualEffectView(effect: blurEffect)
+            blurView?.frame.size = CGSize(width: self.view.frame.size.width, height: self.view.frame.size.height)
+            blurView?.center = CGPoint(x: self.view.frame.size.width/2, y:  self.view.frame.size.height/2)
+            
+            self.view.addSubview(blurView!)
+            UIView.animate(withDuration: 1.0) {
+                self.blurView?.alpha = 1
             }
+            
+            isBlurred = true
+        } else {
+//            blurView!.removeFromSuperview()
+//            UIView.animate(withDuration: 2.8) {
+//                self.blurView?.effect = UIBlurEffect(style: .dark)
+//            }
+            UIView.animate(withDuration: 0.5, animations: {
+                //  EITHER...
+//                self.blurView!.effect = UIBlurEffect(nil)
+                //  OR...
+                self.blurView?.alpha = 0
+            }, completion: { (finished: Bool) -> Void in
+                self.blurView?.removeFromSuperview()
+            } )
+            isBlurred = false
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 3 {
+            SharedVars.sharedInstance.audioTitle = ExerciseContent.sharedInstance.objectsArray[indexPath.section].sectionObjects[indexPath.row]
+            showRemoveBlur()
+            openAudioPlayer()
+        }
+    }
+    
+    func openAudioPlayer() {
+        let popOverAudioVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "audioPlayerPopUp") as! AudioPlayerVC
+        if  self.view.viewWithTag(100) != nil {
+            SharedAudioPlayer.sharedInstance.loadAudioPlayer()
+        } else {
+            self.addChildViewController(popOverAudioVC)
+            
+            popOverAudioVC.view.frame = CGRect(x: 50, y: (self.view.frame.height/2)-125, width: self.view.frame.width-100, height: 250)
+            popOverAudioVC.view.tag = 100
+            
+            self.view.addSubview(popOverAudioVC.view)
+            //    popOverAudioVC.didMove(toParentViewController: self)
+            
+        }
+    }
+    
 }

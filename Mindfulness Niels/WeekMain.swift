@@ -11,6 +11,7 @@ import ENSwiftSideMenu
 
 class WeekMain: UIViewController, ENSideMenuDelegate {
     
+  
     enum TabIndex : Int {
         case firstChildTab = 0
         case secondChildTab = 1
@@ -100,5 +101,6 @@ class WeekMain: UIViewController, ENSideMenuDelegate {
         
         return vc
     }
+
     
 }
