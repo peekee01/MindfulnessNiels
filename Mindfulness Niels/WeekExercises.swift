@@ -79,36 +79,6 @@ class WeekExercises: UIViewController, UITableViewDelegate, UITableViewDataSourc
         return 35
     }
     
-    func showRemoveBlur() {
-        if !isBlurred {
-            let blurEffect = UIBlurEffect(style: .dark)
-            blurView = UIVisualEffectView(effect: blurEffect)
-            blurView?.frame.size = CGSize(width: self.view.frame.size.width, height: self.view.frame.size.height)
-            blurView?.center = CGPoint(x: self.view.frame.size.width/2, y:  self.view.frame.size.height/2)
-            
-            self.view.addSubview(blurView!)
-            UIView.animate(withDuration: 1.0) {
-                self.blurView?.alpha = 1
-            }
-            
-            isBlurred = true
-        } else {
-//            blurView!.removeFromSuperview()
-//            UIView.animate(withDuration: 2.8) {
-//                self.blurView?.effect = UIBlurEffect(style: .dark)
-//            }
-            UIView.animate(withDuration: 0.5, animations: {
-                //  EITHER...
-//                self.blurView!.effect = UIBlurEffect(nil)
-                //  OR...
-                self.blurView?.alpha = 0
-            }, completion: { (finished: Bool) -> Void in
-                self.blurView?.removeFromSuperview()
-            } )
-            isBlurred = false
-        }
-    }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 3 {
             SharedVars.sharedInstance.audioTitle = ExerciseContent.sharedInstance.objectsArray[indexPath.section].sectionObjects[indexPath.row]
@@ -130,6 +100,36 @@ class WeekExercises: UIViewController, UITableViewDelegate, UITableViewDataSourc
             self.view.addSubview(popOverAudioVC.view)
             //    popOverAudioVC.didMove(toParentViewController: self)
             
+        }
+    }
+    
+    func showRemoveBlur() {
+        if !isBlurred {
+            let blurEffect = UIBlurEffect(style: .dark)
+            blurView = UIVisualEffectView(effect: blurEffect)
+            blurView?.frame.size = CGSize(width: self.view.frame.size.width, height: self.view.frame.size.height)
+            blurView?.center = CGPoint(x: self.view.frame.size.width/2, y:  self.view.frame.size.height/2)
+            
+            self.view.addSubview(blurView!)
+            UIView.animate(withDuration: 1.0) {
+                self.blurView?.alpha = 1
+            }
+            
+            isBlurred = true
+        } else {
+            //            blurView!.removeFromSuperview()
+            //            UIView.animate(withDuration: 2.8) {
+            //                self.blurView?.effect = UIBlurEffect(style: .dark)
+            //            }
+            UIView.animate(withDuration: 0.5, animations: {
+                //  EITHER...
+                //                self.blurView!.effect = UIBlurEffect(nil)
+                //  OR...
+                self.blurView?.alpha = 0
+            }, completion: { (finished: Bool) -> Void in
+                self.blurView?.removeFromSuperview()
+            } )
+            isBlurred = false
         }
     }
     

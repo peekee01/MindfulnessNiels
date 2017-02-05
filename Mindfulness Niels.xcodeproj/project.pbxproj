@@ -19,6 +19,7 @@
 		651B09C51E3E3DFB009075A9 /* WeekMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651B09C11E3E3DFB009075A9 /* WeekMain.swift */; };
 		651B09C61E3E3DFB009075A9 /* WeekAdditional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651B09C21E3E3DFB009075A9 /* WeekAdditional.swift */; };
 		653468BF1E43DF7500F6DE0A /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653468BE1E43DF7500F6DE0A /* CustomImage.swift */; };
+		6547F60E1E4750B7006CF37C /* AudioPlayerFull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6547F60D1E4750B6006CF37C /* AudioPlayerFull.swift */; };
 		6561BAB01E39514000B468BA /* Week 3.html in Resources */ = {isa = PBXBuildFile; fileRef = 6561BAAF1E39514000B468BA /* Week 3.html */; };
 		656C58CA1E391CB8009285B7 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C58C91E391CB8009285B7 /* SideMenuVC.swift */; };
 		656C58CC1E391D60009285B7 /* MenuTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656C58CB1E391D60009285B7 /* MenuTableVC.swift */; };
@@ -66,6 +67,7 @@
 		651B09C11E3E3DFB009075A9 /* WeekMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekMain.swift; sourceTree = "<group>"; };
 		651B09C21E3E3DFB009075A9 /* WeekAdditional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekAdditional.swift; sourceTree = "<group>"; };
 		653468BE1E43DF7500F6DE0A /* CustomImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
+		6547F60D1E4750B6006CF37C /* AudioPlayerFull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerFull.swift; sourceTree = "<group>"; };
 		6561BAAF1E39514000B468BA /* Week 3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Week 3.html"; sourceTree = "<group>"; };
 		656C58C91E391CB8009285B7 /* SideMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		656C58CB1E391D60009285B7 /* MenuTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableVC.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		651B09AF1E3E397D009075A9 /* Weekdetails */ = {
 			isa = PBXGroup;
 			children = (
+				651B09C11E3E3DFB009075A9 /* WeekMain.swift */,
 				651B09BF1E3E3DFB009075A9 /* WeekIntro.swift */,
 				651B09C01E3E3DFB009075A9 /* WeekExercises.swift */,
 				651B09C21E3E3DFB009075A9 /* WeekAdditional.swift */,
@@ -135,6 +138,31 @@
 				651B09BA1E3E3D7F009075A9 /* WeekAdditional2.swift */,
 			);
 			name = backup;
+			sourceTree = "<group>";
+		};
+		6547F60B1E474D89006CF37C /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				65B6246E1E3FE02000A89488 /* 22 De soldaat.mp3 */,
+				65D452C61E3FCD180023EAA9 /* Body Scan.mp3 */,
+				65D452C71E3FCD180023EAA9 /* 11.  Mindfulness of breathing and body mediation.mp3 */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		6547F60C1E474D97006CF37C /* Week descriptions */ = {
+			isa = PBXGroup;
+			children = (
+				656C58CF1E393EC7009285B7 /* Week 1.html */,
+				657065AF1E3951050029239E /* Week 2.html */,
+				6561BAAF1E39514000B468BA /* Week 3.html */,
+				65DE95571E3CDC9C00A569D1 /* Week 4.html */,
+				65DE95591E3CDCA700A569D1 /* Week 5.html */,
+				65DE955B1E3CDCB300A569D1 /* Week 6.html */,
+				65DE955D1E3CDCC000A569D1 /* Week 7.html */,
+				65DE955F1E3CDCCB00A569D1 /* Week 8.html */,
+			);
+			name = "Week descriptions";
 			sourceTree = "<group>";
 		};
 		65788ED71E37DA8300A6AC6A = {
@@ -204,11 +232,11 @@
 				651B09B01E3E3B36009075A9 /* backup */,
 				651B09AF1E3E397D009075A9 /* Weekdetails */,
 				65788EE51E37DA8300A6AC6A /* MainVC.swift */,
-				651B09C11E3E3DFB009075A9 /* WeekMain.swift */,
 				656C58C91E391CB8009285B7 /* SideMenuVC.swift */,
 				656C58CB1E391D60009285B7 /* MenuTableVC.swift */,
 				659934A01E3E267F004C2ADF /* ScheduleTableVC.swift */,
 				65D452C41E3FBE0A0023EAA9 /* AudioPlayerVC.swift */,
+				6547F60D1E4750B6006CF37C /* AudioPlayerFull.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -216,19 +244,10 @@
 		65DE95611E3CDCD600A569D1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				65B6246E1E3FE02000A89488 /* 22 De soldaat.mp3 */,
-				65D452C61E3FCD180023EAA9 /* Body Scan.mp3 */,
-				65D452C71E3FCD180023EAA9 /* 11.  Mindfulness of breathing and body mediation.mp3 */,
+				6547F60C1E474D97006CF37C /* Week descriptions */,
+				6547F60B1E474D89006CF37C /* Audio */,
 				65DE95511E3CD7A600A569D1 /* Quotes.txt */,
 				65DE95551E3CDC4A00A569D1 /* QuotesAuthors.txt */,
-				656C58CF1E393EC7009285B7 /* Week 1.html */,
-				657065AF1E3951050029239E /* Week 2.html */,
-				6561BAAF1E39514000B468BA /* Week 3.html */,
-				65DE95571E3CDC9C00A569D1 /* Week 4.html */,
-				65DE95591E3CDCA700A569D1 /* Week 5.html */,
-				65DE955B1E3CDCB300A569D1 /* Week 6.html */,
-				65DE955D1E3CDCC000A569D1 /* Week 7.html */,
-				65DE955F1E3CDCCB00A569D1 /* Week 8.html */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -407,6 +426,7 @@
 				651B09BC1E3E3D7F009075A9 /* WeekExercises2.swift in Sources */,
 				651B09C61E3E3DFB009075A9 /* WeekAdditional.swift in Sources */,
 				651B09BE1E3E3D7F009075A9 /* WeekAdditional2.swift in Sources */,
+				6547F60E1E4750B7006CF37C /* AudioPlayerFull.swift in Sources */,
 				651506221E42991C00B44936 /* TextCell.swift in Sources */,
 				65788EE61E37DA8300A6AC6A /* MainVC.swift in Sources */,
 				65E337C41E3E8430001FFE30 /* SegmentedControl.swift in Sources */,

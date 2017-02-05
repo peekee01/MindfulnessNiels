@@ -18,7 +18,7 @@ class AudioPlayerVC: UIViewController {
     @IBOutlet weak var audioTitle: UILabel!
     
     //   var AudioPlayer: AVAudioPlayer?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -88,14 +88,6 @@ class AudioPlayerVC: UIViewController {
         SharedAudioPlayer.sharedInstance.sharedPlayer.currentTime = TimeInterval(audioSlider.value)
         SharedAudioPlayer.sharedInstance.sharedPlayer.play()
         pausePlay.setImage(UIImage(named: "Audio_pause.png"), for: UIControlState.normal)
-    }
-    
-    func stopPlaying() {
-        if SharedAudioPlayer.sharedInstance.sharedPlayer.isPlaying == true {
-            SharedAudioPlayer.sharedInstance.sharedPlayer.stop()
-        } else {
-            print("er speelde niets")
-        }
     }
     
     func updateAudioSlider() {
