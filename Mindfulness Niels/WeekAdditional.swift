@@ -14,9 +14,7 @@ class WeekAdditional: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     let videoCellIdentifier = "VideoCell"
     let code = "?&modestbranding=1&playsinline=1&controls=1&showinfo=0&rel=0\" frameborder=\"0\" allowfullscreen></iframe>"
-    
- //   var textVideo = ["Dit is filmpje 1", "Dit is filmpje 2", "en nog filmpje 3"]
-  //  var videoArray = ["https://www.youtube.com/embed/GLjelIPg3ys", "https://www.youtube.com/embed/9YRjX3A_8cM", "https://www.youtube.com/embed/BSmToj9VZ4s"]
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

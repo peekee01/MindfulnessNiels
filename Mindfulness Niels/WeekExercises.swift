@@ -17,13 +17,6 @@ class WeekExercises: UIViewController, UITableViewDelegate, UITableViewDataSourc
     var isBlurred: Bool = false
     var blurView: UIVisualEffectView?
     
-    //    struct Objects {
-    //        var sectionName: String!
-    //        var sectionObjects: [String]!
-    //    }
-    //
-    //var objectsArray = [Objects]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         SharedAudioPlayer.sharedInstance.loadAudioPlayer()
@@ -36,8 +29,6 @@ class WeekExercises: UIViewController, UITableViewDelegate, UITableViewDataSourc
         
         NotificationCenter.default.addObserver(self, selector: #selector(WeekExercises.showRemoveBlur), name:NSNotification.Name(rawValue: "showRemoveBlur"), object: nil)
         
-        
-        //        objectsArray = [Objects(sectionName: "Formal practice", sectionObjects: ["Go through the week 1 pages of the Home Practice Handbook", "Do the guided audio practice (Body Scan, 15 to 15 min) six days a week"]), Objects(sectionName: "Informal practice", sectionObjects: ["Eat one meal (or one bite) mindfully", "Attempt to solve the 9 dots exercise, while noticing how you go about solving it"]), Objects(sectionName: "Insight practice", sectionObjects: ["Keeping a daily log of your practice (use the form in your Home Practice Handbook) to record your experience", "Identify your intentions for this course"]), Objects(sectionName: "Audio", sectionObjects: ["De soldaat", "Body Scan", "Mindfulness of breathing and body mediation"])]
     }
     
     
@@ -55,7 +46,6 @@ class WeekExercises: UIViewController, UITableViewDelegate, UITableViewDataSourc
             audioCell.titleLbl.text = ExerciseContent.sharedInstance.objectsArray[indexPath.section].sectionObjects[indexPath.row]
             audioCell.selectionStyle = UITableViewCellSelectionStyle.none
             return audioCell
-            
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: textCellIdentifier, for: indexPath) as! TextCell
             cell.cellLabel.text = ExerciseContent.sharedInstance.objectsArray[indexPath.section].sectionObjects[indexPath.row]
@@ -76,9 +66,9 @@ class WeekExercises: UIViewController, UITableViewDelegate, UITableViewDataSourc
             //(red: 128/255, green: 128/255, blue: 128/255, alpha: 1.0) /* #808080 */
             header.backgroundView?.backgroundColor = UIColor(red: 242/255, green: 137/255, blue: 49/255, alpha: 1.0) /* #f28931 */
         } else {
-        header.textLabel?.font = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-        header.textLabel?.textColor = UIColor.white
-        header.backgroundView?.backgroundColor = UIColor(red: 0/255, green: 128/255, blue: 128/255, alpha: 1.0) //greenish
+            header.textLabel?.font = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
+            header.textLabel?.textColor = UIColor.white
+            header.backgroundView?.backgroundColor = UIColor(red: 0/255, green: 128/255, blue: 128/255, alpha: 1.0) //greenish
         }
     }
     
@@ -120,7 +110,7 @@ class WeekExercises: UIViewController, UITableViewDelegate, UITableViewDataSourc
         } else {
             UIView.animate(withDuration: 0.5, animations: {
                 self.blurView?.effect = UIBlurEffect(style: .dark)
-
+                
             }, completion: { (finished: Bool) -> Void in
                 self.blurView?.removeFromSuperview()
             } )

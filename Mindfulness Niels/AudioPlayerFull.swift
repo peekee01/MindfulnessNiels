@@ -26,19 +26,21 @@ class AudioPlayerFull: UIViewController, UITableViewDelegate, UITableViewDataSou
         var sectionObjects: [String]!
     }
     
-    var objectsArray = [Objects(sectionName: "Audio", sectionObjects: ["initial file"])]
+    var objectsArray = [Objects(sectionName: "AUDIO", sectionObjects: ["initial file"])]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         UIApplication.shared.beginReceivingRemoteControlEvents()
         
         findAudioFiles()
-        objectsArray = [Objects(sectionName: "Audio", sectionObjects: mp3FileNames)]
+        objectsArray = [Objects(sectionName: "AUDIO", sectionObjects: mp3FileNames)]
         
         SharedAudioPlayer.sharedInstance.loadAudioPlayer()
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.tableView.estimatedRowHeight = 70
+        self.tableView.rowHeight = UITableViewAutomaticDimension
         
         _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AudioPlayerFull.updateAudioSlider), userInfo: nil, repeats: true)
         _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AudioPlayerFull.updateLabels), userInfo: nil, repeats: true)
@@ -71,7 +73,7 @@ class AudioPlayerFull: UIViewController, UITableViewDelegate, UITableViewDataSou
         let header = view as! UITableViewHeaderFooterView
         header.textLabel?.textColor = UIColor.white
         header.textLabel?.font = UIFont(name: "HelveticaNeue-Bold", size: 14.0)
-        header.backgroundView?.backgroundColor = UIColor(red: 0/255, green: 128/255, blue: 128/255, alpha: 1.0)
+        header.backgroundView?.backgroundColor = UIColor(red: 242/255, green: 137/255, blue: 49/255, alpha: 1.0) /* #f28931 */
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
